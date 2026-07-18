@@ -3,22 +3,19 @@
  *
  * AUTOMATICALLY UPDATES:
  *
- * 1. Arsenal player injuries / availability
+ * 1. Arsenal injuries / availability concerns
  * 2. Arsenal transfer-watch news
  *
- * NO MANUAL TRANSFER FILE IS REQUIRED.
+ * NO MANUAL EDITING REQUIRED.
  *
  * Injury source:
  * Fantasy Premier League bootstrap data
  *
  * Transfer source:
- * Google News RSS search for recent Arsenal transfer news
+ * Google News RSS search
  *
  * Output:
  * data/football.json
- *
- * Maximum Squad Watch rows:
- * 4
  */
 
 
@@ -58,13 +55,6 @@ const MAX_SQUAD_ITEMS =
   4;
 
 
-/*
- * Maximum injury rows.
- *
- * This ensures that at least one transfer story can appear
- * when there is a credible recent transfer story.
- */
-
 const MAX_INJURY_ITEMS =
   3;
 
@@ -77,7 +67,6 @@ const MAX_INJURY_ITEMS =
 async function fetchText(
   url
 ) {
-
 
   const response =
     await fetch(
@@ -103,13 +92,11 @@ async function fetchText(
 
   if (!response.ok) {
 
-
     throw new Error(
 
       `Request failed: ${response.status} ${url}`
 
     );
-
 
   }
 
@@ -120,14 +107,13 @@ async function fetchText(
 
 
 /* =========================================================
-   READ JSON FILE
+   READ JSON
    ========================================================= */
 
 
 async function readJsonFile(
   filename
 ) {
-
 
   const raw =
     await readFile(
@@ -152,7 +138,6 @@ async function readJsonFile(
 
 
 async function fetchFplData() {
-
 
   console.log(
 
@@ -185,13 +170,11 @@ async function fetchFplData() {
 
   if (!response.ok) {
 
-
     throw new Error(
 
       `FPL request failed: ${response.status}`
 
     );
-
 
   }
 
@@ -202,14 +185,13 @@ async function fetchFplData() {
 
 
 /* =========================================================
-   FIND ARSENAL TEAM
+   FIND ARSENAL TEAM ID
    ========================================================= */
 
 
 function findArsenalTeamId(
   teams
 ) {
-
 
   const arsenal =
     teams.find(
@@ -233,13 +215,11 @@ function findArsenalTeamId(
 
   if (!arsenal) {
 
-
     throw new Error(
 
-      'Arsenal could not be found in player data.'
+      'Arsenal could not be found in FPL data.'
 
     );
-
 
   }
 
@@ -257,7 +237,6 @@ function findArsenalTeamId(
 function getPlayerName(
   player
 ) {
-
 
   const firstName =
 
@@ -299,18 +278,13 @@ function getPlayerName(
 
 
 /* =========================================================
-   SHORTEN PLAYER NAMES
+   SHORTEN PLAYER NAME
    ========================================================= */
 
 
 function shortenPlayerName(
   name
 ) {
-
-
-  /*
-   * Remove excessive spaces.
-   */
 
   const cleanName =
 
@@ -326,27 +300,16 @@ function shortenPlayerName(
       .trim();
 
 
-  /*
-   * Keep reasonably short names unchanged.
-   */
-
   if (
     cleanName.length
     <=
     19
   ) {
 
-
     return cleanName;
 
   }
 
-
-  /*
-   * For long names use:
-   *
-   * First initial + surname
-   */
 
   const parts =
     cleanName.split(' ');
@@ -357,7 +320,6 @@ function shortenPlayerName(
     >
     1
   ) {
-
 
     return (
 
@@ -387,6 +349,195 @@ function shortenPlayerName(
 
 
 /* =========================================================
+   EXCLUDE NON-INJURY NEWS
+   ========================================================= */
+
+
+const NON_INJURY_PHRASES = [
+
+  'has joined',
+
+  'joined werder',
+
+  'joined porto',
+
+  'joined on loan',
+
+  'joined permanently',
+
+  'loan move',
+
+  'on loan',
+
+  'loaned',
+
+  'transferred',
+
+  'transfer completed',
+
+  'permanent transfer',
+
+  'left the club',
+
+  'leaves the club',
+
+  'departed',
+
+  'departure',
+
+  'signed for',
+
+  'signing for',
+
+  'moved to',
+
+  'move to',
+
+  'season-long loan',
+
+  'season long loan',
+
+  'contract terminated',
+
+  'released by the club'
+
+];
+
+
+/* =========================================================
+   CHECK WHETHER FPL NEWS IS ACTUALLY AN AVAILABILITY ISSUE
+   ========================================================= */
+
+
+function isRealAvailabilityIssue(
+  player
+) {
+
+  const news =
+
+    String(
+      player.news
+      ||
+      ''
+    )
+      .toLowerCase()
+      .trim();
+
+
+  /*
+   * Exclude obvious transfer / loan / departure notes.
+   */
+
+  const nonInjuryNews =
+
+    NON_INJURY_PHRASES.some(
+
+      phrase =>
+
+        news.includes(
+          phrase
+        )
+
+    );
+
+
+  if (nonInjuryNews) {
+
+    return false;
+
+  }
+
+
+  /*
+   * Suspended.
+   */
+
+  if (
+    player.status
+    ===
+    's'
+  ) {
+
+    return true;
+
+  }
+
+
+  /*
+   * Injured.
+   */
+
+  if (
+    player.status
+    ===
+    'i'
+  ) {
+
+    return true;
+
+  }
+
+
+  /*
+   * Doubtful.
+   */
+
+  if (
+    player.status
+    ===
+    'd'
+  ) {
+
+    return true;
+
+  }
+
+
+  /*
+   * Explicitly unavailable,
+   * but exclude transfer/loan notes above.
+   */
+
+  if (
+    player.status
+    ===
+    'u'
+  ) {
+
+    return true;
+
+  }
+
+
+  /*
+   * Availability probability below 100%.
+   */
+
+  if (
+
+    typeof player.chance_of_playing_next_round
+    ===
+    'number'
+
+    &&
+
+    player.chance_of_playing_next_round
+    <
+    100
+
+  ) {
+
+    return true;
+
+  }
+
+
+  return false;
+
+}
+
+
+/* =========================================================
    CLEAN INJURY STATUS
    ========================================================= */
 
@@ -395,8 +546,8 @@ function cleanInjuryStatus(
   player
 ) {
 
-
   const news =
+
     String(
       player.news
       ||
@@ -407,13 +558,11 @@ function cleanInjuryStatus(
 
   if (!news) {
 
-
     if (
       player.status
       ===
       'i'
     ) {
-
 
       return 'Injured';
 
@@ -426,7 +575,6 @@ function cleanInjuryStatus(
       'd'
     ) {
 
-
       return 'Doubtful';
 
     }
@@ -437,7 +585,6 @@ function cleanInjuryStatus(
       ===
       's'
     ) {
-
 
       return 'Suspended';
 
@@ -450,7 +597,6 @@ function cleanInjuryStatus(
       'u'
     ) {
 
-
       return 'Unavailable';
 
     }
@@ -459,12 +605,6 @@ function cleanInjuryStatus(
     return 'Availability concern';
 
   }
-
-
-  /*
-   * Remove expected-return wording to keep
-   * the E1002 display compact.
-   */
 
 
   let clean =
@@ -504,11 +644,6 @@ function cleanInjuryStatus(
       )
 
       .trim();
-
-
-  /*
-   * Simplify common phrases.
-   */
 
 
   clean = clean
@@ -559,12 +694,31 @@ function cleanInjuryStatus(
 
       'Groin injury'
 
+    )
+
+    .replace(
+
+      /calf injury/i,
+
+      'Calf injury'
+
+    )
+
+    .replace(
+
+      /foot injury/i,
+
+      'Foot injury'
+
+    )
+
+    .replace(
+
+      /muscle injury/i,
+
+      'Muscle injury'
+
     );
-
-
-  /*
-   * Maximum display length.
-   */
 
 
   if (
@@ -572,7 +726,6 @@ function cleanInjuryStatus(
     >
     24
   ) {
-
 
     clean =
 
@@ -596,7 +749,7 @@ function cleanInjuryStatus(
 
 
 /* =========================================================
-   INJURY PRIORITY
+   AVAILABILITY PRIORITY
    ========================================================= */
 
 
@@ -604,23 +757,11 @@ function getInjuryPriority(
   player
 ) {
 
-
   const chance =
     player.chance_of_playing_next_round;
 
 
-  /*
-   * Definitely unavailable.
-   */
-
-
   if (
-    player.status
-    ===
-    'u'
-
-    ||
-
     player.status
     ===
     'i'
@@ -632,15 +773,9 @@ function getInjuryPriority(
     0
   ) {
 
-
     return 1;
 
   }
-
-
-  /*
-   * Suspended.
-   */
 
 
   if (
@@ -649,15 +784,20 @@ function getInjuryPriority(
     's'
   ) {
 
-
     return 2;
 
   }
 
 
-  /*
-   * Doubtful.
-   */
+  if (
+    player.status
+    ===
+    'u'
+  ) {
+
+    return 3;
+
+  }
 
 
   if (
@@ -680,8 +820,7 @@ function getInjuryPriority(
     )
   ) {
 
-
-    return 3;
+    return 4;
 
   }
 
@@ -699,7 +838,6 @@ function getInjuryPriority(
 function buildInjuryList(
   fplData
 ) {
-
 
   const teams =
     fplData.teams
@@ -737,11 +875,9 @@ function buildInjuryList(
 
         player =>
 
-          getInjuryPriority(
+          isRealAvailabilityIssue(
             player
           )
-          <
-          99
 
       )
 
@@ -750,6 +886,7 @@ function buildInjuryList(
         player => ({
 
           type:
+
             player.status
             ===
             's'
@@ -805,7 +942,6 @@ function buildInjuryList(
         b.priority
       ) {
 
-
         return (
 
           a.priority
@@ -836,14 +972,13 @@ function buildInjuryList(
 
 
 /* =========================================================
-   XML ENTITY CLEANUP
+   XML HELPERS
    ========================================================= */
 
 
 function decodeXml(
   text
 ) {
-
 
   return String(
     text
@@ -882,15 +1017,9 @@ function decodeXml(
 }
 
 
-/* =========================================================
-   STRIP HTML
-   ========================================================= */
-
-
 function stripHtml(
   text
 ) {
-
 
   return decodeXml(
 
@@ -921,16 +1050,10 @@ function stripHtml(
 }
 
 
-/* =========================================================
-   EXTRACT XML TAG
-   ========================================================= */
-
-
 function extractXmlTag(
   xml,
   tag
 ) {
-
 
   const pattern =
 
@@ -960,15 +1083,9 @@ function extractXmlTag(
 }
 
 
-/* =========================================================
-   READ RSS ITEMS
-   ========================================================= */
-
-
 function parseRssItems(
   xml
 ) {
-
 
   const matches =
 
@@ -990,31 +1107,22 @@ function parseRssItems(
       title:
 
         extractXmlTag(
-
           item,
-
           'title'
-
         ),
 
       description:
 
         extractXmlTag(
-
           item,
-
           'description'
-
         ),
 
       pubDate:
 
         extractXmlTag(
-
           item,
-
           'pubDate'
-
         )
 
     })
@@ -1025,7 +1133,7 @@ function parseRssItems(
 
 
 /* =========================================================
-   TRANSFER KEYWORDS
+   TRANSFER FILTERING
    ========================================================= */
 
 
@@ -1053,6 +1161,8 @@ const TRANSFER_KEYWORDS = [
 
   'talks',
 
+  'negotiations',
+
   'agreement',
 
   'agreed',
@@ -1066,11 +1176,6 @@ const TRANSFER_KEYWORDS = [
   'approach'
 
 ];
-
-
-/* =========================================================
-   EXCLUDED NEWS
-   ========================================================= */
 
 
 const EXCLUDED_PHRASES = [
@@ -1096,15 +1201,9 @@ const EXCLUDED_PHRASES = [
 ];
 
 
-/* =========================================================
-   CHECK TRANSFER STORY
-   ========================================================= */
-
-
 function isTransferStory(
   article
 ) {
-
 
   const text =
 
@@ -1138,15 +1237,9 @@ function isTransferStory(
 
   if (excluded) {
 
-
     return false;
 
   }
-
-
-  /*
-   * Article must mention Arsenal.
-   */
 
 
   if (
@@ -1155,16 +1248,9 @@ function isTransferStory(
     )
   ) {
 
-
     return false;
 
   }
-
-
-  /*
-   * Must contain at least one
-   * transfer-related phrase.
-   */
 
 
   return TRANSFER_KEYWORDS.some(
@@ -1181,14 +1267,13 @@ function isTransferStory(
 
 
 /* =========================================================
-   DETERMINE TRANSFER STATUS
+   TRANSFER STATUS
    ========================================================= */
 
 
 function determineTransferStatus(
   text
 ) {
-
 
   const lower =
     text.toLowerCase();
@@ -1199,7 +1284,6 @@ function determineTransferStatus(
       'medical'
     )
   ) {
-
 
     return 'Medical reported';
 
@@ -1224,7 +1308,6 @@ function determineTransferStatus(
     )
   ) {
 
-
     return 'Deal reportedly agreed';
 
   }
@@ -1241,7 +1324,6 @@ function determineTransferStatus(
       'offer'
     )
   ) {
-
 
     return 'Bid reported';
 
@@ -1260,7 +1342,6 @@ function determineTransferStatus(
     )
   ) {
 
-
     return 'Talks reported';
 
   }
@@ -1271,7 +1352,6 @@ function determineTransferStatus(
       'target'
     )
   ) {
-
 
     return 'Reported target';
 
@@ -1290,7 +1370,6 @@ function determineTransferStatus(
     )
   ) {
 
-
     return 'Interest reported';
 
   }
@@ -1302,15 +1381,152 @@ function determineTransferStatus(
 
 
 /* =========================================================
-   EXTRACT POSSIBLE PLAYER NAME
+   CLEAN TITLE
+   ========================================================= */
 
-   Transfer headlines normally follow patterns such as:
 
-   Arsenal linked with Player Name
-   Arsenal target Player Name
-   Arsenal make bid for Player Name
+function cleanHeadline(
+  title
+) {
 
-   This is heuristic rather than guaranteed.
+  return title
+
+    .replace(
+
+      /\s+-\s+[^-]+$/,
+
+      ''
+
+    )
+
+    .replace(
+
+      /\s+/g,
+
+      ' '
+
+    )
+
+    .trim();
+
+}
+
+
+/* =========================================================
+   VALIDATE POSSIBLE PLAYER NAME
+   ========================================================= */
+
+
+function isValidPlayerName(
+  name
+) {
+
+  if (!name) {
+
+    return false;
+
+  }
+
+
+  const clean =
+
+    name
+      .replace(
+        /\s+/g,
+        ' '
+      )
+      .trim();
+
+
+  const lower =
+    clean.toLowerCase();
+
+
+  const blocked = [
+
+    'arsenal',
+
+    'transfer',
+
+    'transfer update',
+
+    'premier league',
+
+    'newcastle',
+
+    'chelsea',
+
+    'manchester united',
+
+    'manchester city',
+
+    'liverpool',
+
+    'tottenham',
+
+    'real madrid',
+
+    'barcelona'
+
+  ];
+
+
+  if (
+    blocked.includes(
+      lower
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  const words =
+    clean.split(' ');
+
+
+  if (
+    words.length
+    <
+    1
+
+    ||
+
+    words.length
+    >
+    4
+  ) {
+
+    return false;
+
+  }
+
+
+  if (
+    clean.length
+    <
+    3
+
+    ||
+
+    clean.length
+    >
+    35
+  ) {
+
+    return false;
+
+  }
+
+
+  return true;
+
+}
+
+
+/* =========================================================
+   EXTRACT PLAYER NAME FROM TRANSFER HEADLINE
    ========================================================= */
 
 
@@ -1318,57 +1534,29 @@ function extractTransferPlayer(
   title
 ) {
 
-
-  /*
-   * Remove publisher suffix from Google News titles.
-   *
-   * Example:
-   *
-   * Arsenal linked with Player - BBC Sport
-   */
-
-
   const cleanTitle =
-
-    title
-
-      .replace(
-
-        /\s+-\s+[^-]+$/,
-
-        ''
-
-      )
-
-      .trim();
+    cleanHeadline(
+      title
+    );
 
 
   const patterns = [
 
+    /Arsenal[^:,-]*?\b(?:bid|offer)\b[^:,-]*?\bfor\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
-    /linked with ([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
+    /Arsenal[^:,-]*?\b(?:linked with|linked to)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
+    /Arsenal[^:,-]*?\b(?:target|eye|want|chase|pursue)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
-    /linked to ([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
+    /Arsenal[^:,-]*?\b(?:talks with|talks for|negotiations with)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
+    /Arsenal[^:,-]*?\b(?:sign|signing|signed)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
-    /bid for ([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
+    /([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){1,3})\s+(?:to Arsenal|linked with Arsenal|linked to Arsenal)/i,
 
+    /(?:bid|offer)\s+for\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
-    /offer for ([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
-
-
-    /talks for ([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
-
-
-    /talks with ([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
-
-
-    /target ([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
-
-
-    /sign ([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i
-
+    /(?:linked with|linked to)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i
 
   ];
 
@@ -1379,7 +1567,6 @@ function extractTransferPlayer(
     patterns
   ) {
 
-
     const match =
       cleanTitle.match(
         pattern
@@ -1389,9 +1576,10 @@ function extractTransferPlayer(
     if (
       match
       &&
-      match[1]
+      isValidPlayerName(
+        match[1]
+      )
     ) {
-
 
       return shortenPlayerName(
 
@@ -1405,26 +1593,19 @@ function extractTransferPlayer(
   }
 
 
-  /*
-   * If a player cannot confidently be extracted,
-   * return a generic label.
-   */
-
-
-  return 'Transfer Update';
+  return null;
 
 }
 
 
 /* =========================================================
-   TRANSFER STORY SCORE
+   SCORE TRANSFER ARTICLE
    ========================================================= */
 
 
 function scoreTransferArticle(
   article
 ) {
-
 
   const text =
 
@@ -1445,11 +1626,6 @@ function scoreTransferArticle(
 
   let score =
     0;
-
-
-  /*
-   * Stronger transfer wording.
-   */
 
 
   if (
@@ -1529,9 +1705,17 @@ function scoreTransferArticle(
   }
 
 
-  /*
-   * Slight preference for newer stories.
-   */
+  const player =
+    extractTransferPlayer(
+      article.title
+    );
+
+
+  if (player) {
+
+    score += 8;
+
+  }
 
 
   const published =
@@ -1545,7 +1729,6 @@ function scoreTransferArticle(
       published.getTime()
     )
   ) {
-
 
     const ageHours =
 
@@ -1568,11 +1751,9 @@ function scoreTransferArticle(
       24
     ) {
 
-
       score += 5;
 
     }
-
 
     else if (
       ageHours
@@ -1580,18 +1761,15 @@ function scoreTransferArticle(
       72
     ) {
 
-
       score += 3;
 
     }
-
 
     else if (
       ageHours
       <
       168
     ) {
-
 
       score += 1;
 
@@ -1606,12 +1784,11 @@ function scoreTransferArticle(
 
 
 /* =========================================================
-   GET AUTOMATIC TRANSFER WATCH
+   GET TRANSFER WATCH
    ========================================================= */
 
 
 async function getTransferWatch() {
-
 
   console.log(
 
@@ -1621,7 +1798,6 @@ async function getTransferWatch() {
 
 
   try {
-
 
     const xml =
       await fetchText(
@@ -1645,6 +1821,12 @@ async function getTransferWatch() {
 
             ...article,
 
+            player:
+
+              extractTransferPlayer(
+                article.title
+              ),
+
             score:
 
               scoreTransferArticle(
@@ -1652,6 +1834,14 @@ async function getTransferWatch() {
               )
 
           })
+
+        )
+
+        .filter(
+
+          article =>
+
+            article.player
 
         )
 
@@ -1675,10 +1865,9 @@ async function getTransferWatch() {
       0
     ) {
 
-
       console.log(
 
-        'No suitable recent transfer story found.'
+        'No transfer story with a confidently extracted player name was found.'
 
       );
 
@@ -1711,10 +1900,7 @@ async function getTransferWatch() {
         'TRANSFER',
 
       player:
-
-        extractTransferPlayer(
-          best.title
-        ),
+        best.player,
 
       status:
 
@@ -1724,12 +1910,9 @@ async function getTransferWatch() {
 
     };
 
-
   }
 
-
   catch (error) {
-
 
     console.warn(
 
@@ -1743,12 +1926,6 @@ async function getTransferWatch() {
       error.message
 
     );
-
-
-    /*
-     * Transfer failure should not break
-     * the whole dashboard.
-     */
 
 
     return null;
@@ -1771,15 +1948,8 @@ function buildSquadWatch(
 
 ) {
 
-
   const items =
     [];
-
-
-  /*
-   * Select up to three highest-priority
-   * availability concerns.
-   */
 
 
   items.push(
@@ -1795,11 +1965,6 @@ function buildSquadWatch(
   );
 
 
-  /*
-   * Add one automatic transfer story.
-   */
-
-
   if (
     transfer
 
@@ -1810,18 +1975,11 @@ function buildSquadWatch(
     MAX_SQUAD_ITEMS
   ) {
 
-
     items.push(
       transfer
     );
 
   }
-
-
-  /*
-   * If there is no transfer story,
-   * use the fourth row for another injury.
-   */
 
 
   if (
@@ -1834,24 +1992,35 @@ function buildSquadWatch(
     MAX_SQUAD_ITEMS
   ) {
 
+    const remainingInjuries =
 
-    const nextInjury =
+      injuries.slice(
 
-      injuries[
         MAX_INJURY_ITEMS
-      ];
 
-
-    if (
-      nextInjury
-    ) {
-
-
-      items.push(
-        nextInjury
       );
 
-    }
+
+    const remainingSlots =
+
+      MAX_SQUAD_ITEMS
+
+      -
+
+      items.length;
+
+
+    items.push(
+
+      ...remainingInjuries.slice(
+
+        0,
+
+        remainingSlots
+
+      )
+
+    );
 
   }
 
@@ -1874,18 +2043,11 @@ function buildSquadWatch(
 
 async function updateSquadWatch() {
 
-
   console.log(
 
     'Starting automatic Squad Watch update...'
 
   );
-
-
-  /*
-   * Load football.json created by
-   * update-football.mjs.
-   */
 
 
   const footballData =
@@ -1895,12 +2057,6 @@ async function updateSquadWatch() {
       FOOTBALL_FILE
 
     );
-
-
-  /*
-   * Fetch injuries and transfer news
-   * simultaneously.
-   */
 
 
   const [
@@ -1920,11 +2076,6 @@ async function updateSquadWatch() {
     ]);
 
 
-  /*
-   * Build injury list.
-   */
-
-
   const injuries =
 
     buildInjuryList(
@@ -1932,11 +2083,6 @@ async function updateSquadWatch() {
       fplData
 
     );
-
-
-  /*
-   * Create final Squad Watch.
-   */
 
 
   const squadWatch =
@@ -1948,11 +2094,6 @@ async function updateSquadWatch() {
       transfer
 
     );
-
-
-  /*
-   * Replace previous Squad Watch.
-   */
 
 
   footballData.squadWatch =
@@ -1973,11 +2114,6 @@ async function updateSquadWatch() {
       })
 
     );
-
-
-  /*
-   * Write updated football.json.
-   */
 
 
   await writeFile(
@@ -2012,7 +2148,7 @@ async function updateSquadWatch() {
 
   console.log(
 
-    `Availability concerns found: ${injuries.length}`
+    `Valid Arsenal availability concerns: ${injuries.length}`
 
   );
 
@@ -2050,7 +2186,6 @@ updateSquadWatch()
 
     error => {
 
-
       console.error(
 
         'Squad Watch update failed:'
@@ -2059,9 +2194,7 @@ updateSquadWatch()
 
 
       console.error(
-
         error
-
       );
 
 
