@@ -7,10 +7,7 @@
  * 2. Arsenal's next 4 Premier League fixtures
  * 3. Match times converted to Singapore time
  *
- * Squad Watch is preserved from the existing football.json file.
- *
- * Data source:
- * football-data.org API v4
+ * Squad Watch is preserved from the existing football.json.
  */
 
 import {
@@ -67,9 +64,7 @@ if (!API_TOKEN) {
    API REQUEST
    ========================================================= */
 
-async function apiRequest(
-  endpoint
-) {
+async function apiRequest(endpoint) {
 
   const url =
     `${API_BASE}${endpoint}`;
@@ -82,20 +77,12 @@ async function apiRequest(
 
   const response =
     await fetch(
-
       url,
-
       {
-
         headers: {
-
-          'X-Auth-Token':
-            API_TOKEN
-
+          'X-Auth-Token': API_TOKEN
         }
-
       }
-
     );
 
 
@@ -107,11 +94,7 @@ async function apiRequest(
 
     throw new Error(
 
-      `Football API error `
-      +
-      `${response.status}: `
-      +
-      errorText
+      `Football API error ${response.status}: ${errorText}`
 
     );
 
@@ -126,7 +109,7 @@ async function apiRequest(
 /* =========================================================
    READ EXISTING JSON
 
-   This allows us to keep Squad Watch unchanged.
+   Preserves Squad Watch.
    ========================================================= */
 
 async function readExistingData() {
@@ -135,36 +118,163 @@ async function readExistingData() {
 
     const raw =
       await readFile(
-
         DATA_FILE,
-
         'utf8'
-
       );
 
 
-    return JSON.parse(
-      raw
-    );
+    return JSON.parse(raw);
 
   }
 
   catch (error) {
 
     console.warn(
-
       'Existing football.json could not be read.'
-
     );
 
 
     return {
-
       squadWatch: []
-
     };
 
   }
+
+}
+
+
+/* =========================================================
+   SHORTEN TEAM NAMES
+
+   These names are used in:
+   - League table
+   - Fixture list
+   ========================================================= */
+
+function shortenTeamName(name) {
+
+  const replacements = {
+
+    'Arsenal FC':
+      'Arsenal',
+
+    'Aston Villa FC':
+      'Aston Villa',
+
+    'AFC Bournemouth':
+      'Bournemouth',
+
+    'Bournemouth':
+      'Bournemouth',
+
+    'Brentford FC':
+      'Brentford',
+
+    'Brighton & Hove Albion FC':
+      'Brighton',
+
+    'Brighton & Hove Albion':
+      'Brighton',
+
+    'Burnley FC':
+      'Burnley',
+
+    'Chelsea FC':
+      'Chelsea',
+
+    'Coventry City FC':
+      'Coventry',
+
+    'Coventry City':
+      'Coventry',
+
+    'Crystal Palace FC':
+      'Crystal Palace',
+
+    'Everton FC':
+      'Everton',
+
+    'Fulham FC':
+      'Fulham',
+
+    'Hull City AFC':
+      'Hull City',
+
+    'Hull City':
+      'Hull City',
+
+    'Ipswich Town FC':
+      'Ipswich',
+
+    'Ipswich Town':
+      'Ipswich',
+
+    'Leeds United FC':
+      'Leeds',
+
+    'Leeds United':
+      'Leeds',
+
+    'Liverpool FC':
+      'Liverpool',
+
+    'Manchester City FC':
+      'Man City',
+
+    'Manchester United FC':
+      'Man United',
+
+    'Newcastle United FC':
+      'Newcastle',
+
+    'Nottingham Forest FC':
+      "Nott'm Forest",
+
+    'Nottingham Forest':
+      "Nott'm Forest",
+
+    'Sunderland AFC':
+      'Sunderland',
+
+    'Tottenham Hotspur FC':
+      'Tottenham',
+
+    'West Ham United FC':
+      'West Ham',
+
+    'Wolverhampton Wanderers FC':
+      'Wolves'
+
+  };
+
+
+  if (replacements[name]) {
+
+    return replacements[name];
+
+  }
+
+
+  /*
+   * General fallbacks.
+   */
+
+  return name
+
+    .replace(
+      /\s+Football Club$/i,
+      ''
+    )
+
+    .replace(
+      /\s+AFC$/i,
+      ''
+    )
+
+    .replace(
+      /\s+FC$/i,
+      ''
+    );
 
 }
 
@@ -175,12 +285,9 @@ async function readExistingData() {
 
 async function getStandings() {
 
-
   const data =
     await apiRequest(
-
       `/competitions/${COMPETITION}/standings`
-
     );
 
 
@@ -203,34 +310,86 @@ async function getStandings() {
   ) {
 
     throw new Error(
-
       'Premier League standings were not found.'
-
     );
 
   }
+
+
+  const seasonNotStarted =
+
+    totalTable.table.every(
+
+      row =>
+        Number(
+          row.playedGames
+        )
+        ===
+        0
+
+    );
 
 
   return totalTable.table.map(
 
     row => ({
 
+      /*
+       * Before the season begins,
+       * all API positions may be 1.
+       *
+       * Show "-" instead.
+       */
+
       pos:
+
+        seasonNotStarted
+        ?
+        '-'
+        :
         row.position,
 
+
       team:
+
         shortenTeamName(
           row.team.name
         ),
 
+
       played:
-        row.playedGames,
+
+        row.playedGames
+        ??
+        0,
+
+
+      gf:
+
+        row.goalsFor
+        ??
+        0,
+
+
+      ga:
+
+        row.goalsAgainst
+        ??
+        0,
+
 
       gd:
-        row.goalDifference,
+
+        row.goalDifference
+        ??
+        0,
+
 
       pts:
+
         row.points
+        ??
+        0
 
     })
 
@@ -240,98 +399,10 @@ async function getStandings() {
 
 
 /* =========================================================
-   TEAM NAME SHORTENING
-
-   Keeps names readable on the 800 x 480 display.
-   ========================================================= */
-
-function shortenTeamName(
-  name
-) {
-
-
-  const replacements = {
-
-    'Arsenal FC':
-      'Arsenal',
-
-    'Aston Villa FC':
-      'Aston Villa',
-
-    'AFC Bournemouth':
-      'Bournemouth',
-
-    'Brentford FC':
-      'Brentford',
-
-    'Brighton & Hove Albion FC':
-      'Brighton',
-
-    'Burnley FC':
-      'Burnley',
-
-    'Chelsea FC':
-      'Chelsea',
-
-    'Crystal Palace FC':
-      'Crystal Palace',
-
-    'Everton FC':
-      'Everton',
-
-    'Fulham FC':
-      'Fulham',
-
-    'Leeds United FC':
-      'Leeds',
-
-    'Liverpool FC':
-      'Liverpool',
-
-    'Manchester City FC':
-      'Man City',
-
-    'Manchester United FC':
-      'Man United',
-
-    'Newcastle United FC':
-      'Newcastle',
-
-    'Nottingham Forest FC':
-      "Nott'm Forest",
-
-    'Sunderland AFC':
-      'Sunderland',
-
-    'Tottenham Hotspur FC':
-      'Tottenham',
-
-    'West Ham United FC':
-      'West Ham',
-
-    'Wolverhampton Wanderers FC':
-      'Wolves'
-
-  };
-
-
-  return replacements[name]
-    ||
-    name
-      .replace(
-        /\s+FC$/,
-        ''
-      );
-
-}
-
-
-/* =========================================================
-   GET ARSENAL'S NEXT FOUR MATCHES
+   GET ARSENAL'S NEXT FOUR EPL FIXTURES
    ========================================================= */
 
 async function getFixtures() {
-
 
   const data =
     await apiRequest(
@@ -348,16 +419,14 @@ async function getFixtures() {
   ) {
 
     throw new Error(
-
       'Arsenal fixture data was not found.'
-
     );
 
   }
 
 
   /*
-   * Keep only future Premier League matches.
+   * Only Premier League matches.
    */
 
   const premierLeagueMatches =
@@ -379,10 +448,7 @@ async function getFixtures() {
 
   premierLeagueMatches.sort(
 
-    (
-      a,
-      b
-    ) =>
+    (a, b) =>
 
       new Date(
         a.utcDate
@@ -398,7 +464,7 @@ async function getFixtures() {
 
 
   /*
-   * Take next four matches.
+   * Return next four fixtures.
    */
 
   return premierLeagueMatches
@@ -413,21 +479,28 @@ async function getFixtures() {
       match => ({
 
         date:
+
           formatFixtureDate(
             match.utcDate
           ),
 
+
         home:
+
           formatFixtureTeam(
             match.homeTeam.name
           ),
 
+
         away:
+
           formatFixtureTeam(
             match.awayTeam.name
           ),
 
+
         time:
+
           formatFixtureTime(
             match.utcDate
           )
@@ -443,10 +516,7 @@ async function getFixtures() {
    FIXTURE TEAM NAME
    ========================================================= */
 
-function formatFixtureTeam(
-  name
-) {
-
+function formatFixtureTeam(name) {
 
   return shortenTeamName(
     name
@@ -458,12 +528,17 @@ function formatFixtureTeam(
 
 /* =========================================================
    FIXTURE DATE
+
+   Uses fixed 3-letter month names.
+
+   Example:
+   01 SEP
+   22 AUG
+
+   Avoids "SEPT" causing overlap.
    ========================================================= */
 
-function formatFixtureDate(
-  utcDate
-) {
-
+function formatFixtureDate(utcDate) {
 
   const date =
     new Date(
@@ -471,7 +546,8 @@ function formatFixtureDate(
     );
 
 
-  const formatter =
+  const parts =
+
     new Intl.DateTimeFormat(
 
       'en-GB',
@@ -485,18 +561,82 @@ function formatFixtureDate(
           '2-digit',
 
         month:
-          'short'
+          '2-digit'
 
       }
 
-    );
-
-
-  return formatter
-    .format(
-      date
     )
-    .toUpperCase();
+      .formatToParts(
+        date
+      );
+
+
+  const day =
+
+    parts.find(
+
+      part =>
+        part.type
+        ===
+        'day'
+
+    )?.value;
+
+
+  const monthNumber =
+
+    parts.find(
+
+      part =>
+        part.type
+        ===
+        'month'
+
+    )?.value;
+
+
+  const monthNames = {
+
+    '01': 'JAN',
+
+    '02': 'FEB',
+
+    '03': 'MAR',
+
+    '04': 'APR',
+
+    '05': 'MAY',
+
+    '06': 'JUN',
+
+    '07': 'JUL',
+
+    '08': 'AUG',
+
+    '09': 'SEP',
+
+    '10': 'OCT',
+
+    '11': 'NOV',
+
+    '12': 'DEC'
+
+  };
+
+
+  return (
+
+    day
+    +
+    ' '
+    +
+    (
+      monthNames[monthNumber]
+      ||
+      monthNumber
+    )
+
+  );
 
 }
 
@@ -505,10 +645,7 @@ function formatFixtureDate(
    FIXTURE TIME
    ========================================================= */
 
-function formatFixtureTime(
-  utcDate
-) {
-
+function formatFixtureTime(utcDate) {
 
   if (!utcDate) {
 
@@ -524,6 +661,7 @@ function formatFixtureTime(
 
 
   const formatter =
+
     new Intl.DateTimeFormat(
 
       'en-GB',
@@ -554,6 +692,7 @@ function formatFixtureTime(
     )
 
     +
+
     ' SGT'
 
   );
@@ -562,17 +701,17 @@ function formatFixtureTime(
 
 
 /* =========================================================
-   UPDATED TIME
+   UPDATED DATE AND TIME
    ========================================================= */
 
 function getUpdatedTime() {
-
 
   const now =
     new Date();
 
 
-  const dateFormatter =
+  const parts =
+
     new Intl.DateTimeFormat(
 
       'en-GB',
@@ -586,22 +725,7 @@ function getUpdatedTime() {
           '2-digit',
 
         month:
-          'short'
-
-      }
-
-    );
-
-
-  const timeFormatter =
-    new Intl.DateTimeFormat(
-
-      'en-GB',
-
-      {
-
-        timeZone:
-          TIME_ZONE,
+          '2-digit',
 
         hour:
           '2-digit',
@@ -614,16 +738,57 @@ function getUpdatedTime() {
 
       }
 
-    );
+    )
+      .formatToParts(
+        now
+      );
+
+
+  const getPart =
+    type =>
+
+      parts.find(
+
+        part =>
+          part.type
+          ===
+          type
+
+      )?.value;
+
+
+  const monthNames = {
+
+    '01': 'JAN',
+
+    '02': 'FEB',
+
+    '03': 'MAR',
+
+    '04': 'APR',
+
+    '05': 'MAY',
+
+    '06': 'JUN',
+
+    '07': 'JUL',
+
+    '08': 'AUG',
+
+    '09': 'SEP',
+
+    '10': 'OCT',
+
+    '11': 'NOV',
+
+    '12': 'DEC'
+
+  };
 
 
   return (
 
-    dateFormatter
-      .format(
-        now
-      )
-      .toUpperCase()
+    getPart('day')
 
     +
 
@@ -631,10 +796,27 @@ function getUpdatedTime() {
 
     +
 
-    timeFormatter
-      .format(
-        now
+    monthNames[
+      getPart(
+        'month'
       )
+    ]
+
+    +
+
+    ' '
+
+    +
+
+    getPart('hour')
+
+    +
+
+    ':'
+
+    +
+
+    getPart('minute')
 
     +
 
@@ -651,16 +833,13 @@ function getUpdatedTime() {
 
 async function updateFootballData() {
 
-
   console.log(
-
     'Starting Arsenal dashboard update...'
-
   );
 
 
   /*
-   * Read current file first.
+   * Read existing file first.
    */
 
   const existingData =
@@ -668,7 +847,7 @@ async function updateFootballData() {
 
 
   /*
-   * Fetch new football information.
+   * Fetch live football information.
    */
 
   const [
@@ -710,7 +889,7 @@ async function updateFootballData() {
 
 
   /*
-   * Ensure data directory exists.
+   * Ensure data folder exists.
    */
 
   await mkdir(
@@ -718,17 +897,14 @@ async function updateFootballData() {
     'data',
 
     {
-
-      recursive:
-        true
-
+      recursive: true
     }
 
   );
 
 
   /*
-   * Write JSON.
+   * Save football.json.
    */
 
   await writeFile(
@@ -755,25 +931,18 @@ async function updateFootballData() {
 
 
   console.log(
-
     'football.json updated successfully.'
-
   );
 
 
   console.log(
-
     `Standings: ${standings.length} teams`
-
   );
 
 
   console.log(
-
     `Fixtures: ${fixtures.length} matches`
-
   );
-
 
 }
 
@@ -788,18 +957,13 @@ updateFootballData()
 
     error => {
 
-
       console.error(
-
         'Football update failed:'
-
       );
 
 
       console.error(
-
         error
-
       );
 
 
