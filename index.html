@@ -16,22 +16,12 @@
 
 /* =========================================================
    ARSENAL E1002 DASHBOARD
-
-   Native display resolution:
-   800 x 480
-
-   Designed specifically for monochrome e-paper.
-   ========================================================= */
-
-
-/* =========================================================
-   GLOBAL
+   Native display resolution: 800 x 480
    ========================================================= */
 
 * {
   box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -57,9 +47,6 @@ body {
 
 /* =========================================================
    FULL PAGE
-
-   LEFT  = 440px
-   RIGHT = 360px
    ========================================================= */
 
 .page {
@@ -81,10 +68,6 @@ body {
 
 /* =========================================================
    LEFT PANEL
-
-   Header      = 40px
-   Fixtures    = 280px
-   Squad Watch = remaining space
    ========================================================= */
 
 .left {
@@ -105,7 +88,7 @@ body {
 
 
 /* =========================================================
-   TOP HEADER
+   HEADER
    ========================================================= */
 
 .header {
@@ -150,7 +133,7 @@ body {
 
 
 /* =========================================================
-   FIXTURE SECTION
+   FIXTURES SECTION
    ========================================================= */
 
 .fixtures {
@@ -163,10 +146,6 @@ body {
 
 }
 
-
-/* =========================================================
-   FIXTURE SECTION TITLE
-   ========================================================= */
 
 .section-title {
 
@@ -190,10 +169,7 @@ body {
 
 
 /* =========================================================
-   INDIVIDUAL FIXTURE
-
-   Four fixtures use approximately
-   59px each.
+   FIXTURE ROW
    ========================================================= */
 
 .fixture {
@@ -205,7 +181,7 @@ body {
   grid-template-columns:
     65px
     1fr
-    67px;
+    72px;
 
   align-items: center;
 
@@ -214,8 +190,6 @@ body {
 
 }
 
-
-/* Remove final line */
 
 .fixture:last-child {
 
@@ -239,7 +213,7 @@ body {
 
 
 /* =========================================================
-   TEAM NAMES
+   FIXTURE TEAM NAMES
    ========================================================= */
 
 .fixture-match {
@@ -254,8 +228,6 @@ body {
 }
 
 
-/* Arsenal is always emphasised */
-
 .fixture-match .arsenal {
 
   font-weight: 900;
@@ -264,11 +236,7 @@ body {
 
 
 /* =========================================================
-   RIGHT SIDE OF FIXTURE
-
-   Holds:
-   competition
-   time
+   FIXTURE RIGHT SIDE
    ========================================================= */
 
 .fixture-info {
@@ -286,13 +254,13 @@ body {
 }
 
 
-/* Match time */
+/* Increased from 10px to 11px */
 
 .fixture-time {
 
-  font-size: 10px;
+  font-size: 11px;
 
-  font-weight: 800;
+  font-weight: 900;
 
   white-space:
     nowrap;
@@ -300,7 +268,7 @@ body {
 }
 
 
-/* Competition label */
+/* Optional competition label */
 
 .fixture-comp {
 
@@ -319,8 +287,6 @@ body {
 
 }
 
-
-/* Hide empty competition label */
 
 .fixture-comp:empty {
 
@@ -393,6 +359,8 @@ body {
 
 /* =========================================================
    SQUAD WATCH ROW
+
+   Increased from 28px to 30px
    ========================================================= */
 
 .watch-item {
@@ -404,7 +372,7 @@ body {
     132px
     1fr;
 
-  height: 28px;
+  height: 30px;
 
   align-items: center;
 
@@ -453,11 +421,11 @@ body {
 }
 
 
-/* Status */
+/* Increased slightly */
 
 .watch-status {
 
-  font-size: 10px;
+  font-size: 11px;
 
   font-weight: 500;
 
@@ -477,7 +445,6 @@ body {
 
 /* =========================================================
    RIGHT PANEL
-   PREMIER LEAGUE TABLE
    ========================================================= */
 
 .table-panel {
@@ -494,7 +461,7 @@ body {
 
 
 /* =========================================================
-   LEAGUE TABLE TITLE
+   TABLE HEADING
    ========================================================= */
 
 .table-heading {
@@ -583,7 +550,7 @@ body {
 /* =========================================================
    LEAGUE TABLE ROW
 
-   20 teams x 20px = 400px
+   Font increased from 10px to 11px
    ========================================================= */
 
 .table-row {
@@ -601,7 +568,7 @@ body {
 
   align-items: center;
 
-  font-size: 10px;
+  font-size: 11px;
 
   border-bottom:
     1px solid #dddddd;
@@ -615,8 +582,6 @@ body {
 
 }
 
-
-/* Team name */
 
 .table-row .team {
 
@@ -687,7 +652,7 @@ body {
 
 
 <!-- =======================================================
-     LEFT SIDE
+     LEFT PANEL
      ======================================================= -->
 
 <section class="left">
@@ -720,7 +685,7 @@ body {
 
 
 <!-- =======================================================
-     NEXT 4 FIXTURES
+     FIXTURES
      ======================================================= -->
 
 <div class="fixtures">
@@ -782,8 +747,7 @@ body {
 
 
 <!-- =======================================================
-     RIGHT SIDE
-     PREMIER LEAGUE TABLE
+     RIGHT PANEL
      ======================================================= -->
 
 <section class="table-panel">
@@ -809,8 +773,6 @@ body {
 </div>
 
 
-
-<!-- TABLE COLUMN HEADINGS -->
 
 <div class="table-header">
 
@@ -854,8 +816,6 @@ body {
 
 
 
-<!-- TABLE DATA -->
-
 <div id="standings">
 
 </div>
@@ -872,34 +832,26 @@ body {
 
 
 /* =========================================================
-   LOAD FOOTBALL DATA
+   LOAD DATA
    ========================================================= */
 
 async function loadFootballData() {
 
-
   try {
-
 
     const response =
       await fetch(
-
         './data/football.json?t='
         +
         Date.now()
-
       );
 
 
     if (!response.ok) {
 
-
       throw new Error(
-
         'Unable to load football data'
-
       );
-
 
     }
 
@@ -908,46 +860,31 @@ async function loadFootballData() {
       await response.json();
 
 
-
     renderUpdated(
-
       data.updated
-
     );
-
 
 
     renderFixtures(
-
       data.fixtures
-
     );
-
 
 
     renderStandings(
-
       data.standings
-
     );
 
 
-
     renderSquadWatch(
-
       data.squadWatch
-
     );
 
 
   }
 
-
   catch (error) {
 
-
     document.body.innerHTML =
-
       '<div class="error">'
       +
       'Unable to load Arsenal dashboard.'
@@ -956,57 +893,32 @@ async function loadFootballData() {
 
 
     console.error(
-
       error
-
     );
 
-
   }
-
 
 }
 
 
-
 /* =========================================================
-   UPDATED TIME
-
-   Current JSON may contain:
-
-   "18 Jul 2026"
-
-   Later the automatic updater can provide:
-
-   "18 Jul 04:00 SGT"
-
-   or simply:
-
-   "04:00 SGT"
+   UPDATED TEXT
    ========================================================= */
 
 function renderUpdated(
-
   updated
-
 ) {
-
 
   document
     .getElementById(
-
       'updated'
-
     )
     .textContent =
-
       'Updated '
       +
       updated;
 
-
 }
-
 
 
 /* =========================================================
@@ -1014,76 +926,39 @@ function renderUpdated(
    ========================================================= */
 
 function renderFixtures(
-
   fixtures
-
 ) {
-
 
   const container =
     document.getElementById(
-
       'fixtures'
-
     );
-
 
 
   container.innerHTML =
 
-
     fixtures
 
-
       .slice(
-
         0,
         4
-
       )
 
-
       .map(
-
 
         fixture => {
 
 
           const home =
             highlightArsenal(
-
               fixture.home
-
             );
 
 
           const away =
             highlightArsenal(
-
               fixture.away
-
             );
-
-
-
-          /*
-
-          Optional competition support.
-
-          Existing JSON does not need to be changed.
-
-          Later we can add:
-
-          "competition": "UCL"
-
-          or
-
-          "competition": "FA CUP"
-
-          If there is no competition field,
-          nothing will appear.
-
-          */
 
 
           const competition =
@@ -1095,37 +970,27 @@ function renderFixtures(
             '';
 
 
-
           return `
-
 
             <div class="fixture">
 
 
               <div class="fixture-date">
 
-
                 ${fixture.date}
 
-
               </div>
-
 
 
               <div class="fixture-match">
 
-
                 ${home}
-
 
                 <br>
 
-
                 ${away}
 
-
               </div>
-
 
 
               <div class="fixture-info">
@@ -1150,21 +1015,15 @@ function renderFixtures(
 
             </div>
 
-
           `;
-
 
         }
 
-
       )
-
 
       .join('');
 
-
 }
-
 
 
 /* =========================================================
@@ -1172,87 +1031,61 @@ function renderFixtures(
    ========================================================= */
 
 function highlightArsenal(
-
   team
-
 ) {
-
 
   if (
 
     team
       .toUpperCase()
       .includes(
-
         'ARSENAL'
-
       )
 
   ) {
 
-
     return `
-
 
       <span class="arsenal">
 
-
         ${team}
-
 
       </span>
 
-
     `;
-
 
   }
 
 
-
   return team;
-
 
 }
 
 
-
 /* =========================================================
-   PREMIER LEAGUE TABLE
+   LEAGUE TABLE
    ========================================================= */
 
 function renderStandings(
-
   standings
-
 ) {
-
 
   const container =
     document.getElementById(
-
       'standings'
-
     );
-
 
 
   container.innerHTML =
 
-
     standings
 
-
       .slice(
-
         0,
         20
-
       )
 
-
       .map(
-
 
         team => {
 
@@ -1265,9 +1098,7 @@ function renderStandings(
             'arsenal';
 
 
-
           return `
-
 
             <div
 
@@ -1285,171 +1116,103 @@ function renderStandings(
             >
 
 
-
               <div>
-
 
                 ${team.pos}
 
-
               </div>
-
 
 
               <div class="team">
 
-
                 ${team.team}
-
 
               </div>
 
 
-
               <div>
-
 
                 ${team.played}
 
-
               </div>
 
 
-
               <div>
-
 
                 ${formatNumber(
-
                   team.gd
-
                 )}
-
 
               </div>
 
 
-
               <div>
-
 
                 ${team.pts}
 
-
               </div>
-
 
 
             </div>
 
-
           `;
-
 
         }
 
-
       )
-
 
       .join('');
 
-
 }
-
 
 
 /* =========================================================
-   GOAL DIFFERENCE FORMAT
-
-   Positive:
-   +12
-
-   Negative:
-   -4
-
-   Zero:
-   0
+   GOAL DIFFERENCE
    ========================================================= */
 
 function formatNumber(
-
   value
-
 ) {
 
+  if (value > 0) {
 
-  if (
-
-    value > 0
-
-  ) {
-
-
-    return
-
-      '+'
-      +
-      value;
-
+    return '+' + value;
 
   }
 
-
-
   return value;
 
-
 }
-
 
 
 /* =========================================================
    SQUAD WATCH
-
-   Maximum:
-   4 items
-
-   Priority sorting:
-
-   Injuries first
-   Transfers second
    ========================================================= */
 
 function renderSquadWatch(
-
   items
-
 ) {
-
 
   const container =
     document.getElementById(
-
       'squadWatch'
-
     );
-
 
 
   const sortedItems =
 
     [...items]
 
-
       .sort(
-
 
         (a, b) => {
 
 
           const priority = {
 
-
             INJURY: 1,
 
             TRANSFER: 2
-
 
           };
 
@@ -1470,92 +1233,65 @@ function renderSquadWatch(
               99
             );
 
-
         }
-
 
       )
 
-
       .slice(
-
         0,
         4
-
       );
-
 
 
   container.innerHTML =
 
-
     sortedItems
-
 
       .map(
 
-
         item => {
 
-
           return `
-
 
             <div class="watch-item">
 
 
-
               <div class="watch-type">
-
 
                 ${item.type}
 
-
               </div>
-
 
 
               <div class="watch-player">
 
-
                 ${item.player}
 
-
               </div>
-
 
 
               <div class="watch-status">
 
-
                 ${item.status}
-
 
               </div>
 
 
-
             </div>
-
 
           `;
 
-
         }
-
 
       )
 
-
       .join('');
-
 
 }
 
 
-
 /* =========================================================
-   START PAGE
+   START
    ========================================================= */
 
 loadFootballData();
