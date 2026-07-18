@@ -16,6 +16,10 @@
 
 <style>
 
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
 * {
   box-sizing: border-box;
 }
@@ -43,6 +47,12 @@ body {
 }
 
 
+/* =========================================================
+   MAIN PAGE
+   LEFT  = 410px
+   RIGHT = 390px
+   ========================================================= */
+
 .page {
 
   width: 800px;
@@ -51,14 +61,18 @@ body {
   display: grid;
 
   grid-template-columns:
-    440px
-    360px;
+    410px
+    390px;
 
   border:
     2px solid #000000;
 
 }
 
+
+/* =========================================================
+   LEFT PANEL
+   ========================================================= */
 
 .left {
 
@@ -77,7 +91,9 @@ body {
 }
 
 
-/* HEADER */
+/* =========================================================
+   HEADER
+   ========================================================= */
 
 .header {
 
@@ -89,7 +105,7 @@ body {
     space-between;
 
   padding:
-    0 10px;
+    0 9px;
 
   border-bottom:
     2px solid #000000;
@@ -99,7 +115,7 @@ body {
 
 .title {
 
-  font-size: 20px;
+  font-size: 19px;
 
   font-weight: 900;
 
@@ -108,24 +124,28 @@ body {
 
 .updated {
 
-  font-size: 10px;
+  font-size: 9px;
 
   font-weight: 700;
 
   text-align: right;
 
+  white-space: nowrap;
+
 }
 
 
-/* FIXTURES */
+/* =========================================================
+   FIXTURES
+   ========================================================= */
 
 .fixtures {
 
   padding:
     7px
-    10px
+    8px
     4px
-    10px;
+    8px;
 
   overflow: hidden;
 
@@ -140,7 +160,7 @@ body {
 
   align-items: flex-start;
 
-  font-size: 15px;
+  font-size: 14px;
 
   font-weight: 900;
 
@@ -150,6 +170,10 @@ body {
 }
 
 
+/* =========================================================
+   FIXTURE ROW
+   ========================================================= */
+
 .fixture {
 
   height: 59px;
@@ -157,9 +181,9 @@ body {
   display: grid;
 
   grid-template-columns:
-    65px
+    61px
     1fr
-    72px;
+    70px;
 
   align-items: center;
 
@@ -171,14 +195,17 @@ body {
 
 .fixture:last-child {
 
-  border-bottom: none;
+  border-bottom:
+    none;
 
 }
 
 
+/* DATE */
+
 .fixture-date {
 
-  font-size: 14px;
+  font-size: 13px;
 
   font-weight: 900;
 
@@ -187,13 +214,15 @@ body {
 }
 
 
+/* TEAMS */
+
 .fixture-match {
 
-  font-size: 14px;
+  font-size: 13px;
 
   font-weight: 700;
 
-  line-height: 1.25;
+  line-height: 1.22;
 
 }
 
@@ -204,6 +233,8 @@ body {
 
 }
 
+
+/* TIME */
 
 .fixture-info {
 
@@ -220,7 +251,7 @@ body {
 
 .fixture-time {
 
-  font-size: 11px;
+  font-size: 10px;
 
   font-weight: 900;
 
@@ -229,7 +260,9 @@ body {
 }
 
 
-/* SQUAD WATCH */
+/* =========================================================
+   SQUAD WATCH
+   ========================================================= */
 
 .squad {
 
@@ -238,9 +271,9 @@ body {
 
   padding:
     6px
-    10px
+    8px
     4px
-    10px;
+    8px;
 
   overflow: hidden;
 
@@ -269,7 +302,7 @@ body {
 
   margin: 0;
 
-  font-size: 15px;
+  font-size: 14px;
 
   font-weight: 900;
 
@@ -280,7 +313,7 @@ body {
 
   margin-top: 2px;
 
-  font-size: 9px;
+  font-size: 8px;
 
   font-weight: 700;
 
@@ -292,8 +325,8 @@ body {
   display: grid;
 
   grid-template-columns:
-    65px
-    132px
+    60px
+    125px
     1fr;
 
   height: 30px;
@@ -308,14 +341,15 @@ body {
 
 .watch-item:last-child {
 
-  border-bottom: none;
+  border-bottom:
+    none;
 
 }
 
 
 .watch-type {
 
-  font-size: 9px;
+  font-size: 8px;
 
   font-weight: 900;
 
@@ -324,7 +358,7 @@ body {
 
 .watch-player {
 
-  font-size: 12px;
+  font-size: 11px;
 
   font-weight: 900;
 
@@ -339,7 +373,7 @@ body {
 
 .watch-status {
 
-  font-size: 11px;
+  font-size: 10px;
 
   text-align: right;
 
@@ -352,7 +386,9 @@ body {
 }
 
 
-/* LEAGUE TABLE */
+/* =========================================================
+   RIGHT PANEL
+   ========================================================= */
 
 .table-panel {
 
@@ -369,6 +405,10 @@ body {
 }
 
 
+/* =========================================================
+   TABLE HEADER AREA
+   ========================================================= */
+
 .table-heading {
 
   height: 29px;
@@ -378,8 +418,7 @@ body {
   justify-content:
     space-between;
 
-  align-items:
-    flex-start;
+  align-items: flex-start;
 
   border-bottom:
     2px solid #000000;
@@ -409,11 +448,14 @@ body {
 }
 
 
-/*
-   TABLE COLUMNS
+/* =========================================================
+   TABLE GRID
 
    # TEAM P W D L GF GA GD PTS
-*/
+
+   Wider right panel now gives the team-name column
+   more space while keeping all statistics visible.
+   ========================================================= */
 
 .table-header,
 .table-row {
@@ -424,25 +466,27 @@ body {
 
     20px
     minmax(0, 1fr)
-    19px
-    18px
-    18px
-    18px
-    21px
-    21px
-    23px
-    27px;
+    20px
+    20px
+    20px
+    20px
+    24px
+    24px
+    26px
+    30px;
 
   align-items: center;
 
 }
 
 
+/* COLUMN HEADERS */
+
 .table-header {
 
   height: 21px;
 
-  font-size: 7.5px;
+  font-size: 8px;
 
   font-weight: 900;
 
@@ -452,11 +496,13 @@ body {
 }
 
 
+/* TEAM ROWS */
+
 .table-row {
 
   height: 20px;
 
-  font-size: 9px;
+  font-size: 9.5px;
 
   border-bottom:
     1px solid #dddddd;
@@ -480,9 +526,11 @@ body {
 }
 
 
+/* TEAM NAME */
+
 .table-row .team {
 
-  font-size: 9.5px;
+  font-size: 10px;
 
   font-weight: 700;
 
@@ -494,6 +542,10 @@ body {
 
 }
 
+
+/* =========================================================
+   ARSENAL HIGHLIGHT
+   ========================================================= */
 
 .table-row.arsenal-row {
 
@@ -514,6 +566,10 @@ body {
 
 }
 
+
+/* =========================================================
+   ERROR
+   ========================================================= */
 
 .error {
 
@@ -536,8 +592,14 @@ body {
 <div class="page">
 
 
+<!-- =======================================================
+     LEFT PANEL
+     ======================================================= -->
+
 <section class="left">
 
+
+<!-- HEADER -->
 
 <div class="header">
 
@@ -563,6 +625,10 @@ Updating...
 
 
 
+<!-- =======================================================
+     FIXTURES
+     ======================================================= -->
+
 <div class="fixtures">
 
 
@@ -581,6 +647,10 @@ NEXT 4 FIXTURES
 </div>
 
 
+
+<!-- =======================================================
+     SQUAD WATCH
+     ======================================================= -->
 
 <div class="squad">
 
@@ -617,6 +687,10 @@ Injuries & Transfers
 
 
 
+<!-- =======================================================
+     RIGHT PANEL
+     ======================================================= -->
+
 <section class="table-panel">
 
 
@@ -640,6 +714,8 @@ PREMIER LEAGUE
 </div>
 
 
+
+<!-- TABLE HEADERS -->
 
 <div class="table-header">
 
@@ -666,6 +742,7 @@ PREMIER LEAGUE
 </div>
 
 
+
 <div id="standings">
 
 </div>
@@ -680,6 +757,10 @@ PREMIER LEAGUE
 
 <script>
 
+
+/* =========================================================
+   LOAD DATA
+   ========================================================= */
 
 async function loadFootballData() {
 
@@ -748,14 +829,16 @@ async function loadFootballData() {
 }
 
 
+/* =========================================================
+   UPDATED TIME
+   ========================================================= */
+
 function renderUpdated(updated) {
 
   document
-
     .getElementById(
       'updated'
     )
-
     .textContent =
 
       'Updated '
@@ -764,6 +847,10 @@ function renderUpdated(updated) {
 
 }
 
+
+/* =========================================================
+   FIXTURES
+   ========================================================= */
 
 function renderFixtures(fixtures) {
 
@@ -804,6 +891,7 @@ function renderFixtures(fixtures) {
 
             <div class="fixture">
 
+
               <div class="fixture-date">
 
                 ${fixture.date}
@@ -832,6 +920,7 @@ function renderFixtures(fixtures) {
 
               </div>
 
+
             </div>
 
           `;
@@ -844,6 +933,10 @@ function renderFixtures(fixtures) {
 
 }
 
+
+/* =========================================================
+   HIGHLIGHT ARSENAL
+   ========================================================= */
 
 function highlightArsenal(team) {
 
@@ -874,6 +967,10 @@ function highlightArsenal(team) {
 
 }
 
+
+/* =========================================================
+   STANDINGS
+   ========================================================= */
 
 function renderStandings(standings) {
 
@@ -918,31 +1015,78 @@ function renderStandings(standings) {
               }"
             >
 
-              <div>${team.pos}</div>
-
-              <div class="team">
-                ${team.team}
-              </div>
-
-              <div>${team.played}</div>
-
-              <div>${team.won ?? 0}</div>
-
-              <div>${team.draw ?? 0}</div>
-
-              <div>${team.lost ?? 0}</div>
-
-              <div>${team.gf ?? 0}</div>
-
-              <div>${team.ga ?? 0}</div>
 
               <div>
+
+                ${team.pos}
+
+              </div>
+
+
+              <div class="team">
+
+                ${team.team}
+
+              </div>
+
+
+              <div>
+
+                ${team.played}
+
+              </div>
+
+
+              <div>
+
+                ${team.won ?? 0}
+
+              </div>
+
+
+              <div>
+
+                ${team.draw ?? 0}
+
+              </div>
+
+
+              <div>
+
+                ${team.lost ?? 0}
+
+              </div>
+
+
+              <div>
+
+                ${team.gf ?? 0}
+
+              </div>
+
+
+              <div>
+
+                ${team.ga ?? 0}
+
+              </div>
+
+
+              <div>
+
                 ${formatNumber(
                   team.gd
                 )}
+
               </div>
 
-              <div>${team.pts}</div>
+
+              <div>
+
+                ${team.pts}
+
+              </div>
+
 
             </div>
 
@@ -957,6 +1101,10 @@ function renderStandings(standings) {
 }
 
 
+/* =========================================================
+   GOAL DIFFERENCE
+   ========================================================= */
+
 function formatNumber(value) {
 
   if (value > 0) {
@@ -970,6 +1118,10 @@ function formatNumber(value) {
 
 }
 
+
+/* =========================================================
+   SQUAD WATCH
+   ========================================================= */
 
 function renderSquadWatch(items) {
 
@@ -1036,6 +1188,7 @@ function renderSquadWatch(items) {
 
           <div class="watch-item">
 
+
             <div class="watch-type">
 
               ${item.type}
@@ -1056,6 +1209,7 @@ function renderSquadWatch(items) {
 
             </div>
 
+
           </div>
 
         `
@@ -1066,6 +1220,10 @@ function renderSquadWatch(items) {
 
 }
 
+
+/* =========================================================
+   START
+   ========================================================= */
 
 loadFootballData();
 
