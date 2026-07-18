@@ -1,55 +1,173 @@
 {
-  "updated": "18 Jul 2026",
+  "updated": "18 JUL 10:15 SGT",
   "fixtures": [
     {
-      "date": "21 AUG",
+      "date": "22 AUG",
       "home": "ARSENAL",
       "away": "COVENTRY CITY",
       "time": "03:00 SGT"
     },
     {
-      "date": "29 AUG",
+      "date": "01 SEPT",
       "home": "ASTON VILLA",
       "away": "ARSENAL",
-      "time": "TBC"
+      "time": "03:00 SGT"
     },
     {
-      "date": "05 SEP",
+      "date": "06 SEPT",
       "home": "ARSENAL",
       "away": "CHELSEA",
-      "time": "TBC"
+      "time": "23:30 SGT"
     },
     {
-      "date": "12 SEP",
+      "date": "13 SEPT",
       "home": "SUNDERLAND",
       "away": "ARSENAL",
-      "time": "TBC"
+      "time": "03:00 SGT"
     }
   ],
-
   "standings": [
-    { "pos": 1, "team": "Arsenal", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 2, "team": "Aston Villa", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 3, "team": "Bournemouth", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 4, "team": "Brentford", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 5, "team": "Brighton", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 6, "team": "Chelsea", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 7, "team": "Coventry", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 8, "team": "Crystal Palace", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 9, "team": "Everton", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 10, "team": "Fulham", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 11, "team": "Hull City", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 12, "team": "Ipswich", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 13, "team": "Leeds", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 14, "team": "Liverpool", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 15, "team": "Man City", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 16, "team": "Man United", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 17, "team": "Newcastle", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 18, "team": "Nott'm Forest", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 19, "team": "Sunderland", "played": 0, "gd": 0, "pts": 0 },
-    { "pos": 20, "team": "Tottenham", "played": 0, "gd": 0, "pts": 0 }
+    {
+      "pos": 1,
+      "team": "Bournemouth",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Arsenal",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Aston Villa",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Brentford",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Brighton",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Chelsea",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Coventry City",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Crystal Palace",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Everton",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Fulham",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Hull City AFC",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Ipswich Town",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Leeds",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Liverpool",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Man City",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Man United",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Newcastle",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Nott'm Forest",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Sunderland",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    },
+    {
+      "pos": 1,
+      "team": "Tottenham",
+      "played": 0,
+      "gd": 0,
+      "pts": 0
+    }
   ],
-
   "squadWatch": [
     {
       "type": "INJURY",
