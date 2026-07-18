@@ -1,13 +1,12 @@
 /**
  * Arsenal E1002 Football Dashboard Updater
  *
- * Automatically updates:
+ * Updates:
+ * - Premier League standings
+ * - Arsenal's next 4 Premier League fixtures
+ * - Singapore fixture times
  *
- * 1. Premier League standings
- * 2. Arsenal's next 4 Premier League fixtures
- * 3. Match times converted to Singapore time
- *
- * Squad Watch is preserved from the existing football.json.
+ * Preserves Squad Watch from the existing football.json.
  */
 
 import {
@@ -17,37 +16,24 @@ import {
 } from 'node:fs/promises';
 
 
-/* =========================================================
-   CONFIGURATION
-   ========================================================= */
-
 const API_BASE =
   'https://api.football-data.org/v4';
-
 
 const COMPETITION =
   'PL';
 
-
 const ARSENAL_ID =
   57;
-
 
 const DATA_FILE =
   'data/football.json';
 
-
 const TIME_ZONE =
   'Asia/Singapore';
-
 
 const API_TOKEN =
   process.env.FOOTBALL_DATA_TOKEN;
 
-
-/* =========================================================
-   CHECK API TOKEN
-   ========================================================= */
 
 if (!API_TOKEN) {
 
@@ -59,10 +45,6 @@ if (!API_TOKEN) {
 
 }
 
-
-/* =========================================================
-   API REQUEST
-   ========================================================= */
 
 async function apiRequest(endpoint) {
 
@@ -93,9 +75,7 @@ async function apiRequest(endpoint) {
 
 
     throw new Error(
-
       `Football API error ${response.status}: ${errorText}`
-
     );
 
   }
@@ -105,12 +85,6 @@ async function apiRequest(endpoint) {
 
 }
 
-
-/* =========================================================
-   READ EXISTING JSON
-
-   Preserves Squad Watch.
-   ========================================================= */
 
 async function readExistingData() {
 
@@ -142,14 +116,6 @@ async function readExistingData() {
 
 }
 
-
-/* =========================================================
-   SHORTEN TEAM NAMES
-
-   These names are used in:
-   - League table
-   - Fixture list
-   ========================================================= */
 
 function shortenTeamName(name) {
 
@@ -255,10 +221,6 @@ function shortenTeamName(name) {
   }
 
 
-  /*
-   * General fallbacks.
-   */
-
   return name
 
     .replace(
@@ -278,10 +240,6 @@ function shortenTeamName(name) {
 
 }
 
-
-/* =========================================================
-   GET PREMIER LEAGUE STANDINGS
-   ========================================================= */
 
 async function getStandings() {
 
@@ -304,9 +262,7 @@ async function getStandings() {
   if (
     !totalTable
     ||
-    !Array.isArray(
-      totalTable.table
-    )
+    !Array.isArray(totalTable.table)
   ) {
 
     throw new Error(
@@ -321,11 +277,7 @@ async function getStandings() {
     totalTable.table.every(
 
       row =>
-        Number(
-          row.playedGames
-        )
-        ===
-        0
+        Number(row.playedGames) === 0
 
     );
 
@@ -333,13 +285,6 @@ async function getStandings() {
   return totalTable.table.map(
 
     row => ({
-
-      /*
-       * Before the season begins,
-       * all API positions may be 1.
-       *
-       * Show "-" instead.
-       */
 
       pos:
 
@@ -360,6 +305,27 @@ async function getStandings() {
       played:
 
         row.playedGames
+        ??
+        0,
+
+
+      won:
+
+        row.won
+        ??
+        0,
+
+
+      draw:
+
+        row.draw
+        ??
+        0,
+
+
+      lost:
+
+        row.lost
         ??
         0,
 
@@ -398,25 +364,15 @@ async function getStandings() {
 }
 
 
-/* =========================================================
-   GET ARSENAL'S NEXT FOUR EPL FIXTURES
-   ========================================================= */
-
 async function getFixtures() {
 
   const data =
     await apiRequest(
-
       `/teams/${ARSENAL_ID}/matches?status=SCHEDULED`
-
     );
 
 
-  if (
-    !Array.isArray(
-      data.matches
-    )
-  ) {
+  if (!Array.isArray(data.matches)) {
 
     throw new Error(
       'Arsenal fixture data was not found.'
@@ -425,16 +381,11 @@ async function getFixtures() {
   }
 
 
-  /*
-   * Only Premier League matches.
-   */
-
   const premierLeagueMatches =
 
     data.matches.filter(
 
       match =>
-
         match.competition?.code
         ===
         COMPETITION
@@ -442,30 +393,16 @@ async function getFixtures() {
     );
 
 
-  /*
-   * Sort chronologically.
-   */
-
   premierLeagueMatches.sort(
 
     (a, b) =>
 
-      new Date(
-        a.utcDate
-      )
-
+      new Date(a.utcDate)
       -
-
-      new Date(
-        b.utcDate
-      )
+      new Date(b.utcDate)
 
   );
 
-
-  /*
-   * Return next four fixtures.
-   */
 
   return premierLeagueMatches
 
@@ -512,38 +449,18 @@ async function getFixtures() {
 }
 
 
-/* =========================================================
-   FIXTURE TEAM NAME
-   ========================================================= */
-
 function formatFixtureTeam(name) {
 
-  return shortenTeamName(
-    name
-  )
+  return shortenTeamName(name)
     .toUpperCase();
 
 }
 
 
-/* =========================================================
-   FIXTURE DATE
-
-   Uses fixed 3-letter month names.
-
-   Example:
-   01 SEP
-   22 AUG
-
-   Avoids "SEPT" causing overlap.
-   ========================================================= */
-
 function formatFixtureDate(utcDate) {
 
   const date =
-    new Date(
-      utcDate
-    );
+    new Date(utcDate);
 
 
   const parts =
@@ -553,97 +470,57 @@ function formatFixtureDate(utcDate) {
       'en-GB',
 
       {
-
-        timeZone:
-          TIME_ZONE,
-
-        day:
-          '2-digit',
-
-        month:
-          '2-digit'
-
+        timeZone: TIME_ZONE,
+        day: '2-digit',
+        month: '2-digit'
       }
 
     )
-      .formatToParts(
-        date
-      );
+      .formatToParts(date);
 
 
   const day =
 
     parts.find(
-
-      part =>
-        part.type
-        ===
-        'day'
-
+      part => part.type === 'day'
     )?.value;
 
 
   const monthNumber =
 
     parts.find(
-
-      part =>
-        part.type
-        ===
-        'month'
-
+      part => part.type === 'month'
     )?.value;
 
 
   const monthNames = {
 
     '01': 'JAN',
-
     '02': 'FEB',
-
     '03': 'MAR',
-
     '04': 'APR',
-
     '05': 'MAY',
-
     '06': 'JUN',
-
     '07': 'JUL',
-
     '08': 'AUG',
-
     '09': 'SEP',
-
     '10': 'OCT',
-
     '11': 'NOV',
-
     '12': 'DEC'
 
   };
 
 
   return (
-
     day
     +
     ' '
     +
-    (
-      monthNames[monthNumber]
-      ||
-      monthNumber
-    )
-
+    monthNames[monthNumber]
   );
 
 }
 
-
-/* =========================================================
-   FIXTURE TIME
-   ========================================================= */
 
 function formatFixtureTime(utcDate) {
 
@@ -654,12 +531,6 @@ function formatFixtureTime(utcDate) {
   }
 
 
-  const date =
-    new Date(
-      utcDate
-    );
-
-
   const formatter =
 
     new Intl.DateTimeFormat(
@@ -667,42 +538,25 @@ function formatFixtureTime(utcDate) {
       'en-GB',
 
       {
-
-        timeZone:
-          TIME_ZONE,
-
-        hour:
-          '2-digit',
-
-        minute:
-          '2-digit',
-
-        hour12:
-          false
-
+        timeZone: TIME_ZONE,
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
       }
 
     );
 
 
   return (
-
     formatter.format(
-      date
+      new Date(utcDate)
     )
-
     +
-
     ' SGT'
-
   );
 
 }
 
-
-/* =========================================================
-   UPDATED DATE AND TIME
-   ========================================================= */
 
 function getUpdatedTime() {
 
@@ -717,119 +571,65 @@ function getUpdatedTime() {
       'en-GB',
 
       {
-
-        timeZone:
-          TIME_ZONE,
-
-        day:
-          '2-digit',
-
-        month:
-          '2-digit',
-
-        hour:
-          '2-digit',
-
-        minute:
-          '2-digit',
-
-        hour12:
-          false
-
+        timeZone: TIME_ZONE,
+        day: '2-digit',
+        month: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
       }
 
     )
-      .formatToParts(
-        now
-      );
+      .formatToParts(now);
 
 
   const getPart =
     type =>
-
       parts.find(
-
-        part =>
-          part.type
-          ===
-          type
-
+        part => part.type === type
       )?.value;
 
 
   const monthNames = {
 
     '01': 'JAN',
-
     '02': 'FEB',
-
     '03': 'MAR',
-
     '04': 'APR',
-
     '05': 'MAY',
-
     '06': 'JUN',
-
     '07': 'JUL',
-
     '08': 'AUG',
-
     '09': 'SEP',
-
     '10': 'OCT',
-
     '11': 'NOV',
-
     '12': 'DEC'
 
   };
 
 
   return (
-
     getPart('day')
-
     +
-
     ' '
-
     +
-
     monthNames[
-      getPart(
-        'month'
-      )
+      getPart('month')
     ]
-
     +
-
     ' '
-
     +
-
     getPart('hour')
-
     +
-
     ':'
-
     +
-
     getPart('minute')
-
     +
-
     ' SGT'
-
   );
 
 }
 
-
-/* =========================================================
-   MAIN UPDATE
-   ========================================================= */
 
 async function updateFootballData() {
 
@@ -838,24 +638,13 @@ async function updateFootballData() {
   );
 
 
-  /*
-   * Read existing file first.
-   */
-
   const existingData =
     await readExistingData();
 
 
-  /*
-   * Fetch live football information.
-   */
-
   const [
-
     standings,
-
     fixtures
-
   ] =
 
     await Promise.all([
@@ -866,10 +655,6 @@ async function updateFootballData() {
 
     ]);
 
-
-  /*
-   * Create final JSON.
-   */
 
   const newData = {
 
@@ -888,10 +673,6 @@ async function updateFootballData() {
   };
 
 
-  /*
-   * Ensure data folder exists.
-   */
-
   await mkdir(
 
     'data',
@@ -903,26 +684,16 @@ async function updateFootballData() {
   );
 
 
-  /*
-   * Save football.json.
-   */
-
   await writeFile(
 
     DATA_FILE,
 
     JSON.stringify(
-
       newData,
-
       null,
-
       2
-
     )
-
     +
-
     '\n',
 
     'utf8'
@@ -947,10 +718,6 @@ async function updateFootballData() {
 }
 
 
-/* =========================================================
-   RUN
-   ========================================================= */
-
 updateFootballData()
 
   .catch(
@@ -962,9 +729,7 @@ updateFootballData()
       );
 
 
-      console.error(
-        error
-      );
+      console.error(error);
 
 
       process.exit(1);
