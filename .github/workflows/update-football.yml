@@ -1,0 +1,98 @@
+name: Update Arsenal Football Data
+
+
+on:
+
+  # Allows you to run it manually from GitHub Actions
+  workflow_dispatch:
+
+
+  # Automatic scheduled update
+  schedule:
+
+    # Every 2 hours at 17 minutes past the hour
+    # GitHub Actions cron uses UTC by default.
+    - cron: "17 */2 * * *"
+
+
+permissions:
+
+  contents: write
+
+
+jobs:
+
+  update-football:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+
+      # -----------------------------------------------------
+      # Checkout repository
+      # -----------------------------------------------------
+
+      - name: Checkout repository
+
+        uses: actions/checkout@v4
+
+
+      # -----------------------------------------------------
+      # Setup Node.js
+      # -----------------------------------------------------
+
+      - name: Setup Node.js
+
+        uses: actions/setup-node@v4
+
+        with:
+
+          node-version: "22"
+
+
+      # -----------------------------------------------------
+      # Run football updater
+      # -----------------------------------------------------
+
+      - name: Update football data
+
+        env:
+
+          FOOTBALL_DATA_TOKEN:
+            ${{ secrets.FOOTBALL_DATA_TOKEN }}
+
+        run: |
+
+          node scripts/update-football.mjs
+
+
+      # -----------------------------------------------------
+      # Commit changes only when football.json changed
+      # -----------------------------------------------------
+
+      - name: Commit updated football data
+
+        run: |
+
+          git config user.name "github-actions[bot]"
+
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+
+          git add data/football.json
+
+
+          if git diff --cached --quiet
+          then
+
+            echo "No football data changes to commit."
+
+          else
+
+            git commit -m "Update Arsenal football data"
+
+            git push
+
+          fi
