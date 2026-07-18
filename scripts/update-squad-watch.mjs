@@ -357,10 +357,6 @@ const NON_INJURY_PHRASES = [
 
   'has joined',
 
-  'joined werder',
-
-  'joined porto',
-
   'joined on loan',
 
   'joined permanently',
@@ -424,10 +420,6 @@ function isRealAvailabilityIssue(
       .trim();
 
 
-  /*
-   * Exclude obvious transfer / loan / departure notes.
-   */
-
   const nonInjuryNews =
 
     NON_INJURY_PHRASES.some(
@@ -448,10 +440,6 @@ function isRealAvailabilityIssue(
   }
 
 
-  /*
-   * Suspended.
-   */
-
   if (
     player.status
     ===
@@ -462,10 +450,6 @@ function isRealAvailabilityIssue(
 
   }
 
-
-  /*
-   * Injured.
-   */
 
   if (
     player.status
@@ -478,10 +462,6 @@ function isRealAvailabilityIssue(
   }
 
 
-  /*
-   * Doubtful.
-   */
-
   if (
     player.status
     ===
@@ -493,11 +473,6 @@ function isRealAvailabilityIssue(
   }
 
 
-  /*
-   * Explicitly unavailable,
-   * but exclude transfer/loan notes above.
-   */
-
   if (
     player.status
     ===
@@ -508,10 +483,6 @@ function isRealAvailabilityIssue(
 
   }
 
-
-  /*
-   * Availability probability below 100%.
-   */
 
   if (
 
@@ -649,75 +620,48 @@ function cleanInjuryStatus(
   clean = clean
 
     .replace(
-
       /knock injury/i,
-
       'Knock'
-
     )
 
     .replace(
-
       /hamstring injury/i,
-
       'Hamstring'
-
     )
 
     .replace(
-
       /knee injury/i,
-
       'Knee injury'
-
     )
 
     .replace(
-
       /back injury/i,
-
       'Back injury'
-
     )
 
     .replace(
-
       /ankle injury/i,
-
       'Ankle injury'
-
     )
 
     .replace(
-
       /groin injury/i,
-
       'Groin injury'
-
     )
 
     .replace(
-
       /calf injury/i,
-
       'Calf injury'
-
     )
 
     .replace(
-
       /foot injury/i,
-
       'Foot injury'
-
     )
 
     .replace(
-
       /muscle injury/i,
-
       'Muscle injury'
-
     );
 
 
@@ -1028,19 +972,13 @@ function stripHtml(
     )
 
       .replace(
-
         /<[^>]*>/g,
-
         ' '
-
       )
 
       .replace(
-
         /\s+/g,
-
         ' '
-
       )
 
       .trim()
@@ -1381,7 +1319,7 @@ function determineTransferStatus(
 
 
 /* =========================================================
-   CLEAN TITLE
+   CLEAN HEADLINE
    ========================================================= */
 
 
@@ -1389,7 +1327,9 @@ function cleanHeadline(
   title
 ) {
 
-  return title
+  return String(
+    title
+  )
 
     .replace(
 
@@ -1413,6 +1353,143 @@ function cleanHeadline(
 
 
 /* =========================================================
+   NAME VALIDATION
+   ========================================================= */
+
+
+const BLOCKED_NAME_WORDS = new Set([
+
+  'arsenal',
+
+  'transfer',
+
+  'update',
+
+  'bid',
+
+  'offer',
+
+  'linked',
+
+  'target',
+
+  'talks',
+
+  'deal',
+
+  'medical',
+
+  'signing',
+
+  'sign',
+
+  'signed',
+
+  'interest',
+
+  'reported',
+
+  'report',
+
+  'reports',
+
+  'latest',
+
+  'news',
+
+  'exclusive',
+
+  'club',
+
+  'move',
+
+  'summer',
+
+  'window',
+
+  'premier',
+
+  'league',
+
+  'chelsea',
+
+  'liverpool',
+
+  'tottenham',
+
+  'newcastle',
+
+  'manchester',
+
+  'city',
+
+  'united',
+
+  'barcelona',
+
+  'madrid'
+
+]);
+
+
+/* =========================================================
+   CHECK A SINGLE NAME WORD
+   ========================================================= */
+
+
+function isValidNameWord(
+  word
+) {
+
+  if (!word) {
+
+    return false;
+
+  }
+
+
+  const clean =
+
+    word
+
+      .replace(
+        /^[^A-Za-zÀ-ÿ]+|[^A-Za-zÀ-ÿ'’-]+$/g,
+        ''
+      )
+
+      .trim();
+
+
+  if (
+    clean.length
+    <
+    2
+  ) {
+
+    return false;
+
+  }
+
+
+  if (
+    BLOCKED_NAME_WORDS.has(
+      clean.toLowerCase()
+    )
+  ) {
+
+    return false;
+
+  }
+
+
+  return /^[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+$/.test(
+    clean
+  );
+
+}
+
+
+/* =========================================================
    VALIDATE POSSIBLE PLAYER NAME
    ========================================================= */
 
@@ -1430,83 +1507,27 @@ function isValidPlayerName(
 
   const clean =
 
-    name
+    String(
+      name
+    )
+
+      .replace(
+        /[^A-Za-zÀ-ÿ'’\-\s]/g,
+        ' '
+      )
+
       .replace(
         /\s+/g,
         ' '
       )
+
       .trim();
-
-
-  const lower =
-    clean.toLowerCase();
-
-
-  const blocked = [
-
-    'arsenal',
-
-    'transfer',
-
-    'transfer update',
-
-    'premier league',
-
-    'newcastle',
-
-    'chelsea',
-
-    'manchester united',
-
-    'manchester city',
-
-    'liverpool',
-
-    'tottenham',
-
-    'real madrid',
-
-    'barcelona'
-
-  ];
-
-
-  if (
-    blocked.includes(
-      lower
-    )
-  ) {
-
-    return false;
-
-  }
-
-
-  const words =
-    clean.split(' ');
-
-
-  if (
-    words.length
-    <
-    1
-
-    ||
-
-    words.length
-    >
-    4
-  ) {
-
-    return false;
-
-  }
 
 
   if (
     clean.length
     <
-    3
+    5
 
     ||
 
@@ -1520,7 +1541,87 @@ function isValidPlayerName(
   }
 
 
+  const words =
+    clean.split(' ');
+
+
+  /*
+   * Require at least two full words.
+   *
+   * This rejects broken results such as:
+   *
+   * A. as
+   */
+
+  if (
+    words.length
+    <
+    2
+
+    ||
+
+    words.length
+    >
+    4
+  ) {
+
+    return false;
+
+  }
+
+
+  const validWords =
+
+    words.filter(
+      isValidNameWord
+    );
+
+
+  if (
+    validWords.length
+    !==
+    words.length
+  ) {
+
+    return false;
+
+  }
+
+
   return true;
+
+}
+
+
+/* =========================================================
+   CLEAN EXTRACTED PLAYER NAME
+   ========================================================= */
+
+
+function cleanExtractedPlayerName(
+  name
+) {
+
+  return String(
+    name
+  )
+
+    .replace(
+      /^(?:the|a|an)\s+/i,
+      ''
+    )
+
+    .replace(
+      /\s+(?:after|amid|as|before|despite|following|for|from|in|on|over|with)$/i,
+      ''
+    )
+
+    .replace(
+      /\s+/g,
+      ' '
+    )
+
+    .trim();
 
 }
 
@@ -1540,23 +1641,42 @@ function extractTransferPlayer(
     );
 
 
+  /*
+   * Strong patterns first.
+   *
+   * The captured name must normally be two words.
+   */
+
+
   const patterns = [
 
-    /Arsenal[^:,-]*?\b(?:bid|offer)\b[^:,-]*?\bfor\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
-    /Arsenal[^:,-]*?\b(?:linked with|linked to)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
+    /(?:Arsenal|Gunners)[^|,:;]*?\b(?:bid|offer)\b[^|,:;]*?\bfor\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})/i,
 
-    /Arsenal[^:,-]*?\b(?:target|eye|want|chase|pursue)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
-    /Arsenal[^:,-]*?\b(?:talks with|talks for|negotiations with)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
+    /(?:Arsenal|Gunners)[^|,:;]*?\b(?:linked with|linked to)\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})/i,
 
-    /Arsenal[^:,-]*?\b(?:sign|signing|signed)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
-    /([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){1,3})\s+(?:to Arsenal|linked with Arsenal|linked to Arsenal)/i,
+    /(?:Arsenal|Gunners)[^|,:;]*?\b(?:target|eye|want|chase|pursue)\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})/i,
 
-    /(?:bid|offer)\s+for\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i,
 
-    /(?:linked with|linked to)\s+([A-Z][A-Za-zÀ-ÿ'’-]+(?:\s+[A-Z][A-Za-zÀ-ÿ'’-]+){0,3})/i
+    /(?:Arsenal|Gunners)[^|,:;]*?\b(?:talks with|talks for|negotiations with|negotiations for)\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})/i,
+
+
+    /(?:Arsenal|Gunners)[^|,:;]*?\b(?:sign|signing|signed)\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})/i,
+
+
+    /([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})\s+(?:to Arsenal|linked with Arsenal|linked to Arsenal)/i,
+
+
+    /(?:bid|offer)\s+for\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})/i,
+
+
+    /(?:linked with|linked to)\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})/i,
+
+
+    /(?:targeting|target)\s+([A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+(?:\s+[A-ZÀ-Ý][A-Za-zÀ-ÿ'’-]+){0,2})/i
+
 
   ];
 
@@ -1574,18 +1694,31 @@ function extractTransferPlayer(
 
 
     if (
-      match
-      &&
-      isValidPlayerName(
+      !match
+      ||
+      !match[1]
+    ) {
+
+      continue;
+
+    }
+
+
+    const candidate =
+
+      cleanExtractedPlayerName(
         match[1]
+      );
+
+
+    if (
+      isValidPlayerName(
+        candidate
       )
     ) {
 
       return shortenPlayerName(
-
-        match[1]
-          .trim()
-
+        candidate
       );
 
     }
@@ -1711,9 +1844,14 @@ function scoreTransferArticle(
     );
 
 
+  /*
+   * Strong boost only when a valid
+   * player name was extracted.
+   */
+
   if (player) {
 
-    score += 8;
+    score += 12;
 
   }
 
@@ -1817,23 +1955,30 @@ async function getTransferWatch() {
 
         .map(
 
-          article => ({
+          article => {
 
-            ...article,
-
-            player:
+            const player =
 
               extractTransferPlayer(
                 article.title
-              ),
+              );
 
-            score:
 
-              scoreTransferArticle(
-                article
-              )
+            return {
 
-          })
+              ...article,
+
+              player,
+
+              score:
+
+                scoreTransferArticle(
+                  article
+                )
+
+            };
+
+          }
 
         )
 
@@ -1842,6 +1987,12 @@ async function getTransferWatch() {
           article =>
 
             article.player
+
+            &&
+
+            isValidPlayerName(
+              article.player
+            )
 
         )
 
@@ -1867,7 +2018,7 @@ async function getTransferWatch() {
 
       console.log(
 
-        'No transfer story with a confidently extracted player name was found.'
+        'No transfer story with a reliable player name was found.'
 
       );
 
@@ -1892,6 +2043,24 @@ async function getTransferWatch() {
       +
 
       best.description;
+
+
+    console.log(
+
+      'Selected transfer story:',
+
+      best.title
+
+    );
+
+
+    console.log(
+
+      'Extracted player:',
+
+      best.player
+
+    );
 
 
     return {
