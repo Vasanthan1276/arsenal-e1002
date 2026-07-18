@@ -1,5 +1,5 @@
 {
-  "updated": "18 JUL 10:26 SGT",
+  "updated": "18 JUL 10:43 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -271,18 +271,23 @@
   "squadWatch": [
     {
       "type": "INJURY",
-      "player": "William Saliba",
-      "status": "Back injury"
+      "player": "Karl Hein",
+      "status": "Has joined Werder Breme…"
     },
     {
       "type": "INJURY",
-      "player": "Ben White",
+      "player": "Jakub Kiwior",
+      "status": "has joined Porto on loa…"
+    },
+    {
+      "type": "INJURY",
+      "player": "Benjamin White",
       "status": "Knee injury"
     },
     {
       "type": "TRANSFER",
-      "player": "Morgan Rogers",
-      "status": "Arsenal linked"
+      "player": "Transfer Update",
+      "status": "Bid reported"
     }
   ]
 }
