@@ -1,5 +1,5 @@
 {
-  "updated": "18 JUL 10:43 SGT",
+  "updated": "18 JUL 10:48 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -271,22 +271,17 @@
   "squadWatch": [
     {
       "type": "INJURY",
-      "player": "Karl Hein",
-      "status": "Has joined Werder Breme…"
-    },
-    {
-      "type": "INJURY",
-      "player": "Jakub Kiwior",
-      "status": "has joined Porto on loa…"
-    },
-    {
-      "type": "INJURY",
       "player": "Benjamin White",
       "status": "Knee injury"
     },
     {
+      "type": "INJURY",
+      "player": "Jurriën Timber",
+      "status": "Lack of match fitness"
+    },
+    {
       "type": "TRANSFER",
-      "player": "Transfer Update",
+      "player": "A. as",
       "status": "Bid reported"
     }
   ]
