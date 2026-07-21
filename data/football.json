@@ -1,5 +1,5 @@
 {
-  "updated": "22 JUL 03:55 SGT",
+  "updated": "22 JUL 05:35 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -268,11 +268,5 @@
       "pts": 20
     }
   ],
-  "squadWatch": [
-    {
-      "type": "TRANSFER",
-      "player": "Bruno Guimaraes",
-      "status": "Talks reported"
-    }
-  ]
+  "squadWatch": []
 }
