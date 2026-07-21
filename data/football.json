@@ -1,5 +1,5 @@
 {
-  "updated": "21 JUL 22:27 SGT",
+  "updated": "22 JUL 01:48 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -270,19 +270,9 @@
   ],
   "squadWatch": [
     {
-      "type": "INJURY",
-      "player": "Benjamin White",
-      "status": "Knee injury"
-    },
-    {
-      "type": "INJURY",
-      "player": "Jurriën Timber",
-      "status": "Lack of match fitness"
-    },
-    {
       "type": "TRANSFER",
-      "player": "Morgan Rogers",
-      "status": "Bid reported"
+      "player": "Bruno Guimaraes",
+      "status": "Talks reported"
     }
   ]
 }
