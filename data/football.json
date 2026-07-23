@@ -1,5 +1,5 @@
 {
-  "updated": "23 JUL 14:42 SGT",
+  "updated": "23 JUL 22:36 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -269,6 +269,21 @@
     }
   ],
   "squadWatch": [
+    {
+      "type": "INJURY",
+      "player": "Jurriën Timber",
+      "status": "Groin injury"
+    },
+    {
+      "type": "INJURY",
+      "player": "William Saliba",
+      "status": "Back injury"
+    },
+    {
+      "type": "INJURY",
+      "player": "Benjamin White",
+      "status": "Knee injury"
+    },
     {
       "type": "TRANSFER",
       "player": "Bruno Guimaraes",
