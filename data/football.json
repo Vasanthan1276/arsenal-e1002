@@ -1,5 +1,5 @@
 {
-  "updated": "30 JUL 18:35 SGT",
+  "updated": "30 JUL 22:36 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -283,6 +283,11 @@
       "type": "INJURY",
       "player": "Benjamin White",
       "status": "Knee injury"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "Vinicius Jr",
+      "status": "Bid reported"
     }
   ]
 }
