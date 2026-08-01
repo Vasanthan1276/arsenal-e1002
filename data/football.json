@@ -1,5 +1,5 @@
 {
-  "updated": "02 AUG 01:25 SGT",
+  "updated": "02 AUG 03:38 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -278,11 +278,6 @@
       "type": "INJURY",
       "player": "William Saliba",
       "status": "Back injury"
-    },
-    {
-      "type": "INJURY",
-      "player": "Benjamin White",
-      "status": "Knee injury"
     },
     {
       "type": "TRANSFER",
