@@ -1,5 +1,5 @@
 {
-  "updated": "01 AUG 14:42 SGT",
+  "updated": "01 AUG 18:12 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -286,8 +286,8 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Bruno Guimaraes",
-      "status": "Reported target"
+      "player": "Vinicius Jr",
+      "status": "Bid reported"
     }
   ]
 }
