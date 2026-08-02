@@ -1,5 +1,5 @@
 {
-  "updated": "03 AUG 01:26 SGT",
+  "updated": "03 AUG 03:38 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -281,8 +281,8 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Bruno Guimaraes",
-      "status": "Reported target"
+      "player": "New Bruno Guimaraes",
+      "status": "Bid reported"
     }
   ]
 }
