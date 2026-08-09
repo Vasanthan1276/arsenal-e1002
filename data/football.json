@@ -1,5 +1,5 @@
 {
-  "updated": "09 AUG 22:55 SGT",
+  "updated": "10 AUG 00:58 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -278,6 +278,11 @@
       "type": "INJURY",
       "player": "William Saliba",
       "status": "Back injury"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "New Bruno Guimaraes",
+      "status": "Bid reported"
     }
   ]
 }
