@@ -1,5 +1,5 @@
 {
-  "updated": "12 AUG 03:28 SGT",
+  "updated": "12 AUG 05:07 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -281,7 +281,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Leandro Trossard",
+      "player": "Ezri Konsa",
       "status": "Reported target"
     }
   ]
