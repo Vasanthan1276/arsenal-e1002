@@ -1,5 +1,5 @@
 {
-  "updated": "12 AUG 05:07 SGT",
+  "updated": "12 AUG 07:06 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -281,7 +281,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Ezri Konsa",
+      "player": "Bruno Guimaraes",
       "status": "Reported target"
     }
   ]
