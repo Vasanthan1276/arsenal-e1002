@@ -1,5 +1,5 @@
 {
-  "updated": "18 AUG 06:44 SGT",
+  "updated": "18 AUG 09:53 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -278,6 +278,11 @@
       "type": "INJURY",
       "player": "William Saliba",
       "status": "Back injury"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "Victor Osimhen",
+      "status": "Talks reported"
     }
   ]
 }
