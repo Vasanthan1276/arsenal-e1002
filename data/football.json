@@ -1,5 +1,5 @@
 {
-  "updated": "21 AUG 00:54 SGT",
+  "updated": "21 AUG 03:04 SGT",
   "fixtures": [
     {
       "date": "22 AUG",
@@ -278,6 +278,11 @@
       "type": "INJURY",
       "player": "William Saliba",
       "status": "Back injury"
+    },
+    {
+      "type": "INJURY",
+      "player": "B. Moura",
+      "status": "Thigh injury"
     },
     {
       "type": "TRANSFER",
