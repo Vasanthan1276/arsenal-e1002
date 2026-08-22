@@ -1,5 +1,5 @@
 {
-  "updated": "22 AUG 22:41 SGT",
+  "updated": "23 AUG 00:43 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -41,6 +41,18 @@
     },
     {
       "pos": 2,
+      "team": "Everton",
+      "played": 1,
+      "won": 1,
+      "draw": 0,
+      "lost": 0,
+      "gf": 2,
+      "ga": 0,
+      "gd": 2,
+      "pts": 3
+    },
+    {
+      "pos": 2,
       "team": "Hull City",
       "played": 1,
       "won": 1,
@@ -52,68 +64,32 @@
       "pts": 3
     },
     {
-      "pos": 3,
+      "pos": 4,
       "team": "Ipswich",
       "played": 1,
-      "won": 0,
-      "draw": 1,
+      "won": 1,
+      "draw": 0,
       "lost": 0,
-      "gf": 1,
+      "gf": 2,
       "ga": 1,
-      "gd": 0,
-      "pts": 1
-    },
-    {
-      "pos": 3,
-      "team": "Sunderland",
-      "played": 1,
-      "won": 0,
-      "draw": 1,
-      "lost": 0,
-      "gf": 1,
-      "ga": 1,
-      "gd": 0,
-      "pts": 1
-    },
-    {
-      "pos": 5,
-      "team": "Crystal Palace",
-      "played": 1,
-      "won": 0,
-      "draw": 1,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 1
-    },
-    {
-      "pos": 5,
-      "team": "Everton",
-      "played": 1,
-      "won": 0,
-      "draw": 1,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 1
+      "gd": 1,
+      "pts": 3
     },
     {
       "pos": 5,
       "team": "Leeds",
       "played": 1,
-      "won": 0,
-      "draw": 1,
+      "won": 1,
+      "draw": 0,
       "lost": 0,
-      "gf": 0,
+      "gf": 1,
       "ga": 0,
-      "gd": 0,
-      "pts": 1
+      "gd": 1,
+      "pts": 3
     },
     {
-      "pos": 5,
-      "team": "Nott'm Forest",
+      "pos": 6,
+      "team": "Brentford",
       "played": 1,
       "won": 0,
       "draw": 1,
@@ -124,7 +100,19 @@
       "pts": 1
     },
     {
-      "pos": 9,
+      "pos": 6,
+      "team": "Tottenham",
+      "played": 1,
+      "won": 0,
+      "draw": 1,
+      "lost": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "pts": 1
+    },
+    {
+      "pos": 8,
       "team": "Bournemouth",
       "played": 0,
       "won": 0,
@@ -136,7 +124,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "team": "Aston Villa",
       "played": 0,
       "won": 0,
@@ -148,19 +136,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
-      "team": "Brentford",
-      "played": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 0
-    },
-    {
-      "pos": 9,
+      "pos": 8,
       "team": "Brighton",
       "played": 0,
       "won": 0,
@@ -172,7 +148,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "team": "Chelsea",
       "played": 0,
       "won": 0,
@@ -184,7 +160,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "team": "Fulham",
       "played": 0,
       "won": 0,
@@ -196,7 +172,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "team": "Liverpool",
       "played": 0,
       "won": 0,
@@ -208,7 +184,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "team": "Man City",
       "played": 0,
       "won": 0,
@@ -220,7 +196,7 @@
       "pts": 0
     },
     {
-      "pos": 9,
+      "pos": 8,
       "team": "Newcastle",
       "played": 0,
       "won": 0,
@@ -232,19 +208,43 @@
       "pts": 0
     },
     {
-      "pos": 9,
-      "team": "Tottenham",
-      "played": 0,
+      "pos": 16,
+      "team": "Sunderland",
+      "played": 1,
       "won": 0,
       "draw": 0,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
+      "lost": 1,
+      "gf": 1,
+      "ga": 2,
+      "gd": -1,
       "pts": 0
     },
     {
-      "pos": 19,
+      "pos": 17,
+      "team": "Nott'm Forest",
+      "played": 1,
+      "won": 0,
+      "draw": 0,
+      "lost": 1,
+      "gf": 0,
+      "ga": 1,
+      "gd": -1,
+      "pts": 0
+    },
+    {
+      "pos": 18,
+      "team": "Crystal Palace",
+      "played": 1,
+      "won": 0,
+      "draw": 0,
+      "lost": 1,
+      "gf": 0,
+      "ga": 2,
+      "gd": -2,
+      "pts": 0
+    },
+    {
+      "pos": 18,
       "team": "Man United",
       "played": 1,
       "won": 0,
