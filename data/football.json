@@ -1,5 +1,5 @@
 {
-  "updated": "23 AUG 18:44 SGT",
+  "updated": "23 AUG 21:05 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -102,41 +102,53 @@
     {
       "pos": 7,
       "team": "Bournemouth",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "draw": 0,
+      "draw": 1,
       "lost": 0,
       "gf": 0,
       "ga": 0,
       "gd": 0,
-      "pts": 0
+      "pts": 1
     },
     {
       "pos": 7,
       "team": "Aston Villa",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "draw": 0,
+      "draw": 1,
       "lost": 0,
       "gf": 0,
       "ga": 0,
       "gd": 0,
-      "pts": 0
+      "pts": 1
     },
     {
       "pos": 7,
       "team": "Brighton",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "draw": 0,
+      "draw": 1,
       "lost": 0,
       "gf": 0,
       "ga": 0,
       "gd": 0,
-      "pts": 0
+      "pts": 1
     },
     {
       "pos": 7,
+      "team": "Man City",
+      "played": 1,
+      "won": 0,
+      "draw": 1,
+      "lost": 0,
+      "gf": 0,
+      "ga": 0,
+      "gd": 0,
+      "pts": 1
+    },
+    {
+      "pos": 11,
       "team": "Chelsea",
       "played": 0,
       "won": 0,
@@ -148,7 +160,7 @@
       "pts": 0
     },
     {
-      "pos": 7,
+      "pos": 11,
       "team": "Fulham",
       "played": 0,
       "won": 0,
@@ -160,7 +172,7 @@
       "pts": 0
     },
     {
-      "pos": 7,
+      "pos": 11,
       "team": "Liverpool",
       "played": 0,
       "won": 0,
@@ -172,19 +184,7 @@
       "pts": 0
     },
     {
-      "pos": 7,
-      "team": "Man City",
-      "played": 0,
-      "won": 0,
-      "draw": 0,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 0
-    },
-    {
-      "pos": 7,
+      "pos": 11,
       "team": "Newcastle",
       "played": 0,
       "won": 0,
@@ -286,8 +286,8 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Victor Osimhen",
-      "status": "Talks reported"
+      "player": "Julian Alvarez",
+      "status": "Bid reported"
     }
   ]
 }
