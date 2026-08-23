@@ -1,5 +1,5 @@
 {
-  "updated": "24 AUG 00:45 SGT",
+  "updated": "24 AUG 02:50 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -124,19 +124,31 @@
       "pts": 3
     },
     {
-      "pos": 8,
-      "team": "Newcastle",
+      "pos": 9,
+      "team": "Liverpool",
       "played": 1,
-      "won": 1,
-      "draw": 0,
+      "won": 0,
+      "draw": 1,
       "lost": 0,
-      "gf": 1,
-      "ga": 0,
-      "gd": 1,
-      "pts": 3
+      "gf": 2,
+      "ga": 2,
+      "gd": 0,
+      "pts": 1
     },
     {
-      "pos": 10,
+      "pos": 9,
+      "team": "Newcastle",
+      "played": 1,
+      "won": 0,
+      "draw": 1,
+      "lost": 0,
+      "gf": 2,
+      "ga": 2,
+      "gd": 0,
+      "pts": 1
+    },
+    {
+      "pos": 11,
       "team": "Chelsea",
       "played": 0,
       "won": 0,
@@ -148,7 +160,7 @@
       "pts": 0
     },
     {
-      "pos": 10,
+      "pos": 11,
       "team": "Fulham",
       "played": 0,
       "won": 0,
@@ -160,7 +172,7 @@
       "pts": 0
     },
     {
-      "pos": 12,
+      "pos": 13,
       "team": "Bournemouth",
       "played": 1,
       "won": 0,
@@ -172,7 +184,7 @@
       "pts": 0
     },
     {
-      "pos": 12,
+      "pos": 13,
       "team": "Sunderland",
       "played": 1,
       "won": 0,
@@ -184,19 +196,7 @@
       "pts": 0
     },
     {
-      "pos": 14,
-      "team": "Liverpool",
-      "played": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "gf": 0,
-      "ga": 1,
-      "gd": -1,
-      "pts": 0
-    },
-    {
-      "pos": 14,
+      "pos": 15,
       "team": "Nott'm Forest",
       "played": 1,
       "won": 0,
