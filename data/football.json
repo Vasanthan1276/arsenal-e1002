@@ -1,5 +1,5 @@
 {
-  "updated": "25 AUG 00:58 SGT",
+  "updated": "25 AUG 03:03 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -150,26 +150,26 @@
     {
       "pos": 11,
       "team": "Chelsea",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "draw": 0,
+      "draw": 1,
       "lost": 0,
       "gf": 0,
       "ga": 0,
       "gd": 0,
-      "pts": 0
+      "pts": 1
     },
     {
       "pos": 11,
       "team": "Fulham",
-      "played": 0,
+      "played": 1,
       "won": 0,
-      "draw": 0,
+      "draw": 1,
       "lost": 0,
       "gf": 0,
       "ga": 0,
       "gd": 0,
-      "pts": 0
+      "pts": 1
     },
     {
       "pos": 13,
