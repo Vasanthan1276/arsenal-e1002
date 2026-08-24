@@ -1,5 +1,5 @@
 {
-  "updated": "25 AUG 03:03 SGT",
+  "updated": "25 AUG 04:51 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -89,6 +89,18 @@
     },
     {
       "pos": 6,
+      "team": "Chelsea",
+      "played": 1,
+      "won": 1,
+      "draw": 0,
+      "lost": 0,
+      "gf": 3,
+      "ga": 2,
+      "gd": 1,
+      "pts": 3
+    },
+    {
+      "pos": 7,
       "team": "Ipswich",
       "played": 1,
       "won": 1,
@@ -100,7 +112,7 @@
       "pts": 3
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "Man City",
       "played": 1,
       "won": 1,
@@ -112,7 +124,7 @@
       "pts": 3
     },
     {
-      "pos": 8,
+      "pos": 9,
       "team": "Leeds",
       "played": 1,
       "won": 1,
@@ -124,7 +136,7 @@
       "pts": 3
     },
     {
-      "pos": 9,
+      "pos": 10,
       "team": "Liverpool",
       "played": 1,
       "won": 0,
@@ -136,7 +148,7 @@
       "pts": 1
     },
     {
-      "pos": 9,
+      "pos": 10,
       "team": "Newcastle",
       "played": 1,
       "won": 0,
@@ -148,28 +160,16 @@
       "pts": 1
     },
     {
-      "pos": 11,
-      "team": "Chelsea",
-      "played": 1,
-      "won": 0,
-      "draw": 1,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 1
-    },
-    {
-      "pos": 11,
+      "pos": 12,
       "team": "Fulham",
       "played": 1,
       "won": 0,
-      "draw": 1,
-      "lost": 0,
-      "gf": 0,
-      "ga": 0,
-      "gd": 0,
-      "pts": 1
+      "draw": 0,
+      "lost": 1,
+      "gf": 2,
+      "ga": 3,
+      "gd": -1,
+      "pts": 0
     },
     {
       "pos": 13,
