@@ -1,5 +1,5 @@
 {
-  "updated": "25 AUG 23:08 SGT",
+  "updated": "26 AUG 00:58 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -283,6 +283,11 @@
       "type": "INJURY",
       "player": "B. Moura",
       "status": "Thigh injury"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "Julian Alvarez",
+      "status": "Bid reported"
     }
   ]
 }
