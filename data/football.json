@@ -1,5 +1,5 @@
 {
-  "updated": "29 AUG 19:10 SGT",
+  "updated": "30 AUG 00:46 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -41,6 +41,30 @@
     },
     {
       "pos": 2,
+      "team": "Hull City",
+      "played": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "gf": 3,
+      "ga": 0,
+      "gd": 3,
+      "pts": 6
+    },
+    {
+      "pos": 3,
+      "team": "Everton",
+      "played": 2,
+      "won": 1,
+      "draw": 1,
+      "lost": 0,
+      "gf": 3,
+      "ga": 1,
+      "gd": 2,
+      "pts": 4
+    },
+    {
+      "pos": 4,
       "team": "Brighton",
       "played": 1,
       "won": 1,
@@ -52,7 +76,7 @@
       "pts": 3
     },
     {
-      "pos": 3,
+      "pos": 5,
       "team": "Arsenal",
       "played": 1,
       "won": 1,
@@ -64,7 +88,7 @@
       "pts": 3
     },
     {
-      "pos": 3,
+      "pos": 5,
       "team": "Brentford",
       "played": 1,
       "won": 1,
@@ -73,30 +97,6 @@
       "gf": 3,
       "ga": 0,
       "gd": 3,
-      "pts": 3
-    },
-    {
-      "pos": 5,
-      "team": "Everton",
-      "played": 1,
-      "won": 1,
-      "draw": 0,
-      "lost": 0,
-      "gf": 2,
-      "ga": 0,
-      "gd": 2,
-      "pts": 3
-    },
-    {
-      "pos": 5,
-      "team": "Hull City",
-      "played": 1,
-      "won": 1,
-      "draw": 0,
-      "lost": 0,
-      "gf": 2,
-      "ga": 0,
-      "gd": 2,
       "pts": 3
     },
     {
@@ -138,29 +138,65 @@
     {
       "pos": 10,
       "team": "Liverpool",
-      "played": 1,
+      "played": 2,
       "won": 0,
-      "draw": 1,
+      "draw": 2,
       "lost": 0,
-      "gf": 2,
-      "ga": 2,
+      "gf": 4,
+      "ga": 4,
       "gd": 0,
-      "pts": 1
+      "pts": 2
     },
     {
-      "pos": 10,
+      "pos": 11,
       "team": "Newcastle",
-      "played": 1,
+      "played": 2,
       "won": 0,
-      "draw": 1,
+      "draw": 2,
       "lost": 0,
       "gf": 2,
       "ga": 2,
       "gd": 0,
+      "pts": 2
+    },
+    {
+      "pos": 12,
+      "team": "Bournemouth",
+      "played": 2,
+      "won": 0,
+      "draw": 1,
+      "lost": 1,
+      "gf": 2,
+      "ga": 3,
+      "gd": -1,
       "pts": 1
     },
     {
       "pos": 12,
+      "team": "Nott'm Forest",
+      "played": 2,
+      "won": 0,
+      "draw": 1,
+      "lost": 1,
+      "gf": 2,
+      "ga": 3,
+      "gd": -1,
+      "pts": 1
+    },
+    {
+      "pos": 14,
+      "team": "Tottenham",
+      "played": 2,
+      "won": 0,
+      "draw": 1,
+      "lost": 1,
+      "gf": 0,
+      "ga": 3,
+      "gd": -3,
+      "pts": 1
+    },
+    {
+      "pos": 15,
       "team": "Fulham",
       "played": 1,
       "won": 0,
@@ -172,19 +208,7 @@
       "pts": 0
     },
     {
-      "pos": 13,
-      "team": "Bournemouth",
-      "played": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "gf": 1,
-      "ga": 2,
-      "gd": -1,
-      "pts": 0
-    },
-    {
-      "pos": 13,
+      "pos": 16,
       "team": "Sunderland",
       "played": 1,
       "won": 0,
@@ -196,19 +220,7 @@
       "pts": 0
     },
     {
-      "pos": 15,
-      "team": "Nott'm Forest",
-      "played": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "gf": 0,
-      "ga": 1,
-      "gd": -1,
-      "pts": 0
-    },
-    {
-      "pos": 16,
+      "pos": 17,
       "team": "Man United",
       "played": 1,
       "won": 0,
@@ -220,36 +232,24 @@
       "pts": 0
     },
     {
-      "pos": 17,
-      "team": "Coventry",
-      "played": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "gf": 0,
-      "ga": 3,
-      "gd": -3,
-      "pts": 0
-    },
-    {
-      "pos": 17,
-      "team": "Tottenham",
-      "played": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "gf": 0,
-      "ga": 3,
-      "gd": -3,
-      "pts": 0
-    },
-    {
-      "pos": 19,
+      "pos": 18,
       "team": "Aston Villa",
       "played": 1,
       "won": 0,
       "draw": 0,
       "lost": 1,
+      "gf": 0,
+      "ga": 4,
+      "gd": -4,
+      "pts": 0
+    },
+    {
+      "pos": 18,
+      "team": "Coventry",
+      "played": 2,
+      "won": 0,
+      "draw": 0,
+      "lost": 2,
       "gf": 0,
       "ga": 4,
       "gd": -4,
