@@ -1,5 +1,5 @@
 {
-  "updated": "30 AUG 00:46 SGT",
+  "updated": "30 AUG 04:58 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -53,6 +53,18 @@
     },
     {
       "pos": 3,
+      "team": "Newcastle",
+      "played": 2,
+      "won": 1,
+      "draw": 1,
+      "lost": 0,
+      "gf": 4,
+      "ga": 2,
+      "gd": 2,
+      "pts": 4
+    },
+    {
+      "pos": 4,
       "team": "Everton",
       "played": 2,
       "won": 1,
@@ -64,7 +76,7 @@
       "pts": 4
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Brighton",
       "played": 1,
       "won": 1,
@@ -76,7 +88,7 @@
       "pts": 3
     },
     {
-      "pos": 5,
+      "pos": 6,
       "team": "Arsenal",
       "played": 1,
       "won": 1,
@@ -88,7 +100,7 @@
       "pts": 3
     },
     {
-      "pos": 5,
+      "pos": 6,
       "team": "Brentford",
       "played": 1,
       "won": 1,
@@ -100,7 +112,7 @@
       "pts": 3
     },
     {
-      "pos": 7,
+      "pos": 8,
       "team": "Chelsea",
       "played": 1,
       "won": 1,
@@ -112,7 +124,7 @@
       "pts": 3
     },
     {
-      "pos": 8,
+      "pos": 9,
       "team": "Ipswich",
       "played": 1,
       "won": 1,
@@ -124,7 +136,7 @@
       "pts": 3
     },
     {
-      "pos": 9,
+      "pos": 10,
       "team": "Leeds",
       "played": 1,
       "won": 1,
@@ -136,7 +148,7 @@
       "pts": 3
     },
     {
-      "pos": 10,
+      "pos": 11,
       "team": "Liverpool",
       "played": 2,
       "won": 0,
@@ -144,18 +156,6 @@
       "lost": 0,
       "gf": 4,
       "ga": 4,
-      "gd": 0,
-      "pts": 2
-    },
-    {
-      "pos": 11,
-      "team": "Newcastle",
-      "played": 2,
-      "won": 0,
-      "draw": 2,
-      "lost": 0,
-      "gf": 2,
-      "ga": 2,
       "gd": 0,
       "pts": 2
     },
@@ -185,18 +185,6 @@
     },
     {
       "pos": 14,
-      "team": "Tottenham",
-      "played": 2,
-      "won": 0,
-      "draw": 1,
-      "lost": 1,
-      "gf": 0,
-      "ga": 3,
-      "gd": -3,
-      "pts": 1
-    },
-    {
-      "pos": 15,
       "team": "Fulham",
       "played": 1,
       "won": 0,
@@ -208,7 +196,7 @@
       "pts": 0
     },
     {
-      "pos": 16,
+      "pos": 15,
       "team": "Sunderland",
       "played": 1,
       "won": 0,
@@ -220,7 +208,7 @@
       "pts": 0
     },
     {
-      "pos": 17,
+      "pos": 16,
       "team": "Man United",
       "played": 1,
       "won": 0,
@@ -232,7 +220,7 @@
       "pts": 0
     },
     {
-      "pos": 18,
+      "pos": 17,
       "team": "Aston Villa",
       "played": 1,
       "won": 0,
@@ -244,7 +232,7 @@
       "pts": 0
     },
     {
-      "pos": 18,
+      "pos": 17,
       "team": "Coventry",
       "played": 2,
       "won": 0,
@@ -256,7 +244,7 @@
       "pts": 0
     },
     {
-      "pos": 20,
+      "pos": 19,
       "team": "Crystal Palace",
       "played": 2,
       "won": 0,
@@ -264,6 +252,18 @@
       "lost": 2,
       "gf": 1,
       "ga": 6,
+      "gd": -5,
+      "pts": 0
+    },
+    {
+      "pos": 20,
+      "team": "Tottenham",
+      "played": 2,
+      "won": 0,
+      "draw": 0,
+      "lost": 2,
+      "gf": 0,
+      "ga": 5,
       "gd": -5,
       "pts": 0
     }
