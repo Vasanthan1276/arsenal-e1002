@@ -1,5 +1,5 @@
 {
-  "updated": "29 AUG 02:48 SGT",
+  "updated": "29 AUG 10:50 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -29,6 +29,18 @@
   "standings": [
     {
       "pos": 1,
+      "team": "Man City",
+      "played": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "gf": 6,
+      "ga": 2,
+      "gd": 4,
+      "pts": 6
+    },
+    {
+      "pos": 2,
       "team": "Brighton",
       "played": 1,
       "won": 1,
@@ -40,7 +52,7 @@
       "pts": 3
     },
     {
-      "pos": 2,
+      "pos": 3,
       "team": "Arsenal",
       "played": 1,
       "won": 1,
@@ -52,7 +64,7 @@
       "pts": 3
     },
     {
-      "pos": 2,
+      "pos": 3,
       "team": "Brentford",
       "played": 1,
       "won": 1,
@@ -64,7 +76,7 @@
       "pts": 3
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Everton",
       "played": 1,
       "won": 1,
@@ -76,7 +88,7 @@
       "pts": 3
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Hull City",
       "played": 1,
       "won": 1,
@@ -88,7 +100,7 @@
       "pts": 3
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "Chelsea",
       "played": 1,
       "won": 1,
@@ -100,20 +112,8 @@
       "pts": 3
     },
     {
-      "pos": 7,
+      "pos": 8,
       "team": "Ipswich",
-      "played": 1,
-      "won": 1,
-      "draw": 0,
-      "lost": 0,
-      "gf": 2,
-      "ga": 1,
-      "gd": 1,
-      "pts": 3
-    },
-    {
-      "pos": 7,
-      "team": "Man City",
       "played": 1,
       "won": 1,
       "draw": 0,
@@ -209,18 +209,6 @@
     },
     {
       "pos": 16,
-      "team": "Crystal Palace",
-      "played": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "gf": 0,
-      "ga": 2,
-      "gd": -2,
-      "pts": 0
-    },
-    {
-      "pos": 16,
       "team": "Man United",
       "played": 1,
       "won": 0,
@@ -232,7 +220,7 @@
       "pts": 0
     },
     {
-      "pos": 18,
+      "pos": 17,
       "team": "Coventry",
       "played": 1,
       "won": 0,
@@ -244,7 +232,7 @@
       "pts": 0
     },
     {
-      "pos": 18,
+      "pos": 17,
       "team": "Tottenham",
       "played": 1,
       "won": 0,
@@ -256,7 +244,7 @@
       "pts": 0
     },
     {
-      "pos": 20,
+      "pos": 19,
       "team": "Aston Villa",
       "played": 1,
       "won": 0,
@@ -265,6 +253,18 @@
       "gf": 0,
       "ga": 4,
       "gd": -4,
+      "pts": 0
+    },
+    {
+      "pos": 20,
+      "team": "Crystal Palace",
+      "played": 2,
+      "won": 0,
+      "draw": 0,
+      "lost": 2,
+      "gf": 1,
+      "ga": 6,
+      "gd": -5,
       "pts": 0
     }
   ],
