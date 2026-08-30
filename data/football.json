@@ -1,5 +1,5 @@
 {
-  "updated": "30 AUG 16:22 SGT",
+  "updated": "30 AUG 22:53 SGT",
   "fixtures": [
     {
       "date": "01 SEP",
@@ -41,6 +41,18 @@
     },
     {
       "pos": 2,
+      "team": "Chelsea",
+      "played": 2,
+      "won": 2,
+      "draw": 0,
+      "lost": 0,
+      "gf": 7,
+      "ga": 4,
+      "gd": 3,
+      "pts": 6
+    },
+    {
+      "pos": 3,
       "team": "Hull City",
       "played": 2,
       "won": 2,
@@ -52,7 +64,19 @@
       "pts": 6
     },
     {
-      "pos": 3,
+      "pos": 4,
+      "team": "Brentford",
+      "played": 2,
+      "won": 1,
+      "draw": 1,
+      "lost": 0,
+      "gf": 4,
+      "ga": 1,
+      "gd": 3,
+      "pts": 4
+    },
+    {
+      "pos": 5,
       "team": "Newcastle",
       "played": 2,
       "won": 1,
@@ -64,7 +88,7 @@
       "pts": 4
     },
     {
-      "pos": 4,
+      "pos": 6,
       "team": "Everton",
       "played": 2,
       "won": 1,
@@ -76,19 +100,19 @@
       "pts": 4
     },
     {
-      "pos": 5,
-      "team": "Brighton",
-      "played": 1,
+      "pos": 7,
+      "team": "Leeds",
+      "played": 2,
       "won": 1,
-      "draw": 0,
+      "draw": 1,
       "lost": 0,
-      "gf": 4,
-      "ga": 0,
-      "gd": 4,
-      "pts": 3
+      "gf": 2,
+      "ga": 1,
+      "gd": 1,
+      "pts": 4
     },
     {
-      "pos": 6,
+      "pos": 8,
       "team": "Arsenal",
       "played": 1,
       "won": 1,
@@ -100,31 +124,19 @@
       "pts": 3
     },
     {
-      "pos": 6,
-      "team": "Brentford",
-      "played": 1,
-      "won": 1,
-      "draw": 0,
-      "lost": 0,
-      "gf": 3,
-      "ga": 0,
-      "gd": 3,
-      "pts": 3
-    },
-    {
-      "pos": 8,
-      "team": "Chelsea",
-      "played": 1,
-      "won": 1,
-      "draw": 0,
-      "lost": 0,
-      "gf": 3,
-      "ga": 2,
-      "gd": 1,
-      "pts": 3
-    },
-    {
       "pos": 9,
+      "team": "Brighton",
+      "played": 2,
+      "won": 1,
+      "draw": 0,
+      "lost": 1,
+      "gf": 6,
+      "ga": 4,
+      "gd": 2,
+      "pts": 3
+    },
+    {
+      "pos": 10,
       "team": "Ipswich",
       "played": 1,
       "won": 1,
@@ -136,19 +148,19 @@
       "pts": 3
     },
     {
-      "pos": 10,
-      "team": "Leeds",
-      "played": 1,
+      "pos": 11,
+      "team": "Sunderland",
+      "played": 2,
       "won": 1,
       "draw": 0,
-      "lost": 0,
-      "gf": 1,
-      "ga": 0,
-      "gd": 1,
+      "lost": 1,
+      "gf": 2,
+      "ga": 2,
+      "gd": 0,
       "pts": 3
     },
     {
-      "pos": 11,
+      "pos": 12,
       "team": "Liverpool",
       "played": 2,
       "won": 0,
@@ -160,7 +172,7 @@
       "pts": 2
     },
     {
-      "pos": 12,
+      "pos": 13,
       "team": "Bournemouth",
       "played": 2,
       "won": 0,
@@ -172,7 +184,7 @@
       "pts": 1
     },
     {
-      "pos": 12,
+      "pos": 13,
       "team": "Nott'm Forest",
       "played": 2,
       "won": 0,
@@ -184,27 +196,15 @@
       "pts": 1
     },
     {
-      "pos": 14,
-      "team": "Fulham",
-      "played": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "gf": 2,
-      "ga": 3,
-      "gd": -1,
-      "pts": 0
-    },
-    {
       "pos": 15,
-      "team": "Sunderland",
-      "played": 1,
+      "team": "Fulham",
+      "played": 2,
       "won": 0,
       "draw": 0,
-      "lost": 1,
-      "gf": 1,
-      "ga": 2,
-      "gd": -1,
+      "lost": 2,
+      "gf": 2,
+      "ga": 4,
+      "gd": -2,
       "pts": 0
     },
     {
@@ -287,7 +287,7 @@
     {
       "type": "TRANSFER",
       "player": "Julian Alvarez",
-      "status": "Bid reported"
+      "status": "Talks reported"
     }
   ]
 }
