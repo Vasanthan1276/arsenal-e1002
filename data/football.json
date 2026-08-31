@@ -1,12 +1,6 @@
 {
-  "updated": "31 AUG 22:02 SGT",
+  "updated": "01 SEP 04:10 SGT",
   "fixtures": [
-    {
-      "date": "01 SEP",
-      "home": "ASTON VILLA",
-      "away": "ARSENAL",
-      "time": "03:00 SGT"
-    },
     {
       "date": "06 SEP",
       "home": "ARSENAL",
@@ -24,6 +18,12 @@
       "home": "BRIGHTON",
       "away": "ARSENAL",
       "time": "22:00 SGT"
+    },
+    {
+      "date": "10 OCT",
+      "home": "ARSENAL",
+      "away": "LEEDS",
+      "time": "19:30 SGT"
     }
   ],
   "standings": [
@@ -77,6 +77,18 @@
     },
     {
       "pos": 5,
+      "team": "Arsenal",
+      "played": 2,
+      "won": 1,
+      "draw": 1,
+      "lost": 0,
+      "gf": 3,
+      "ga": 0,
+      "gd": 3,
+      "pts": 4
+    },
+    {
+      "pos": 6,
       "team": "Newcastle",
       "played": 2,
       "won": 1,
@@ -88,7 +100,7 @@
       "pts": 4
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "Everton",
       "played": 2,
       "won": 1,
@@ -100,7 +112,7 @@
       "pts": 4
     },
     {
-      "pos": 7,
+      "pos": 8,
       "team": "Leeds",
       "played": 2,
       "won": 1,
@@ -112,7 +124,7 @@
       "pts": 4
     },
     {
-      "pos": 8,
+      "pos": 9,
       "team": "Brighton",
       "played": 2,
       "won": 1,
@@ -120,18 +132,6 @@
       "lost": 1,
       "gf": 7,
       "ga": 4,
-      "gd": 3,
-      "pts": 3
-    },
-    {
-      "pos": 9,
-      "team": "Arsenal",
-      "played": 1,
-      "won": 1,
-      "draw": 0,
-      "lost": 0,
-      "gf": 3,
-      "ga": 0,
       "gd": 3,
       "pts": 3
     },
@@ -209,6 +209,18 @@
     },
     {
       "pos": 16,
+      "team": "Aston Villa",
+      "played": 2,
+      "won": 0,
+      "draw": 1,
+      "lost": 1,
+      "gf": 0,
+      "ga": 4,
+      "gd": -4,
+      "pts": 1
+    },
+    {
+      "pos": 17,
       "team": "Fulham",
       "played": 2,
       "won": 0,
@@ -220,19 +232,7 @@
       "pts": 0
     },
     {
-      "pos": 17,
-      "team": "Aston Villa",
-      "played": 1,
-      "won": 0,
-      "draw": 0,
-      "lost": 1,
-      "gf": 0,
-      "ga": 4,
-      "gd": -4,
-      "pts": 0
-    },
-    {
-      "pos": 17,
+      "pos": 18,
       "team": "Coventry",
       "played": 2,
       "won": 0,
@@ -278,11 +278,6 @@
       "type": "INJURY",
       "player": "William Saliba",
       "status": "Back injury"
-    },
-    {
-      "type": "INJURY",
-      "player": "B. Moura",
-      "status": "Thigh injury"
     },
     {
       "type": "TRANSFER",
