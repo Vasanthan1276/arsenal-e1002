@@ -1,5 +1,5 @@
 {
-  "updated": "03 SEP 05:07 SGT",
+  "updated": "03 SEP 08:20 SGT",
   "fixtures": [
     {
       "date": "06 SEP",
@@ -281,8 +281,8 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Julian Alvarez",
-      "status": "Talks reported"
+      "player": "Malick Fofana",
+      "status": "Reported target"
     }
   ]
 }
