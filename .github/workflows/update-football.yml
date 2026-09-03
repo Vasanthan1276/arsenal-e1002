@@ -1,22 +1,16 @@
 name: Update Arsenal Dashboard
 
-
 on:
 
   # Manual run
   workflow_dispatch:
 
-
   # Run automatically every 2 hours
   schedule:
-
     - cron: "17 */2 * * *"
 
-
 permissions:
-
   contents: write
-
 
 jobs:
 
@@ -24,94 +18,41 @@ jobs:
 
     runs-on: ubuntu-latest
 
-
     steps:
 
-
-      # =====================================================
-      # CHECKOUT REPOSITORY
-      # =====================================================
-
       - name: Checkout repository
-
         uses: actions/checkout@v4
 
-
-
-      # =====================================================
-      # SETUP NODE.JS
-      # =====================================================
-
       - name: Setup Node.js
-
         uses: actions/setup-node@v4
-
         with:
-
           node-version: "22"
 
-
-
-      # =====================================================
-      # UPDATE FOOTBALL DATA
-      #
-      # Premier League table
-      # Arsenal fixtures
-      # =====================================================
-
       - name: Update football data
-
         env:
-
-          FOOTBALL_DATA_TOKEN:
-            ${{ secrets.FOOTBALL_DATA_TOKEN }}
-
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: |
-
           node scripts/update-football.mjs
 
-
-
-      # =====================================================
-      # UPDATE SQUAD WATCH
-      #
-      # Arsenal injuries
-      # Arsenal transfer news
-      # =====================================================
-
       - name: Update automatic Squad Watch
-
         run: |
-
           node scripts/update-squad-watch.mjs
 
-
-
-      # =====================================================
-      # COMMIT CHANGES
-      # =====================================================
-
-      - name: Commit updated dashboard data
-
+      - name: Generate fully static Arsenal dashboard
         run: |
+          node scripts/render-static-dashboard.mjs
 
+      - name: Commit updated dashboard
+        run: |
           git config user.name "github-actions[bot]"
-
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-
-          git add data/football.json
-
+          git add data/football.json index.html
 
           if git diff --cached --quiet
           then
-
-            echo "No dashboard data changes to commit."
-
+            echo "No dashboard changes to commit."
           else
-
-            git commit -m "Update Arsenal dashboard data"
-
+            git commit -m "Update static Arsenal dashboard"
             git push
-
           fi
