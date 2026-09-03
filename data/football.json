@@ -1,5 +1,5 @@
 {
-  "updated": "03 SEP 20:51 SGT",
+  "updated": "04 SEP 01:53 SGT",
   "fixtures": [
     {
       "date": "06 SEP",
@@ -278,6 +278,11 @@
       "type": "INJURY",
       "player": "William Saliba",
       "status": "Back injury"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "Julian Alvarez",
+      "status": "Talks reported"
     }
   ]
 }
