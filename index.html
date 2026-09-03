@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -13,7 +12,6 @@
 
 <title>Arsenal Dashboard</title>
 
-
 <style>
 
 /* =========================================================
@@ -23,7 +21,6 @@
 * {
   box-sizing: border-box;
 }
-
 
 html,
 body {
@@ -201,8 +198,6 @@ body {
 }
 
 
-/* DATE */
-
 .fixture-date {
 
   font-size: 13px;
@@ -213,8 +208,6 @@ body {
 
 }
 
-
-/* TEAMS */
 
 .fixture-match {
 
@@ -233,8 +226,6 @@ body {
 
 }
 
-
-/* TIME */
 
 .fixture-info {
 
@@ -450,11 +441,6 @@ body {
 
 /* =========================================================
    TABLE GRID
-
-   # TEAM P W D L GF GA GD PTS
-
-   Wider right panel now gives the team-name column
-   more space while keeping all statistics visible.
    ========================================================= */
 
 .table-header,
@@ -480,8 +466,6 @@ body {
 }
 
 
-/* COLUMN HEADERS */
-
 .table-header {
 
   height: 21px;
@@ -495,8 +479,6 @@ body {
 
 }
 
-
-/* TEAM ROWS */
 
 .table-row {
 
@@ -525,8 +507,6 @@ body {
 
 }
 
-
-/* TEAM NAME */
 
 .table-row .team {
 
@@ -566,21 +546,6 @@ body {
 
 }
 
-
-/* =========================================================
-   ERROR
-   ========================================================= */
-
-.error {
-
-  padding: 20px;
-
-  font-size: 18px;
-
-  font-weight: 700;
-
-}
-
 </style>
 
 </head>
@@ -592,93 +557,120 @@ body {
 <div class="page">
 
 
-<!-- =======================================================
-     LEFT PANEL
-     ======================================================= -->
-
 <section class="left">
 
 
-<!-- HEADER -->
-
 <div class="header">
 
-
 <div class="title">
-
 ARSENAL
+</div>
+
+<div class="updated">
+Updated 03 SEP 20:39 SGT
+</div>
 
 </div>
 
-
-<div
-  class="updated"
-  id="updated"
->
-
-Updating...
-
-</div>
-
-
-</div>
-
-
-
-<!-- =======================================================
-     FIXTURES
-     ======================================================= -->
 
 <div class="fixtures">
 
-
 <div class="section-title">
-
 NEXT 4 FIXTURES
+</div>
+
+<div>
+
+<div class="fixture">
+  <div class="fixture-date">06 SEP</div>
+
+  <div class="fixture-match">
+    <span class="arsenal">ARSENAL</span>
+    <br>
+    CHELSEA
+  </div>
+
+  <div class="fixture-info">
+    <div class="fixture-time">23:30 SGT</div>
+  </div>
+</div>
+
+<div class="fixture">
+  <div class="fixture-date">13 SEP</div>
+
+  <div class="fixture-match">
+    SUNDERLAND
+    <br>
+    <span class="arsenal">ARSENAL</span>
+  </div>
+
+  <div class="fixture-info">
+    <div class="fixture-time">03:00 SGT</div>
+  </div>
+</div>
+
+<div class="fixture">
+  <div class="fixture-date">19 SEP</div>
+
+  <div class="fixture-match">
+    BRIGHTON
+    <br>
+    <span class="arsenal">ARSENAL</span>
+  </div>
+
+  <div class="fixture-info">
+    <div class="fixture-time">22:00 SGT</div>
+  </div>
+</div>
+
+<div class="fixture">
+  <div class="fixture-date">10 OCT</div>
+
+  <div class="fixture-match">
+    <span class="arsenal">ARSENAL</span>
+    <br>
+    LEEDS
+  </div>
+
+  <div class="fixture-info">
+    <div class="fixture-time">19:30 SGT</div>
+  </div>
+</div>
 
 </div>
 
-
-<div id="fixtures">
-
 </div>
 
-
-</div>
-
-
-
-<!-- =======================================================
-     SQUAD WATCH
-     ======================================================= -->
 
 <div class="squad">
 
-
 <div class="squad-title">
 
-
 <h2>
-
 SQUAD WATCH
-
 </h2>
 
-
 <span class="squad-subtitle">
-
 Injuries & Transfers
-
 </span>
 
-
 </div>
 
+<div>
 
-<div id="squadWatch">
-
+<div class="watch-item">
+  <div class="watch-type">INJURY</div>
+  <div class="watch-player">Jurriën Timber</div>
+  <div class="watch-status">Groin injury</div>
 </div>
 
+<div class="watch-item">
+  <div class="watch-type">INJURY</div>
+  <div class="watch-player">William Saliba</div>
+  <div class="watch-status">Back injury</div>
+</div>
+
+</div>
 
 </div>
 
@@ -686,64 +678,298 @@ Injuries & Transfers
 </section>
 
 
-
-<!-- =======================================================
-     RIGHT PANEL
-     ======================================================= -->
-
 <section class="table-panel">
-
 
 <div class="table-heading">
 
-
 <h2>
-
 PREMIER LEAGUE
-
 </h2>
 
-
 <div class="season">
-
 2026/27
+</div>
 
 </div>
 
-
-</div>
-
-
-
-<!-- TABLE HEADERS -->
 
 <div class="table-header">
 
 <div>#</div>
-
 <div class="team">TEAM</div>
-
 <div>P</div>
-
 <div>W</div>
-
 <div>D</div>
-
 <div>L</div>
-
 <div>GF</div>
-
 <div>GA</div>
-
 <div>GD</div>
-
 <div>PTS</div>
 
 </div>
 
 
+<div>
 
-<div id="standings">
+<div class="table-row ">
+  <div>1</div>
+  <div class="team">Man City</div>
+  <div>2</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>6</div>
+  <div>2</div>
+  <div>+4</div>
+  <div>6</div>
+</div>
+
+<div class="table-row arsenal-row">
+  <div>2</div>
+  <div class="team">Arsenal</div>
+  <div>2</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>4</div>
+  <div>0</div>
+  <div>+4</div>
+  <div>6</div>
+</div>
+
+<div class="table-row ">
+  <div>3</div>
+  <div class="team">Hull City</div>
+  <div>2</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>3</div>
+  <div>0</div>
+  <div>+3</div>
+  <div>6</div>
+</div>
+
+<div class="table-row ">
+  <div>4</div>
+  <div class="team">Chelsea</div>
+  <div>2</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>7</div>
+  <div>5</div>
+  <div>+2</div>
+  <div>6</div>
+</div>
+
+<div class="table-row ">
+  <div>5</div>
+  <div class="team">Brentford</div>
+  <div>2</div>
+  <div>1</div>
+  <div>1</div>
+  <div>0</div>
+  <div>4</div>
+  <div>1</div>
+  <div>+3</div>
+  <div>4</div>
+</div>
+
+<div class="table-row ">
+  <div>6</div>
+  <div class="team">Newcastle</div>
+  <div>2</div>
+  <div>1</div>
+  <div>1</div>
+  <div>0</div>
+  <div>4</div>
+  <div>2</div>
+  <div>+2</div>
+  <div>4</div>
+</div>
+
+<div class="table-row ">
+  <div>7</div>
+  <div class="team">Everton</div>
+  <div>2</div>
+  <div>1</div>
+  <div>1</div>
+  <div>0</div>
+  <div>3</div>
+  <div>1</div>
+  <div>+2</div>
+  <div>4</div>
+</div>
+
+<div class="table-row ">
+  <div>8</div>
+  <div class="team">Leeds</div>
+  <div>2</div>
+  <div>1</div>
+  <div>1</div>
+  <div>0</div>
+  <div>2</div>
+  <div>1</div>
+  <div>+1</div>
+  <div>4</div>
+</div>
+
+<div class="table-row ">
+  <div>9</div>
+  <div class="team">Brighton</div>
+  <div>2</div>
+  <div>1</div>
+  <div>0</div>
+  <div>1</div>
+  <div>7</div>
+  <div>4</div>
+  <div>+3</div>
+  <div>3</div>
+</div>
+
+<div class="table-row ">
+  <div>10</div>
+  <div class="team">Man United</div>
+  <div>2</div>
+  <div>1</div>
+  <div>0</div>
+  <div>1</div>
+  <div>5</div>
+  <div>4</div>
+  <div>+1</div>
+  <div>3</div>
+</div>
+
+<div class="table-row ">
+  <div>11</div>
+  <div class="team">Sunderland</div>
+  <div>2</div>
+  <div>1</div>
+  <div>0</div>
+  <div>1</div>
+  <div>2</div>
+  <div>2</div>
+  <div>0</div>
+  <div>3</div>
+</div>
+
+<div class="table-row ">
+  <div>12</div>
+  <div class="team">Ipswich</div>
+  <div>2</div>
+  <div>1</div>
+  <div>0</div>
+  <div>1</div>
+  <div>4</div>
+  <div>6</div>
+  <div>-2</div>
+  <div>3</div>
+</div>
+
+<div class="table-row ">
+  <div>13</div>
+  <div class="team">Liverpool</div>
+  <div>2</div>
+  <div>0</div>
+  <div>2</div>
+  <div>0</div>
+  <div>4</div>
+  <div>4</div>
+  <div>0</div>
+  <div>2</div>
+</div>
+
+<div class="table-row ">
+  <div>14</div>
+  <div class="team">Bournemouth</div>
+  <div>2</div>
+  <div>0</div>
+  <div>1</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>-1</div>
+  <div>1</div>
+</div>
+
+<div class="table-row ">
+  <div>14</div>
+  <div class="team">Nott&#39;m Forest</div>
+  <div>2</div>
+  <div>0</div>
+  <div>1</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>-1</div>
+  <div>1</div>
+</div>
+
+<div class="table-row ">
+  <div>16</div>
+  <div class="team">Fulham</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>2</div>
+  <div>2</div>
+  <div>4</div>
+  <div>-2</div>
+  <div>0</div>
+</div>
+
+<div class="table-row ">
+  <div>17</div>
+  <div class="team">Coventry</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>2</div>
+  <div>0</div>
+  <div>4</div>
+  <div>-4</div>
+  <div>0</div>
+</div>
+
+<div class="table-row ">
+  <div>18</div>
+  <div class="team">Crystal Palace</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>2</div>
+  <div>1</div>
+  <div>6</div>
+  <div>-5</div>
+  <div>0</div>
+</div>
+
+<div class="table-row ">
+  <div>19</div>
+  <div class="team">Aston Villa</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>2</div>
+  <div>0</div>
+  <div>5</div>
+  <div>-5</div>
+  <div>0</div>
+</div>
+
+<div class="table-row ">
+  <div>19</div>
+  <div class="team">Tottenham</div>
+  <div>2</div>
+  <div>0</div>
+  <div>0</div>
+  <div>2</div>
+  <div>0</div>
+  <div>5</div>
+  <div>-5</div>
+  <div>0</div>
+</div>
 
 </div>
 
@@ -752,483 +978,6 @@ PREMIER LEAGUE
 
 
 </div>
-
-
-
-<script>
-
-
-/* =========================================================
-   LOAD DATA
-   ========================================================= */
-
-async function loadFootballData() {
-
-  try {
-
-    const response =
-
-      await fetch(
-
-        './data/football.json?t='
-        +
-        Date.now()
-
-      );
-
-
-    if (!response.ok) {
-
-      throw new Error(
-        'Unable to load football data'
-      );
-
-    }
-
-
-    const data =
-      await response.json();
-
-
-    renderUpdated(
-      data.updated
-    );
-
-
-    renderFixtures(
-      data.fixtures
-    );
-
-
-    renderStandings(
-      data.standings
-    );
-
-
-    renderSquadWatch(
-      data.squadWatch
-    );
-
-  }
-
-  catch (error) {
-
-    document.body.innerHTML =
-
-      '<div class="error">'
-      +
-      'Unable to load Arsenal dashboard.'
-      +
-      '</div>';
-
-
-    console.error(error);
-
-  }
-
-}
-
-
-/* =========================================================
-   UPDATED TIME
-   ========================================================= */
-
-function renderUpdated(updated) {
-
-  document
-    .getElementById(
-      'updated'
-    )
-    .textContent =
-
-      'Updated '
-      +
-      updated;
-
-}
-
-
-/* =========================================================
-   FIXTURES
-   ========================================================= */
-
-function renderFixtures(fixtures) {
-
-  const container =
-
-    document.getElementById(
-      'fixtures'
-    );
-
-
-  container.innerHTML =
-
-    fixtures
-
-      .slice(
-        0,
-        4
-      )
-
-      .map(
-
-        fixture => {
-
-
-          const home =
-            highlightArsenal(
-              fixture.home
-            );
-
-
-          const away =
-            highlightArsenal(
-              fixture.away
-            );
-
-
-          return `
-
-            <div class="fixture">
-
-
-              <div class="fixture-date">
-
-                ${fixture.date}
-
-              </div>
-
-
-              <div class="fixture-match">
-
-                ${home}
-
-                <br>
-
-                ${away}
-
-              </div>
-
-
-              <div class="fixture-info">
-
-                <div class="fixture-time">
-
-                  ${fixture.time}
-
-                </div>
-
-              </div>
-
-
-            </div>
-
-          `;
-
-        }
-
-      )
-
-      .join('');
-
-}
-
-
-/* =========================================================
-   HIGHLIGHT ARSENAL
-   ========================================================= */
-
-function highlightArsenal(team) {
-
-  if (
-
-    team
-      .toUpperCase()
-      .includes(
-        'ARSENAL'
-      )
-
-  ) {
-
-    return `
-
-      <span class="arsenal">
-
-        ${team}
-
-      </span>
-
-    `;
-
-  }
-
-
-  return team;
-
-}
-
-
-/* =========================================================
-   STANDINGS
-   ========================================================= */
-
-function renderStandings(standings) {
-
-  const container =
-
-    document.getElementById(
-      'standings'
-    );
-
-
-  container.innerHTML =
-
-    standings
-
-      .slice(
-        0,
-        20
-      )
-
-      .map(
-
-        team => {
-
-
-          const arsenal =
-
-            team.team
-              .toLowerCase()
-            ===
-            'arsenal';
-
-
-          return `
-
-            <div
-              class="table-row ${
-                arsenal
-                ?
-                'arsenal-row'
-                :
-                ''
-              }"
-            >
-
-
-              <div>
-
-                ${team.pos}
-
-              </div>
-
-
-              <div class="team">
-
-                ${team.team}
-
-              </div>
-
-
-              <div>
-
-                ${team.played}
-
-              </div>
-
-
-              <div>
-
-                ${team.won ?? 0}
-
-              </div>
-
-
-              <div>
-
-                ${team.draw ?? 0}
-
-              </div>
-
-
-              <div>
-
-                ${team.lost ?? 0}
-
-              </div>
-
-
-              <div>
-
-                ${team.gf ?? 0}
-
-              </div>
-
-
-              <div>
-
-                ${team.ga ?? 0}
-
-              </div>
-
-
-              <div>
-
-                ${formatNumber(
-                  team.gd
-                )}
-
-              </div>
-
-
-              <div>
-
-                ${team.pts}
-
-              </div>
-
-
-            </div>
-
-          `;
-
-        }
-
-      )
-
-      .join('');
-
-}
-
-
-/* =========================================================
-   GOAL DIFFERENCE
-   ========================================================= */
-
-function formatNumber(value) {
-
-  if (value > 0) {
-
-    return '+' + value;
-
-  }
-
-
-  return value;
-
-}
-
-
-/* =========================================================
-   SQUAD WATCH
-   ========================================================= */
-
-function renderSquadWatch(items) {
-
-  const container =
-
-    document.getElementById(
-      'squadWatch'
-    );
-
-
-  const sortedItems =
-
-    [...items]
-
-      .sort(
-
-        (a, b) => {
-
-
-          const priority = {
-
-            INJURY: 1,
-
-            TRANSFER: 2
-
-          };
-
-
-          return (
-
-            priority[a.type]
-            ||
-            99
-
-          )
-
-          -
-
-          (
-
-            priority[b.type]
-            ||
-            99
-
-          );
-
-        }
-
-      )
-
-      .slice(
-        0,
-        4
-      );
-
-
-  container.innerHTML =
-
-    sortedItems
-
-      .map(
-
-        item => `
-
-          <div class="watch-item">
-
-
-            <div class="watch-type">
-
-              ${item.type}
-
-            </div>
-
-
-            <div class="watch-player">
-
-              ${item.player}
-
-            </div>
-
-
-            <div class="watch-status">
-
-              ${item.status}
-
-            </div>
-
-
-          </div>
-
-        `
-
-      )
-
-      .join('');
-
-}
-
-
-/* =========================================================
-   START
-   ========================================================= */
-
-loadFootballData();
-
-
-</script>
 
 
 </body>

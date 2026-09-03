@@ -1,5 +1,5 @@
 {
-  "updated": "03 SEP 15:14 SGT",
+  "updated": "03 SEP 20:39 SGT",
   "fixtures": [
     {
       "date": "06 SEP",
@@ -278,11 +278,6 @@
       "type": "INJURY",
       "player": "William Saliba",
       "status": "Back injury"
-    },
-    {
-      "type": "TRANSFER",
-      "player": "Malick Fofana",
-      "status": "Reported target"
     }
   ]
 }
