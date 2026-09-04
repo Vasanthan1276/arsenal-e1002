@@ -1,5 +1,5 @@
 {
-  "updated": "04 SEP 19:26 SGT",
+  "updated": "05 SEP 00:27 SGT",
   "fixtures": [
     {
       "date": "06 SEP",
@@ -271,18 +271,23 @@
   "squadWatch": [
     {
       "type": "INJURY",
+      "player": "William Saliba",
+      "status": "Back injury"
+    },
+    {
+      "type": "INJURY",
       "player": "Jurriën Timber",
       "status": "Groin injury"
     },
     {
       "type": "INJURY",
-      "player": "William Saliba",
-      "status": "Back injury"
+      "player": "Cristhian Mosquera",
+      "status": "Unspecified injury"
     },
     {
       "type": "TRANSFER",
       "player": "Julian Alvarez",
-      "status": "Talks reported"
+      "status": "Reported target"
     }
   ]
 }
