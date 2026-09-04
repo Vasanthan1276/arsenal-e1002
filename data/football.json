@@ -1,5 +1,5 @@
 {
-  "updated": "05 SEP 00:27 SGT",
+  "updated": "05 SEP 04:49 SGT",
   "fixtures": [
     {
       "date": "06 SEP",
@@ -77,6 +77,18 @@
     },
     {
       "pos": 5,
+      "team": "Liverpool",
+      "played": 3,
+      "won": 1,
+      "draw": 2,
+      "lost": 0,
+      "gf": 6,
+      "ga": 4,
+      "gd": 2,
+      "pts": 5
+    },
+    {
+      "pos": 6,
       "team": "Brentford",
       "played": 2,
       "won": 1,
@@ -88,7 +100,7 @@
       "pts": 4
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "Newcastle",
       "played": 2,
       "won": 1,
@@ -100,7 +112,7 @@
       "pts": 4
     },
     {
-      "pos": 7,
+      "pos": 8,
       "team": "Everton",
       "played": 2,
       "won": 1,
@@ -112,7 +124,7 @@
       "pts": 4
     },
     {
-      "pos": 8,
+      "pos": 9,
       "team": "Leeds",
       "played": 2,
       "won": 1,
@@ -124,7 +136,7 @@
       "pts": 4
     },
     {
-      "pos": 9,
+      "pos": 10,
       "team": "Brighton",
       "played": 2,
       "won": 1,
@@ -136,7 +148,7 @@
       "pts": 3
     },
     {
-      "pos": 10,
+      "pos": 11,
       "team": "Man United",
       "played": 2,
       "won": 1,
@@ -148,7 +160,7 @@
       "pts": 3
     },
     {
-      "pos": 11,
+      "pos": 12,
       "team": "Sunderland",
       "played": 2,
       "won": 1,
@@ -160,28 +172,16 @@
       "pts": 3
     },
     {
-      "pos": 12,
+      "pos": 13,
       "team": "Ipswich",
-      "played": 2,
+      "played": 3,
       "won": 1,
       "draw": 0,
-      "lost": 1,
+      "lost": 2,
       "gf": 4,
-      "ga": 6,
-      "gd": -2,
+      "ga": 8,
+      "gd": -4,
       "pts": 3
-    },
-    {
-      "pos": 13,
-      "team": "Liverpool",
-      "played": 2,
-      "won": 0,
-      "draw": 2,
-      "lost": 0,
-      "gf": 4,
-      "ga": 4,
-      "gd": 0,
-      "pts": 2
     },
     {
       "pos": 14,
