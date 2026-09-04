@@ -1,5 +1,5 @@
 {
-  "updated": "04 SEP 12:41 SGT",
+  "updated": "04 SEP 19:26 SGT",
   "fixtures": [
     {
       "date": "06 SEP",
@@ -282,7 +282,7 @@
     {
       "type": "TRANSFER",
       "player": "Julian Alvarez",
-      "status": "Reported target"
+      "status": "Talks reported"
     }
   ]
 }
