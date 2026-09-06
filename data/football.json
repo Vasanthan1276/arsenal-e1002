@@ -1,5 +1,5 @@
 {
-  "updated": "06 SEP 23:31 SGT",
+  "updated": "07 SEP 02:22 SGT",
   "fixtures": [
     {
       "date": "13 SEP",
@@ -32,6 +32,14 @@
   ],
   "results": [
     {
+      "date": "06 SEP",
+      "home": "ARSENAL",
+      "away": "CHELSEA",
+      "homeScore": 2,
+      "awayScore": 1,
+      "outcome": "W"
+    },
+    {
       "date": "01 SEP",
       "home": "ASTON VILLA",
       "away": "ARSENAL",
@@ -49,6 +57,7 @@
     }
   ],
   "form": [
+    "W",
     "W",
     "W"
   ],
@@ -69,13 +78,13 @@
       "pos": 2,
       "team": "Arsenal",
       "played": 3,
-      "won": 2,
-      "draw": 1,
+      "won": 3,
+      "draw": 0,
       "lost": 0,
-      "gf": 4,
-      "ga": 0,
-      "gd": 4,
-      "pts": 7
+      "gf": 6,
+      "ga": 1,
+      "gd": 5,
+      "pts": 9
     },
     {
       "pos": 3,
@@ -94,12 +103,12 @@
       "team": "Chelsea",
       "played": 3,
       "won": 2,
-      "draw": 1,
-      "lost": 0,
-      "gf": 7,
-      "ga": 5,
-      "gd": 2,
-      "pts": 7
+      "draw": 0,
+      "lost": 1,
+      "gf": 8,
+      "ga": 7,
+      "gd": 1,
+      "pts": 6
     },
     {
       "pos": 5,
@@ -312,7 +321,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Julian Alvarez",
+      "player": "Ethan Nwaneri",
       "status": "Reported target"
     }
   ]
