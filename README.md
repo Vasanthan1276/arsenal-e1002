@@ -354,4 +354,37 @@ These entry IDs are intentionally different from the initial URL-order assumptio
 
 ## SenseCraft HMI compatibility note
 
-The E1002 `index.html` is intentionally generated with conservative, self-contained HTML/CSS for SenseCraft HMI compatibility. It uses a standard `width=device-width` viewport, no JavaScript, no external assets, and avoids newer CSS constructs that may fail in SenseCraft's renderer. A small `sensecraft-test.html` file is included for renderer diagnostics.
+The E1002 `index.html` now deliberately uses the same proven DOM/CSS structure as the earlier Arsenal dashboard that rendered successfully in SenseCraft. The generated file is ASCII-only, uses a standard `width=device-width` viewport, contains no JavaScript or external assets, and keeps the E1002 view focused on Arsenal fixtures, Squad Watch, and the full league table.
+
+Fantasy detail remains available in `ha.html` for Home Assistant. This separation is intentional: it preserves the reliable E1002 renderer while keeping the richer Main FPL / D1 / D2 / C1 experience in Home Assistant.
+
+A small `sensecraft-test.html` file remains included for renderer diagnostics.
+
+
+## E1002 delivery method — static PNG
+
+The E1002 now uses a rendered **800 x 480 PNG** instead of asking SenseCraft's Web renderer to interpret a large HTML/CSS dashboard.
+
+The workflow generates:
+
+- `e1002.png` — the actual E1002 dashboard image
+- `index.html` — a tiny wrapper that displays `e1002.png`
+- `ha.html` — the separate rich Home Assistant dashboard
+
+### Recommended SenseCraft setup
+
+Use **Gallery** and import this public image URL:
+
+`https://vasanthan1276.github.io/arsenal-e1002/e1002.png`
+
+This is the most reliable option for the E1002.
+
+You can also test the tiny Web wrapper:
+
+`https://vasanthan1276.github.io/arsenal-e1002/index.html`
+
+If the Web function remains unreliable, keep using Gallery with the PNG URL.
+
+### Automatic updates
+
+GitHub Actions regenerates `e1002.png` from the same `football.json` and `fantasy.json` data on the normal schedule. No API calls are made by the E1002 itself.
