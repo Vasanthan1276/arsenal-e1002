@@ -1,11 +1,7 @@
-name: Update Arsenal Dashboard
+name: Update Arsenal + Fantasy Hub
 
 on:
-
-  # Manual run
   workflow_dispatch:
-
-  # Run automatically every 2 hours
   schedule:
     - cron: "17 */2 * * *"
 
@@ -13,13 +9,9 @@ permissions:
   contents: write
 
 jobs:
-
   update-dashboard:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -28,31 +20,36 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Update football data
+      - name: Update Arsenal football data
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-        run: |
-          node scripts/update-football.mjs
+        run: node scripts/update-football.mjs
 
-      - name: Update automatic Squad Watch
-        run: |
-          node scripts/update-squad-watch.mjs
+      - name: Update Arsenal Squad Watch
+        continue-on-error: true
+        run: node scripts/update-squad-watch.mjs
 
-      - name: Generate fully static Arsenal dashboard
-        run: |
-          node scripts/render-static-dashboard.mjs
+      - name: Update Fantasy teams
+        continue-on-error: true
+        run: node scripts/update-fantasy.mjs
 
-      - name: Commit updated dashboard
+      - name: Generate E1002 dashboard
+        run: node scripts/render-static-dashboard.mjs
+
+      - name: Generate Home Assistant dashboard
+        run: node scripts/render-home-assistant.mjs
+
+      - name: Commit updated dashboards
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/football.json index.html
+          git add data/football.json data/fantasy.json index.html ha.html
 
           if git diff --cached --quiet
           then
             echo "No dashboard changes to commit."
           else
-            git commit -m "Update static Arsenal dashboard"
+            git commit -m "Update Arsenal and Fantasy dashboards"
             git push
           fi
