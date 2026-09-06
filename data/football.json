@@ -1,13 +1,6 @@
 {
-  "updated": "06 SEP 19:04 SGT",
+  "updated": "06 SEP 23:31 SGT",
   "fixtures": [
-    {
-      "date": "06 SEP",
-      "home": "ARSENAL",
-      "away": "CHELSEA",
-      "time": "23:30 SGT",
-      "utcDate": "2026-09-06T15:30:00Z"
-    },
     {
       "date": "13 SEP",
       "home": "SUNDERLAND",
@@ -28,6 +21,13 @@
       "away": "LEEDS",
       "time": "19:30 SGT",
       "utcDate": "2026-10-10T11:30:00Z"
+    },
+    {
+      "date": "18 OCT",
+      "home": "NOTT'M FOREST",
+      "away": "ARSENAL",
+      "time": "23:30 SGT",
+      "utcDate": "2026-10-18T15:30:00Z"
     }
   ],
   "results": [
@@ -67,6 +67,18 @@
     },
     {
       "pos": 2,
+      "team": "Arsenal",
+      "played": 3,
+      "won": 2,
+      "draw": 1,
+      "lost": 0,
+      "gf": 4,
+      "ga": 0,
+      "gd": 4,
+      "pts": 7
+    },
+    {
+      "pos": 3,
       "team": "Hull City",
       "played": 3,
       "won": 2,
@@ -78,28 +90,16 @@
       "pts": 7
     },
     {
-      "pos": 3,
-      "team": "Arsenal",
-      "played": 2,
-      "won": 2,
-      "draw": 0,
-      "lost": 0,
-      "gf": 4,
-      "ga": 0,
-      "gd": 4,
-      "pts": 6
-    },
-    {
       "pos": 4,
       "team": "Chelsea",
-      "played": 2,
+      "played": 3,
       "won": 2,
-      "draw": 0,
+      "draw": 1,
       "lost": 0,
       "gf": 7,
       "ga": 5,
       "gd": 2,
-      "pts": 6
+      "pts": 7
     },
     {
       "pos": 5,
@@ -139,6 +139,18 @@
     },
     {
       "pos": 8,
+      "team": "Everton",
+      "played": 3,
+      "won": 1,
+      "draw": 2,
+      "lost": 0,
+      "gf": 5,
+      "ga": 3,
+      "gd": 2,
+      "pts": 5
+    },
+    {
+      "pos": 9,
       "team": "Leeds",
       "played": 3,
       "won": 1,
@@ -150,7 +162,7 @@
       "pts": 5
     },
     {
-      "pos": 9,
+      "pos": 10,
       "team": "Brighton",
       "played": 3,
       "won": 1,
@@ -162,19 +174,19 @@
       "pts": 4
     },
     {
-      "pos": 10,
-      "team": "Everton",
-      "played": 2,
+      "pos": 11,
+      "team": "Man United",
+      "played": 3,
       "won": 1,
       "draw": 1,
-      "lost": 0,
-      "gf": 3,
-      "ga": 1,
-      "gd": 2,
+      "lost": 1,
+      "gf": 7,
+      "ga": 6,
+      "gd": 1,
       "pts": 4
     },
     {
-      "pos": 11,
+      "pos": 12,
       "team": "Sunderland",
       "played": 3,
       "won": 1,
@@ -184,18 +196,6 @@
       "ga": 3,
       "gd": 0,
       "pts": 4
-    },
-    {
-      "pos": 12,
-      "team": "Man United",
-      "played": 2,
-      "won": 1,
-      "draw": 0,
-      "lost": 1,
-      "gf": 5,
-      "ga": 4,
-      "gd": 1,
-      "pts": 3
     },
     {
       "pos": 13,
