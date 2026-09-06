@@ -26,11 +26,9 @@ jobs:
         run: node scripts/update-football.mjs
 
       - name: Update Arsenal Squad Watch
-        continue-on-error: true
         run: node scripts/update-squad-watch.mjs
 
       - name: Update Fantasy teams
-        continue-on-error: true
         run: node scripts/update-fantasy.mjs
 
       - name: Generate E1002 dashboard
