@@ -342,3 +342,12 @@ That is expected until a stable Challenge source is configured. The fallback pre
 ---
 
 This repository is intentionally kept dependency-free and static so the same data pipeline can reliably serve a low-power e-paper display and Home Assistant without running another server.
+
+### Configured Draft IDs (Sep 2026)
+
+The verified team mapping is:
+
+- **Golden Eagles D1** — league `66570`, entry `351274`
+- **Golden Eagles D2** — league `66701`, entry `351935`
+
+These entry IDs are intentionally different from the initial URL-order assumption; live squad validation showed the first mapping was reversed. The updater also derives Draft total/rank from the league standings table when the API does not expose the top-level row fields directly.

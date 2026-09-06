@@ -273,6 +273,11 @@ async function updateDraftTeam(cfg, fallback, draftBootstrap, draftLive, gw) {
 
   const row = findDraftStanding(details, entryId);
   const entry = findDraftEntry(details, entryId);
+  const standings = draftStandingRows(details);
+  const ownStanding = standings.find(s =>
+    String(s.name || '').trim().toLowerCase() ===
+    String(cfg.name || '').trim().toLowerCase()
+  ) || null;
   const isH2H = /head-to-head/i.test(cfg.scoring || '');
   const calculatedGw = playerRows
     .filter(p => p.starter)
@@ -288,19 +293,30 @@ async function updateDraftTeam(cfg, fallback, draftBootstrap, draftLive, gw) {
     leagueId,
     entryId,
     gameweek: gw,
-    entryName: entry?.entry_name || fallback.entryName || null,
+    entryName:
+      entry?.entry_name ||
+      ownStanding?.name ||
+      fallback.entryName ||
+      cfg.name ||
+      null,
     gameweekPoints:
       eventData.entry_history?.points ??
       eventData.points ??
       eventData.total_points ??
       (playerRows.length ? calculatedGw : null),
     totalPoints: isH2H
-      ? (row?.points_for ?? row?.total ?? row?.points ?? null)
-      : (row?.total ?? row?.points_for ?? row?.points ?? null),
-    leaguePoints: isH2H ? (row?.total ?? null) : null,
-    leagueRank: row?.rank ?? row?.position ?? null,
+      ? (row?.points_for ?? ownStanding?.points ?? row?.points ?? null)
+      : (row?.total ?? ownStanding?.points ?? row?.points_for ?? row?.points ?? null),
+    leaguePoints: isH2H
+      ? (row?.total ?? ownStanding?.leaguePoints ?? null)
+      : null,
+    leagueRank:
+      row?.rank ??
+      row?.position ??
+      ownStanding?.rank ??
+      null,
     players: playerRows.length ? playerRows : fallback.players,
-    standings: draftStandingRows(details)
+    standings
   };
 }
 
