@@ -20,9 +20,6 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Setup Python image renderer
-        run: python -m pip install --quiet pillow
-
       - name: Update Arsenal football data
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
@@ -34,8 +31,8 @@ jobs:
       - name: Update Fantasy teams
         run: node scripts/update-fantasy.mjs
 
-      - name: Generate E1002 static image
-        run: python scripts/render-e1002-image.py
+      - name: Generate E1002 dashboard
+        run: node scripts/render-static-dashboard.mjs
 
       - name: Generate Home Assistant dashboard
         run: node scripts/render-home-assistant.mjs
@@ -45,7 +42,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/football.json data/fantasy.json e1002.png index.html ha.html
+          git add data/football.json data/fantasy.json index.html ha.html
 
           if git diff --cached --quiet
           then
