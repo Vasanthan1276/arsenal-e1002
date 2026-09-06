@@ -1,123 +1,241 @@
 {
-  "updated": "Fallback squads loaded",
-  "gameweek": null,
+  "updated": "06 SEPT, 17:14 SGT",
+  "gameweek": 3,
   "main": {
     "key": "main",
     "name": "Main FPL",
     "format": "Classic FPL",
-    "source": "fallback",
-    "status": "Fallback squad from 29 Aug handoff; add Main FPL entryId for live points and lineup",
-    "gameweekPoints": null,
-    "totalPoints": null,
-    "overallRank": null,
+    "source": "live",
+    "status": "Live FPL API",
+    "entryId": 6522273,
+    "gameweek": 3,
+    "gameweekPoints": 42,
+    "totalPoints": 208,
+    "overallRank": 618418,
+    "bank": 0,
+    "value": 100.5,
+    "activeChip": "3xc",
     "players": [
       {
-        "name": "Bart Verbruggen",
+        "id": 109,
+        "name": "Verbruggen",
         "position": "GKP",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "BHA",
+        "totalPoints": 9,
+        "gwPoints": 3,
+        "contribution": 3,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Riccardo Calafiori",
+        "id": 8,
+        "name": "Calafiori",
         "position": "DEF",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "ARS",
+        "totalPoints": 20,
+        "gwPoints": 0,
+        "contribution": 0,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Joško Gvardiol",
+        "id": 391,
+        "name": "Gvardiol",
         "position": "DEF",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "MCI",
+        "totalPoints": 22,
+        "gwPoints": 8,
+        "contribution": 8,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Harry Maguire",
+        "id": 418,
+        "name": "Maguire",
         "position": "DEF",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "MUN",
+        "totalPoints": 5,
+        "gwPoints": 0,
+        "contribution": 0,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Bruno Fernandes",
+        "id": 124,
+        "name": "Groß",
         "position": "MID",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "BHA",
+        "totalPoints": 16,
+        "gwPoints": 1,
+        "contribution": 1,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Bryan Mbeumo",
+        "id": 426,
+        "name": "B.Fernandes",
         "position": "MID",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "MUN",
+        "totalPoints": 25,
+        "gwPoints": 0,
+        "contribution": 0,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": true,
+        "multiplier": 1
       },
       {
-        "name": "Florian Wirtz",
+        "id": 427,
+        "name": "Mbeumo",
         "position": "MID",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "MUN",
+        "totalPoints": 13,
+        "gwPoints": 0,
+        "contribution": 0,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Christos Tzolis",
+        "id": 366,
+        "name": "Wirtz",
         "position": "MID",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "LIV",
+        "totalPoints": 9,
+        "gwPoints": 3,
+        "contribution": 3,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Pascal Groß",
+        "id": 557,
+        "name": "Tzolis",
         "position": "MID",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "ARS",
+        "totalPoints": 6,
+        "gwPoints": 0,
+        "contribution": 0,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Erling Haaland",
+        "id": 411,
+        "name": "Haaland",
         "position": "FWD",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "MCI",
+        "totalPoints": 24,
+        "gwPoints": 9,
+        "contribution": 27,
+        "starter": true,
+        "benchOrder": null,
+        "captain": true,
+        "viceCaptain": false,
+        "multiplier": 3
       },
       {
+        "id": 165,
         "name": "João Pedro",
         "position": "FWD",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "CHE",
+        "totalPoints": 20,
+        "gwPoints": 0,
+        "contribution": 0,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
       },
       {
-        "name": "Antonín Kinský",
+        "id": 496,
+        "name": "Kinsky",
         "position": "GKP",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "TOT",
+        "totalPoints": 9,
+        "gwPoints": 6,
+        "contribution": 0,
+        "starter": false,
+        "benchOrder": 1,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 0
       },
       {
-        "name": "Bobby Thomas",
+        "id": 173,
+        "name": "Thomas",
         "position": "DEF",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "COV",
+        "totalPoints": 15,
+        "gwPoints": 4,
+        "contribution": 0,
+        "starter": false,
+        "benchOrder": 2,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 0
       },
       {
-        "name": "Jacob Greaves",
+        "id": 306,
+        "name": "Greaves",
         "position": "DEF",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "IPS",
+        "totalPoints": 2,
+        "gwPoints": 1,
+        "contribution": 0,
+        "starter": false,
+        "benchOrder": 3,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 0
       },
       {
-        "name": "Jonah Kusi-Asare",
+        "id": 272,
+        "name": "Kusi-Asare",
         "position": "FWD",
-        "club": "",
-        "gwPoints": null,
-        "contribution": null
+        "club": "FUL",
+        "totalPoints": 0,
+        "gwPoints": 0,
+        "contribution": 0,
+        "starter": false,
+        "benchOrder": 4,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 0
       }
     ],
-    "leagues": []
+    "leagues": [
+      {
+        "id": 1293885,
+        "name": "FS PSM League",
+        "rank": 1,
+        "lastRank": 1,
+        "type": "x"
+      }
+    ]
   },
   "draft": {
     "d1": {
@@ -125,148 +243,466 @@
       "name": "Golden Eagles D1",
       "format": "FPL Draft",
       "scoring": "Head-to-Head",
-      "source": "fallback",
-      "status": "Fallback squad from 29 Aug handoff; add Draft leagueId + entryId for live points",
-      "gameweekPoints": null,
-      "totalPoints": null,
-      "leagueRank": null,
+      "source": "live",
+      "status": "Live Draft API",
+      "leagueId": 66570,
+      "entryId": 351274,
+      "gameweek": 3,
+      "entryName": "Golden Eagles D1",
+      "gameweekPoints": 27,
+      "totalPoints": 103,
+      "leaguePoints": 3,
+      "leagueRank": 3,
       "players": [
         {
-          "name": "Gianluigi Donnarumma",
-          "position": "GKP"
+          "id": 384,
+          "name": "Donnarumma",
+          "position": "GKP",
+          "club": "MCI",
+          "totalPoints": 10,
+          "gwPoints": 7,
+          "contribution": 7,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Bart Verbruggen",
-          "position": "GKP"
+          "id": 391,
+          "name": "Gvardiol",
+          "position": "DEF",
+          "club": "MCI",
+          "totalPoints": 22,
+          "gwPoints": 8,
+          "contribution": 8,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Marc Guéhi",
-          "position": "DEF"
+          "id": 418,
+          "name": "Maguire",
+          "position": "DEF",
+          "club": "MUN",
+          "totalPoints": 5,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Joško Gvardiol",
-          "position": "DEF"
+          "id": 357,
+          "name": "Frimpong",
+          "position": "DEF",
+          "club": "LIV",
+          "totalPoints": 1,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Jeremie Frimpong",
-          "position": "DEF"
+          "id": 388,
+          "name": "Guéhi",
+          "position": "DEF",
+          "club": "MCI",
+          "totalPoints": 20,
+          "gwPoints": 8,
+          "contribution": 8,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Harry Maguire",
-          "position": "DEF"
+          "id": 154,
+          "name": "Palmer",
+          "position": "MID",
+          "club": "CHE",
+          "totalPoints": 20,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Neco Williams",
-          "position": "DEF"
+          "id": 427,
+          "name": "Mbeumo",
+          "position": "MID",
+          "club": "MUN",
+          "totalPoints": 13,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Cole Palmer",
-          "position": "MID"
+          "id": 398,
+          "name": "Foden",
+          "position": "MID",
+          "club": "MCI",
+          "totalPoints": 11,
+          "gwPoints": 1,
+          "contribution": 1,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Bryan Mbeumo",
-          "position": "MID"
+          "id": 249,
+          "name": "Barry",
+          "position": "FWD",
+          "club": "EVE",
+          "totalPoints": 10,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Phil Foden",
-          "position": "MID"
+          "id": 464,
+          "name": "Wissa",
+          "position": "FWD",
+          "club": "NEW",
+          "totalPoints": 13,
+          "gwPoints": 1,
+          "contribution": 1,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Christos Tzolis",
-          "position": "MID"
+          "id": 569,
+          "name": "Gonzalo",
+          "position": "FWD",
+          "club": "FUL",
+          "totalPoints": 10,
+          "gwPoints": 2,
+          "contribution": 2,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Iliman Ndiaye",
-          "position": "MID"
+          "id": 109,
+          "name": "Verbruggen",
+          "position": "GKP",
+          "club": "BHA",
+          "totalPoints": 9,
+          "gwPoints": 3,
+          "contribution": 3,
+          "starter": false,
+          "benchOrder": 1
         },
         {
-          "name": "Gonzalo García",
-          "position": "FWD"
+          "id": 554,
+          "name": "Tzolis",
+          "position": "MID",
+          "club": "ARS",
+          "totalPoints": 6,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": false,
+          "benchOrder": 2
         },
         {
-          "name": "Jean-Philippe Mateta",
-          "position": "FWD"
+          "id": 237,
+          "name": "Ndiaye",
+          "position": "MID",
+          "club": "MCI",
+          "totalPoints": 16,
+          "gwPoints": 3,
+          "contribution": 3,
+          "starter": false,
+          "benchOrder": 3
         },
         {
-          "name": "Brian Brobbey",
-          "position": "FWD"
+          "id": 469,
+          "name": "N.Williams",
+          "position": "DEF",
+          "club": "NFO",
+          "totalPoints": 15,
+          "gwPoints": 7,
+          "contribution": 7,
+          "starter": false,
+          "benchOrder": 4
         }
       ],
-      "standings": []
+      "standings": [
+        {
+          "rank": 1,
+          "name": "FC Rote Funken 01",
+          "points": 106,
+          "leaguePoints": 6
+        },
+        {
+          "rank": 2,
+          "name": "XabiXI",
+          "points": 113,
+          "leaguePoints": 3
+        },
+        {
+          "rank": 3,
+          "name": "Golden Eagles D1",
+          "points": 103,
+          "leaguePoints": 3
+        },
+        {
+          "rank": 4,
+          "name": "Coldah fc",
+          "points": 95,
+          "leaguePoints": 3
+        },
+        {
+          "rank": 5,
+          "name": "A-ROLE",
+          "points": 88,
+          "leaguePoints": 3
+        },
+        {
+          "rank": 6,
+          "name": "Mr Vệ",
+          "points": 55,
+          "leaguePoints": 3
+        },
+        {
+          "rank": 7,
+          "name": "Danny",
+          "points": 46,
+          "leaguePoints": 3
+        },
+        {
+          "rank": 8,
+          "name": "Selborne FC",
+          "points": 41,
+          "leaguePoints": 0
+        }
+      ]
     },
     "d2": {
       "key": "d2",
       "name": "Golden Eagles D2",
       "format": "FPL Draft",
       "scoring": "Classic",
-      "source": "fallback",
-      "status": "Fallback squad from 29 Aug handoff; add Draft leagueId + entryId for live points",
-      "gameweekPoints": null,
-      "totalPoints": null,
-      "leagueRank": null,
+      "source": "live",
+      "status": "Live Draft API",
+      "leagueId": 66701,
+      "entryId": 351935,
+      "gameweek": 3,
+      "entryName": "Golden Eagles D2",
+      "gameweekPoints": 24,
+      "totalPoints": 159,
+      "leaguePoints": null,
+      "leagueRank": 1,
       "players": [
         {
-          "name": "Dean Henderson",
-          "position": "GKP"
+          "id": 198,
+          "name": "Henderson",
+          "position": "GKP",
+          "club": "CRY",
+          "totalPoints": 5,
+          "gwPoints": 2,
+          "contribution": 2,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "James Trafford",
-          "position": "GKP"
-        },
-        {
-          "name": "Daniel Muñoz",
-          "position": "DEF"
-        },
-        {
-          "name": "Joško Gvardiol",
-          "position": "DEF"
-        },
-        {
+          "id": 499,
           "name": "Pedro Porro",
-          "position": "DEF"
+          "position": "DEF",
+          "club": "TOT",
+          "totalPoints": 8,
+          "gwPoints": 7,
+          "contribution": 7,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Ben White",
-          "position": "DEF"
+          "id": 391,
+          "name": "Gvardiol",
+          "position": "DEF",
+          "club": "MCI",
+          "totalPoints": 22,
+          "gwPoints": 8,
+          "contribution": 8,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Neco Williams",
-          "position": "DEF"
+          "id": 201,
+          "name": "Muñoz",
+          "position": "DEF",
+          "club": "NFO",
+          "totalPoints": 1,
+          "gwPoints": 1,
+          "contribution": 1,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Bruno Fernandes",
-          "position": "MID"
+          "id": 426,
+          "name": "B.Fernandes",
+          "position": "MID",
+          "club": "MUN",
+          "totalPoints": 25,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Florian Wirtz",
-          "position": "MID"
+          "id": 366,
+          "name": "Wirtz",
+          "position": "MID",
+          "club": "LIV",
+          "totalPoints": 9,
+          "gwPoints": 3,
+          "contribution": 3,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Phil Foden",
-          "position": "MID"
+          "id": 398,
+          "name": "Foden",
+          "position": "MID",
+          "club": "MCI",
+          "totalPoints": 11,
+          "gwPoints": 1,
+          "contribution": 1,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Eberechi Eze",
-          "position": "MID"
+          "id": 15,
+          "name": "Ødegaard",
+          "position": "MID",
+          "club": "ARS",
+          "totalPoints": 14,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Martin Ødegaard",
-          "position": "MID"
+          "id": 14,
+          "name": "Eze",
+          "position": "MID",
+          "club": "ARS",
+          "totalPoints": 2,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
+          "id": 165,
           "name": "João Pedro",
-          "position": "FWD"
+          "position": "FWD",
+          "club": "CHE",
+          "totalPoints": 20,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": true,
+          "benchOrder": null
         },
         {
-          "name": "Jean-Philippe Mateta",
-          "position": "FWD"
+          "id": 138,
+          "name": "Kostoulas",
+          "position": "FWD",
+          "club": "BHA",
+          "totalPoints": 8,
+          "gwPoints": 2,
+          "contribution": 2,
+          "starter": true,
+          "benchOrder": null
         },
         {
+          "id": 385,
+          "name": "Trafford",
+          "position": "GKP",
+          "club": "LEE",
+          "totalPoints": 15,
+          "gwPoints": 3,
+          "contribution": 3,
+          "starter": false,
+          "benchOrder": 1
+        },
+        {
+          "id": 79,
           "name": "Evanilson",
-          "position": "FWD"
+          "position": "FWD",
+          "club": "BOU",
+          "totalPoints": 11,
+          "gwPoints": 2,
+          "contribution": 2,
+          "starter": false,
+          "benchOrder": 2
+        },
+        {
+          "id": 10,
+          "name": "White",
+          "position": "DEF",
+          "club": "ARS",
+          "totalPoints": 18,
+          "gwPoints": 0,
+          "contribution": 0,
+          "starter": false,
+          "benchOrder": 3
+        },
+        {
+          "id": 469,
+          "name": "N.Williams",
+          "position": "DEF",
+          "club": "NFO",
+          "totalPoints": 15,
+          "gwPoints": 7,
+          "contribution": 7,
+          "starter": false,
+          "benchOrder": 4
         }
       ],
-      "standings": []
+      "standings": [
+        {
+          "rank": 1,
+          "name": "Golden Eagles D2",
+          "points": 159,
+          "leaguePoints": 159
+        },
+        {
+          "rank": 2,
+          "name": "1MDD",
+          "points": 138,
+          "leaguePoints": 138
+        },
+        {
+          "rank": 3,
+          "name": "Dont stop Baleba-ing",
+          "points": 106,
+          "leaguePoints": 106
+        },
+        {
+          "rank": 4,
+          "name": "Mighty",
+          "points": 102,
+          "leaguePoints": 102
+        },
+        {
+          "rank": 5,
+          "name": "Kubsi FC",
+          "points": 77,
+          "leaguePoints": 77
+        },
+        {
+          "rank": 6,
+          "name": "DontBottleIt",
+          "points": 76,
+          "leaguePoints": 76
+        },
+        {
+          "rank": 7,
+          "name": "y0y0y",
+          "points": 74,
+          "leaguePoints": 74
+        },
+        {
+          "rank": 8,
+          "name": "Dinezine Dizane",
+          "points": 58,
+          "leaguePoints": 58
+        }
+      ]
     }
   },
   "challenge": {
