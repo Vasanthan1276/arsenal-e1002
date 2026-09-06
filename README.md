@@ -311,6 +311,12 @@ node scripts/render-home-assistant.mjs
 - FPL bootstrap data — Arsenal availability information
 - Google News RSS — lightweight Arsenal transfer-watch feed
 
+## September 2026 live-data hardening
+
+The Fantasy updater now accepts both array-shaped Classic FPL live data and object-shaped FPL Draft live data. Main FPL, D1 and D2 are updated independently, so a temporary issue with one source does not discard successful updates from the others. The workflow no longer hides Fantasy updater failures behind `continue-on-error`.
+
+Squad Watch also filters transfer/departure news from FPL availability text so a player who has joined another club is not incorrectly displayed as an Arsenal injury.
+
 ## Troubleshooting
 
 ### E1002 still shows the previous layout
