@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Main FPL",
-    "entryId": null,
+    "entryId": 6522273,
     "leagueIds": []
   },
   "draft": [
@@ -10,16 +10,16 @@
       "name": "Golden Eagles D1",
       "format": "FPL Draft",
       "scoring": "Head-to-Head",
-      "leagueId": null,
-      "entryId": null
+      "leagueId": 66570,
+      "entryId": 351935
     },
     {
       "key": "d2",
       "name": "Golden Eagles D2",
       "format": "FPL Draft",
       "scoring": "Classic",
-      "leagueId": null,
-      "entryId": null
+      "leagueId": 66701,
+      "entryId": 351274
     }
   ],
   "challenge": {
