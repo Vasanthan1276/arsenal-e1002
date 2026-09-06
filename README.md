@@ -351,3 +351,7 @@ The verified team mapping is:
 - **Golden Eagles D2** — league `66701`, entry `351935`
 
 These entry IDs are intentionally different from the initial URL-order assumption; live squad validation showed the first mapping was reversed. The updater also derives Draft total/rank from the league standings table when the API does not expose the top-level row fields directly.
+
+## SenseCraft HMI compatibility note
+
+The E1002 `index.html` is intentionally generated with conservative, self-contained HTML/CSS for SenseCraft HMI compatibility. It uses a standard `width=device-width` viewport, no JavaScript, no external assets, and avoids newer CSS constructs that may fail in SenseCraft's renderer. A small `sensecraft-test.html` file is included for renderer diagnostics.
