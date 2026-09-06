@@ -1,293 +1,39 @@
 {
   "updated": "06 SEP 12:47 SGT",
   "fixtures": [
-    {
-      "date": "06 SEP",
-      "home": "ARSENAL",
-      "away": "CHELSEA",
-      "time": "23:30 SGT"
-    },
-    {
-      "date": "13 SEP",
-      "home": "SUNDERLAND",
-      "away": "ARSENAL",
-      "time": "03:00 SGT"
-    },
-    {
-      "date": "19 SEP",
-      "home": "BRIGHTON",
-      "away": "ARSENAL",
-      "time": "22:00 SGT"
-    },
-    {
-      "date": "10 OCT",
-      "home": "ARSENAL",
-      "away": "LEEDS",
-      "time": "19:30 SGT"
-    }
+    {"date":"06 SEP","home":"ARSENAL","away":"CHELSEA","time":"23:30 SGT"},
+    {"date":"13 SEP","home":"SUNDERLAND","away":"ARSENAL","time":"03:00 SGT"},
+    {"date":"19 SEP","home":"BRIGHTON","away":"ARSENAL","time":"22:00 SGT"},
+    {"date":"10 OCT","home":"ARSENAL","away":"LEEDS","time":"19:30 SGT"}
   ],
+  "results": [],
+  "form": [],
   "standings": [
-    {
-      "pos": 1,
-      "team": "Man City",
-      "played": 3,
-      "won": 3,
-      "draw": 0,
-      "lost": 0,
-      "gf": 7,
-      "ga": 2,
-      "gd": 5,
-      "pts": 9
-    },
-    {
-      "pos": 2,
-      "team": "Hull City",
-      "played": 3,
-      "won": 2,
-      "draw": 1,
-      "lost": 0,
-      "gf": 3,
-      "ga": 0,
-      "gd": 3,
-      "pts": 7
-    },
-    {
-      "pos": 3,
-      "team": "Arsenal",
-      "played": 2,
-      "won": 2,
-      "draw": 0,
-      "lost": 0,
-      "gf": 4,
-      "ga": 0,
-      "gd": 4,
-      "pts": 6
-    },
-    {
-      "pos": 4,
-      "team": "Chelsea",
-      "played": 2,
-      "won": 2,
-      "draw": 0,
-      "lost": 0,
-      "gf": 7,
-      "ga": 5,
-      "gd": 2,
-      "pts": 6
-    },
-    {
-      "pos": 5,
-      "team": "Brentford",
-      "played": 3,
-      "won": 1,
-      "draw": 2,
-      "lost": 0,
-      "gf": 5,
-      "ga": 2,
-      "gd": 3,
-      "pts": 5
-    },
-    {
-      "pos": 6,
-      "team": "Liverpool",
-      "played": 3,
-      "won": 1,
-      "draw": 2,
-      "lost": 0,
-      "gf": 6,
-      "ga": 4,
-      "gd": 2,
-      "pts": 5
-    },
-    {
-      "pos": 6,
-      "team": "Newcastle",
-      "played": 3,
-      "won": 1,
-      "draw": 2,
-      "lost": 0,
-      "gf": 6,
-      "ga": 4,
-      "gd": 2,
-      "pts": 5
-    },
-    {
-      "pos": 8,
-      "team": "Leeds",
-      "played": 3,
-      "won": 1,
-      "draw": 2,
-      "lost": 0,
-      "gf": 3,
-      "ga": 2,
-      "gd": 1,
-      "pts": 5
-    },
-    {
-      "pos": 9,
-      "team": "Brighton",
-      "played": 3,
-      "won": 1,
-      "draw": 1,
-      "lost": 1,
-      "gf": 8,
-      "ga": 5,
-      "gd": 3,
-      "pts": 4
-    },
-    {
-      "pos": 10,
-      "team": "Everton",
-      "played": 2,
-      "won": 1,
-      "draw": 1,
-      "lost": 0,
-      "gf": 3,
-      "ga": 1,
-      "gd": 2,
-      "pts": 4
-    },
-    {
-      "pos": 11,
-      "team": "Sunderland",
-      "played": 3,
-      "won": 1,
-      "draw": 1,
-      "lost": 1,
-      "gf": 3,
-      "ga": 3,
-      "gd": 0,
-      "pts": 4
-    },
-    {
-      "pos": 12,
-      "team": "Man United",
-      "played": 2,
-      "won": 1,
-      "draw": 0,
-      "lost": 1,
-      "gf": 5,
-      "ga": 4,
-      "gd": 1,
-      "pts": 3
-    },
-    {
-      "pos": 13,
-      "team": "Crystal Palace",
-      "played": 3,
-      "won": 1,
-      "draw": 0,
-      "lost": 2,
-      "gf": 4,
-      "ga": 8,
-      "gd": -4,
-      "pts": 3
-    },
-    {
-      "pos": 13,
-      "team": "Ipswich",
-      "played": 3,
-      "won": 1,
-      "draw": 0,
-      "lost": 2,
-      "gf": 4,
-      "ga": 8,
-      "gd": -4,
-      "pts": 3
-    },
-    {
-      "pos": 15,
-      "team": "Bournemouth",
-      "played": 3,
-      "won": 0,
-      "draw": 2,
-      "lost": 1,
-      "gf": 4,
-      "ga": 5,
-      "gd": -1,
-      "pts": 2
-    },
-    {
-      "pos": 16,
-      "team": "Nott'm Forest",
-      "played": 3,
-      "won": 0,
-      "draw": 2,
-      "lost": 1,
-      "gf": 2,
-      "ga": 3,
-      "gd": -1,
-      "pts": 2
-    },
-    {
-      "pos": 17,
-      "team": "Aston Villa",
-      "played": 3,
-      "won": 0,
-      "draw": 1,
-      "lost": 2,
-      "gf": 0,
-      "ga": 5,
-      "gd": -5,
-      "pts": 1
-    },
-    {
-      "pos": 17,
-      "team": "Tottenham",
-      "played": 3,
-      "won": 0,
-      "draw": 1,
-      "lost": 2,
-      "gf": 0,
-      "ga": 5,
-      "gd": -5,
-      "pts": 1
-    },
-    {
-      "pos": 19,
-      "team": "Fulham",
-      "played": 3,
-      "won": 0,
-      "draw": 0,
-      "lost": 3,
-      "gf": 4,
-      "ga": 7,
-      "gd": -3,
-      "pts": 0
-    },
-    {
-      "pos": 20,
-      "team": "Coventry",
-      "played": 3,
-      "won": 0,
-      "draw": 0,
-      "lost": 3,
-      "gf": 0,
-      "ga": 5,
-      "gd": -5,
-      "pts": 0
-    }
+    {"pos":1,"team":"Man City","played":3,"won":3,"draw":0,"lost":0,"gf":7,"ga":2,"gd":5,"pts":9},
+    {"pos":2,"team":"Hull City","played":3,"won":2,"draw":1,"lost":0,"gf":3,"ga":0,"gd":3,"pts":7},
+    {"pos":3,"team":"Arsenal","played":2,"won":2,"draw":0,"lost":0,"gf":4,"ga":0,"gd":4,"pts":6},
+    {"pos":4,"team":"Chelsea","played":2,"won":2,"draw":0,"lost":0,"gf":7,"ga":5,"gd":2,"pts":6},
+    {"pos":5,"team":"Brentford","played":3,"won":1,"draw":2,"lost":0,"gf":5,"ga":2,"gd":3,"pts":5},
+    {"pos":6,"team":"Liverpool","played":3,"won":1,"draw":2,"lost":0,"gf":6,"ga":4,"gd":2,"pts":5},
+    {"pos":6,"team":"Newcastle","played":3,"won":1,"draw":2,"lost":0,"gf":6,"ga":4,"gd":2,"pts":5},
+    {"pos":8,"team":"Leeds","played":3,"won":1,"draw":2,"lost":0,"gf":3,"ga":2,"gd":1,"pts":5},
+    {"pos":9,"team":"Brighton","played":3,"won":1,"draw":1,"lost":1,"gf":8,"ga":5,"gd":3,"pts":4},
+    {"pos":10,"team":"Everton","played":2,"won":1,"draw":1,"lost":0,"gf":3,"ga":1,"gd":2,"pts":4},
+    {"pos":11,"team":"Sunderland","played":3,"won":1,"draw":1,"lost":1,"gf":3,"ga":3,"gd":0,"pts":4},
+    {"pos":12,"team":"Man United","played":2,"won":1,"draw":0,"lost":1,"gf":5,"ga":4,"gd":1,"pts":3},
+    {"pos":13,"team":"Crystal Palace","played":3,"won":1,"draw":0,"lost":2,"gf":4,"ga":8,"gd":-4,"pts":3},
+    {"pos":13,"team":"Ipswich","played":3,"won":1,"draw":0,"lost":2,"gf":4,"ga":8,"gd":-4,"pts":3},
+    {"pos":15,"team":"Bournemouth","played":3,"won":0,"draw":2,"lost":1,"gf":4,"ga":5,"gd":-1,"pts":2},
+    {"pos":16,"team":"Nott'm Forest","played":3,"won":0,"draw":2,"lost":1,"gf":2,"ga":3,"gd":-1,"pts":2},
+    {"pos":17,"team":"Aston Villa","played":3,"won":0,"draw":1,"lost":2,"gf":0,"ga":5,"gd":-5,"pts":1},
+    {"pos":17,"team":"Tottenham","played":3,"won":0,"draw":1,"lost":2,"gf":0,"ga":5,"gd":-5,"pts":1},
+    {"pos":19,"team":"Fulham","played":3,"won":0,"draw":0,"lost":3,"gf":4,"ga":7,"gd":-3,"pts":0},
+    {"pos":20,"team":"Coventry","played":3,"won":0,"draw":0,"lost":3,"gf":0,"ga":5,"gd":-5,"pts":0}
   ],
   "squadWatch": [
-    {
-      "type": "INJURY",
-      "player": "William Saliba",
-      "status": "Back injury"
-    },
-    {
-      "type": "INJURY",
-      "player": "Jurriën Timber",
-      "status": "Groin injury"
-    },
-    {
-      "type": "INJURY",
-      "player": "Cristhian Mosquera",
-      "status": "Unspecified injury"
-    },
-    {
-      "type": "TRANSFER",
-      "player": "Julian Alvarez",
-      "status": "Reported target"
-    }
+    {"type":"INJURY","player":"William Saliba","status":"Back injury"},
+    {"type":"INJURY","player":"Jurriën Timber","status":"Groin injury"},
+    {"type":"INJURY","player":"Cristhian Mosquera","status":"Unspecified injury"},
+    {"type":"TRANSFER","player":"Julian Alvarez","status":"Reported target"}
   ]
 }

@@ -1,0 +1,311 @@
+{
+  "updated": "Fallback squads loaded",
+  "gameweek": null,
+  "main": {
+    "key": "main",
+    "name": "Main FPL",
+    "format": "Classic FPL",
+    "source": "fallback",
+    "status": "Fallback squad from 29 Aug handoff; add Main FPL entryId for live points and lineup",
+    "gameweekPoints": null,
+    "totalPoints": null,
+    "overallRank": null,
+    "players": [
+      {
+        "name": "Bart Verbruggen",
+        "position": "GKP",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Riccardo Calafiori",
+        "position": "DEF",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Joško Gvardiol",
+        "position": "DEF",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Harry Maguire",
+        "position": "DEF",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Bruno Fernandes",
+        "position": "MID",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Bryan Mbeumo",
+        "position": "MID",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Florian Wirtz",
+        "position": "MID",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Christos Tzolis",
+        "position": "MID",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Pascal Groß",
+        "position": "MID",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Erling Haaland",
+        "position": "FWD",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "João Pedro",
+        "position": "FWD",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Antonín Kinský",
+        "position": "GKP",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Bobby Thomas",
+        "position": "DEF",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Jacob Greaves",
+        "position": "DEF",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      },
+      {
+        "name": "Jonah Kusi-Asare",
+        "position": "FWD",
+        "club": "",
+        "gwPoints": null,
+        "contribution": null
+      }
+    ],
+    "leagues": []
+  },
+  "draft": {
+    "d1": {
+      "key": "d1",
+      "name": "Golden Eagles D1",
+      "format": "FPL Draft",
+      "scoring": "Head-to-Head",
+      "source": "fallback",
+      "status": "Fallback squad from 29 Aug handoff; add Draft leagueId + entryId for live points",
+      "gameweekPoints": null,
+      "totalPoints": null,
+      "leagueRank": null,
+      "players": [
+        {
+          "name": "Gianluigi Donnarumma",
+          "position": "GKP"
+        },
+        {
+          "name": "Bart Verbruggen",
+          "position": "GKP"
+        },
+        {
+          "name": "Marc Guéhi",
+          "position": "DEF"
+        },
+        {
+          "name": "Joško Gvardiol",
+          "position": "DEF"
+        },
+        {
+          "name": "Jeremie Frimpong",
+          "position": "DEF"
+        },
+        {
+          "name": "Harry Maguire",
+          "position": "DEF"
+        },
+        {
+          "name": "Neco Williams",
+          "position": "DEF"
+        },
+        {
+          "name": "Cole Palmer",
+          "position": "MID"
+        },
+        {
+          "name": "Bryan Mbeumo",
+          "position": "MID"
+        },
+        {
+          "name": "Phil Foden",
+          "position": "MID"
+        },
+        {
+          "name": "Christos Tzolis",
+          "position": "MID"
+        },
+        {
+          "name": "Iliman Ndiaye",
+          "position": "MID"
+        },
+        {
+          "name": "Gonzalo García",
+          "position": "FWD"
+        },
+        {
+          "name": "Jean-Philippe Mateta",
+          "position": "FWD"
+        },
+        {
+          "name": "Brian Brobbey",
+          "position": "FWD"
+        }
+      ],
+      "standings": []
+    },
+    "d2": {
+      "key": "d2",
+      "name": "Golden Eagles D2",
+      "format": "FPL Draft",
+      "scoring": "Classic",
+      "source": "fallback",
+      "status": "Fallback squad from 29 Aug handoff; add Draft leagueId + entryId for live points",
+      "gameweekPoints": null,
+      "totalPoints": null,
+      "leagueRank": null,
+      "players": [
+        {
+          "name": "Dean Henderson",
+          "position": "GKP"
+        },
+        {
+          "name": "James Trafford",
+          "position": "GKP"
+        },
+        {
+          "name": "Daniel Muñoz",
+          "position": "DEF"
+        },
+        {
+          "name": "Joško Gvardiol",
+          "position": "DEF"
+        },
+        {
+          "name": "Pedro Porro",
+          "position": "DEF"
+        },
+        {
+          "name": "Ben White",
+          "position": "DEF"
+        },
+        {
+          "name": "Neco Williams",
+          "position": "DEF"
+        },
+        {
+          "name": "Bruno Fernandes",
+          "position": "MID"
+        },
+        {
+          "name": "Florian Wirtz",
+          "position": "MID"
+        },
+        {
+          "name": "Phil Foden",
+          "position": "MID"
+        },
+        {
+          "name": "Eberechi Eze",
+          "position": "MID"
+        },
+        {
+          "name": "Martin Ødegaard",
+          "position": "MID"
+        },
+        {
+          "name": "João Pedro",
+          "position": "FWD"
+        },
+        {
+          "name": "Jean-Philippe Mateta",
+          "position": "FWD"
+        },
+        {
+          "name": "Evanilson",
+          "position": "FWD"
+        }
+      ],
+      "standings": []
+    }
+  },
+  "challenge": {
+    "c1": {
+      "key": "c1",
+      "name": "Golden Eagles C1",
+      "format": "FPL Challenge",
+      "source": "fallback",
+      "status": "Fallback: last known GW2 Challenge squad; configure sourceUrl for automatic updates",
+      "gameweekPoints": null,
+      "totalPoints": null,
+      "rank": null,
+      "players": [
+        {
+          "name": "Konstantinos Tzolakis",
+          "position": "GKP"
+        },
+        {
+          "name": "Ferland Mendy",
+          "position": "DEF"
+        },
+        {
+          "name": "Bobby Thomas",
+          "position": "DEF"
+        },
+        {
+          "name": "Lououm Tchaouna",
+          "position": "MID"
+        },
+        {
+          "name": "Oliver McBurnie",
+          "position": "FWD",
+          "captain": true
+        },
+        {
+          "name": "Erling Haaland",
+          "position": "FWD"
+        }
+      ]
+    }
+  }
+}
