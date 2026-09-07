@@ -1,37 +1,123 @@
 # Arsenal E1002 + Home Assistant Fantasy Hub
 
-A single GitHub Pages project that powers both:
+A single GitHub Pages project for:
 
-1. **reTerminal E1002 Arsenal dashboard** — `index.html` (fixed 800×480)
-2. **Home Assistant Arsenal + Fantasy Hub** — `ha.html` (responsive)
+1. **Seeed Studio reTerminal E1002** — direct static `arsenal.bmp`
+2. **Home Assistant** — richer responsive `ha.html`
+3. **Browser / diagnostic preview** — generated `index.html`
 
-The project combines Arsenal fixtures, Premier League standings, recent Arsenal form/results, injury/transfer watch, and four Fantasy teams in one update pipeline.
+The project combines Arsenal fixtures, Premier League standings, recent Arsenal form/results, Squad Watch, and Fantasy Premier League information in one GitHub Actions pipeline.
 
-## Live pages
+---
 
-- E1002: `https://vasanthan1276.github.io/arsenal-e1002/`
-- Home Assistant: `https://vasanthan1276.github.io/arsenal-e1002/ha.html`
+## Production URLs
 
-## What changed
+### E1002 — direct BMP
 
-### E1002 display
+Use this URL in **SenseCraft HMI**:
 
-The old full 20-team spreadsheet-style view has been replaced with a more glanceable 800×480 layout:
+```text
+https://vasanthan1276.github.io/arsenal-e1002/arsenal.bmp
+```
 
-- large **next Arsenal match** hero panel
-- Singapore kickoff time
-- Arsenal recent form / last result
-- next three fixtures
-- compact **Arsenal-focused Premier League table**
-- Arsenal position / points / goal difference
-- Squad Watch for injuries, suspensions and transfers
-- bottom Fantasy strip for Main FPL, D1, D2 and C1 gameweek points
+This is the production E1002 output.
 
-The design uses solid high-contrast colours suited to the E1002 e-paper display rather than gradients, animations or small dense tables.
+Resolution:
+
+```text
+800 × 480
+```
 
 ### Home Assistant
 
-`ha.html` is a responsive Arsenal + Fantasy dashboard with tabs for:
+```text
+https://vasanthan1276.github.io/arsenal-e1002/ha.html
+```
+
+### Browser / diagnostic preview
+
+```text
+https://vasanthan1276.github.io/arsenal-e1002/
+```
+
+or:
+
+```text
+https://vasanthan1276.github.io/arsenal-e1002/index.html
+```
+
+The physical E1002 should use `arsenal.bmp`, not the HTML preview.
+
+---
+
+# BMP-first E1002 architecture
+
+From September 2026 onward, the physical E1002 follows a common static-image standard:
+
+```text
+Football / FPL / news sources
+          ↓
+     GitHub Actions
+          ↓
+    normalized JSON
+          ↓
+ generated 800×480 HTML
+          ↓
+ Playwright screenshot
+          ↓
+     arsenal.bmp
+          ↓
+    SenseCraft HMI
+          ↓
+ reTerminal E1002
+```
+
+The E1002 does not need to:
+
+- call Football-Data.org;
+- call Fantasy Premier League APIs;
+- fetch Google News RSS;
+- execute JavaScript;
+- wait for dynamic rendering;
+- calculate standings or Fantasy data.
+
+All of that work happens before the E1002 wakes.
+
+`index.html` is retained as the deterministic 800×480 render source and browser preview.
+
+`ha.html` remains the separate richer Home Assistant dashboard.
+
+---
+
+# E1002 dashboard content
+
+The 800×480 Arsenal display includes:
+
+- large **next Arsenal match** panel;
+- Singapore kickoff time;
+- recent Arsenal form;
+- latest Arsenal result;
+- next three fixtures;
+- compact Arsenal-focused Premier League table;
+- Arsenal position;
+- Arsenal points;
+- goal difference;
+- Squad Watch for injuries / suspensions / transfer items;
+- Fantasy strip for:
+  - Main FPL
+  - Golden Eagles D1
+  - Golden Eagles D2
+  - Golden Eagles C1
+
+The generated layout uses solid high-contrast colours suitable for the E1002 e-paper display.
+
+---
+
+# Home Assistant dashboard
+
+`ha.html` provides a larger responsive Arsenal + Fantasy dashboard.
+
+Tabs include:
 
 - Overview
 - Main FPL
@@ -39,118 +125,181 @@ The design uses solid high-contrast colours suited to the E1002 e-paper display 
 - Golden Eagles D2
 - Golden Eagles C1
 
-When live IDs are configured it can show:
+Depending on available live data it can show:
 
-- gameweek points
-- total points
-- overall / league rank
-- Main FPL starting XI and bench
-- captain and vice-captain
-- individual player GW points
-- Main FPL leagues
-- Draft squads and Draft standings
+- gameweek points;
+- total points;
+- overall / league rank;
+- Main FPL starting XI and bench;
+- captain and vice-captain;
+- individual player gameweek points;
+- Main FPL leagues;
+- Draft squads;
+- Draft standings.
 
-If IDs are not yet configured, the dashboard continues to show the last known squads instead of failing.
+If a live source is unavailable, fallback / previously generated data can remain available rather than making the whole page unusable.
 
-## Tracked Fantasy teams
+---
 
-### Main FPL
+# Tracked Fantasy teams
 
-Fallback squad:
+## Main FPL
 
-- GKP: Antonín Kinský, Bart Verbruggen
-- DEF: Riccardo Calafiori, Joško Gvardiol, Harry Maguire, Jacob Greaves, Bobby Thomas
-- MID: Bruno Fernandes, Bryan Mbeumo, Florian Wirtz, Christos Tzolis, Pascal Groß
-- FWD: Erling Haaland, João Pedro, Jonah Kusi-Asare
+The Main FPL entry is configured in:
 
-### Golden Eagles D1
+```text
+config/fantasy-config.json
+```
+
+No FPL API key is required for the public read-only FPL endpoints used by this project.
+
+## Golden Eagles D1
 
 - FPL Draft
 - 8-team league
 - Head-to-Head scoring
 
-Fallback squad:
+Verified mapping as of September 2026:
 
-- GKP: Gianluigi Donnarumma, Bart Verbruggen
-- DEF: Marc Guéhi, Joško Gvardiol, Jeremie Frimpong, Harry Maguire, Neco Williams
-- MID: Cole Palmer, Bryan Mbeumo, Phil Foden, Christos Tzolis, Iliman Ndiaye
-- FWD: Gonzalo García, Jean-Philippe Mateta, Brian Brobbey
+```text
+League ID: 66570
+Entry ID:  351274
+```
 
-### Golden Eagles D2
+## Golden Eagles D2
 
 - FPL Draft
 - 8-team league
 - Classic scoring
 
-Fallback squad:
+Verified mapping as of September 2026:
 
-- GKP: Dean Henderson, James Trafford
-- DEF: Daniel Muñoz, Joško Gvardiol, Pedro Porro, Ben White, Neco Williams
-- MID: Bruno Fernandes, Florian Wirtz, Phil Foden, Eberechi Eze, Martin Ødegaard
-- FWD: João Pedro, Jean-Philippe Mateta, Evanilson
+```text
+League ID: 66701
+Entry ID:  351935
+```
 
-### Golden Eagles C1
+## Golden Eagles C1
 
-- Fantasy Premier League Challenge
+Fantasy Premier League Challenge.
 
-The fallback C1 squad is retained until a reliable live Challenge source is configured. C1 is designed to be replaceable each Challenge Gameweek.
+A stable public Challenge API is not assumed. The project can preserve fallback Challenge data until a reliable source is configured.
 
-## Repository structure
+---
+
+# Repository structure
+
+Important files:
 
 ```text
 arsenal-e1002/
+│
 ├── .github/
 │   └── workflows/
 │       └── update-football.yml
+│
 ├── config/
 │   └── fantasy-config.json
+│
 ├── data/
 │   ├── football.json
 │   └── fantasy.json
+│
 ├── home-assistant/
 │   └── webpage-card.yaml
+│
 ├── scripts/
 │   ├── update-football.mjs
 │   ├── update-squad-watch.mjs
 │   ├── update-fantasy.mjs
 │   ├── render-static-dashboard.mjs
-│   └── render-home-assistant.mjs
+│   ├── render-home-assistant.mjs
+│   ├── render-e1002-bmp.mjs
+│   └── png_to_bmp.py
+│
+├── arsenal.bmp
 ├── index.html
 ├── ha.html
 └── README.md
 ```
 
-## Automatic update flow
+Older files such as `e1002.png` or `sensecraft-test.html` may remain for historical or diagnostic purposes, but **`arsenal.bmp` is the production E1002 file**.
 
-GitHub Actions runs every two hours and can also be started manually.
+---
+
+# Automatic update flow
+
+Workflow:
 
 ```text
-Football-Data.org
-        │
-        ├── standings
-        ├── Arsenal fixtures
-        └── Arsenal recent results
-        │
-        ▼
- data/football.json
-        ▲
-        │
-FPL bootstrap + Google News RSS
-        │
-        └── Squad Watch
-
-Fantasy Premier League / Draft APIs
-        │
-        ▼
- data/fantasy.json
-        │
-        ├───────────────┐
-        ▼               ▼
-    index.html        ha.html
-      E1002        Home Assistant
+.github/workflows/update-football.yml
 ```
 
-## Existing GitHub secret
+Workflow name:
+
+```text
+Update Arsenal + Fantasy Hub
+```
+
+Schedule:
+
+```cron
+17 */2 * * *
+```
+
+This provides an update opportunity approximately every two hours.
+
+The workflow can also be run manually:
+
+```text
+GitHub
+→ Actions
+→ Update Arsenal + Fantasy Hub
+→ Run workflow
+```
+
+The workflow performs:
+
+1. update Arsenal football data;
+2. update Squad Watch;
+3. update Fantasy teams;
+4. generate the fixed 800×480 `index.html`;
+5. generate the responsive Home Assistant `ha.html`;
+6. render `index.html` in headless Chromium at exactly 800×480;
+7. capture an 800×480 PNG internally;
+8. convert it to `arsenal.bmp`;
+9. validate that the output is exactly 800×480;
+10. commit the generated data / pages / BMP to the repository.
+
+---
+
+# Data sources
+
+The project uses:
+
+- **Football-Data.org API**
+  - Premier League standings
+  - Arsenal fixtures
+  - Arsenal recent results
+
+- **Fantasy Premier League public API**
+  - Main FPL entry
+  - player / gameweek data
+  - league data
+
+- **Fantasy Premier League Draft endpoints**
+  - Draft entry data
+  - Draft league data
+
+- **FPL bootstrap data**
+  - player availability information
+
+- **Google News RSS**
+  - lightweight Arsenal transfer-watch information
+
+---
+
+# Required GitHub secret
 
 Keep the existing repository secret:
 
@@ -158,11 +307,15 @@ Keep the existing repository secret:
 FOOTBALL_DATA_TOKEN
 ```
 
-This is used by `scripts/update-football.mjs`.
+It is used by:
 
-No FPL API key is required for the public read-only Main FPL endpoints used by this project.
+```text
+scripts/update-football.mjs
+```
 
-## Configure live Fantasy data
+---
+
+# Configure live Fantasy data
 
 Edit:
 
@@ -170,9 +323,9 @@ Edit:
 config/fantasy-config.json
 ```
 
-### Main FPL
+## Main FPL
 
-Replace `null` with your numeric FPL entry ID:
+Example:
 
 ```json
 "main": {
@@ -182,17 +335,19 @@ Replace `null` with your numeric FPL entry ID:
 }
 ```
 
-The entry ID is the number in a URL similar to:
+The entry ID is the number in a URL such as:
 
 ```text
 https://fantasy.premierleague.com/entry/1234567/event/3
 ```
 
-`leagueIds` is optional. If left empty, the updater shows up to six non-system leagues returned by the entry profile. If you only want particular mini-leagues, enter their numeric league IDs.
+If `leagueIds` is empty, the updater can use leagues returned from the entry profile.
 
-### Golden Eagles D1 / D2
+## Draft D1 / D2
 
-For each Draft league enter both the **league ID** and **entry ID**:
+Each Draft team needs the correct league ID and entry ID.
+
+Example:
 
 ```json
 {
@@ -200,191 +355,191 @@ For each Draft league enter both the **league ID** and **entry ID**:
   "name": "Golden Eagles D1",
   "format": "FPL Draft",
   "scoring": "Head-to-Head",
-  "leagueId": 12345,
-  "entryId": 67890
+  "leagueId": 66570,
+  "entryId": 351274
 }
 ```
 
-A Draft league ID can be found in the network request:
+D1 and D2 are independent and must use their own verified IDs.
 
-```text
-/api/league/12345/details
-```
+---
 
-The Draft entry ID is visible in the Draft Points page URL / API request containing:
+# Home Assistant setup
 
-```text
-/api/entry/67890/event/<GW>
-```
+The easiest method is a Home Assistant **Webpage** card.
 
-D1 and D2 are independent, so use the correct league ID and entry ID for each.
-
-### Golden Eagles C1
-
-A stable public Challenge API has not been assumed. The current known C1 squad remains available as fallback.
-
-If you later have a JSON endpoint that returns C1 fields, set:
-
-```json
-"sourceUrl": "https://example.com/c1.json"
-```
-
-The updater merges that JSON into the C1 record.
-
-## Home Assistant setup — no configuration.yaml required
-
-The easiest setup is a **Webpage / iframe card**.
-
-### Through the Home Assistant UI
-
-1. Open your Home Assistant dashboard.
-2. Select **Edit dashboard**.
-3. Select **Add card**.
-4. Choose **Webpage**.
-5. Use this URL:
+Use:
 
 ```text
 https://vasanthan1276.github.io/arsenal-e1002/ha.html
 ```
 
-6. Give it a large vertical height so the dashboard has room to scroll.
-
-A YAML example is also included at:
-
-```text
-home-assistant/webpage-card.yaml
-```
-
-## E1002 setup
-
-Continue using the root GitHub Pages URL:
-
-```text
-https://vasanthan1276.github.io/arsenal-e1002/
-```
-
-The root `index.html` remains fixed at exactly **800×480** for the E1002.
-
-## Running manually in GitHub
-
-Go to:
-
-```text
-Actions → Update Arsenal + Fantasy Hub → Run workflow
-```
-
-This performs all updates in one run:
-
-1. update Arsenal football data
-2. update Squad Watch
-3. update Fantasy data
-4. rebuild E1002 page
-5. rebuild Home Assistant page
-6. commit generated JSON / HTML changes
-
-Fantasy and Squad Watch are intentionally non-blocking. If an external source is temporarily unavailable, the main Arsenal page still rebuilds and the previous Fantasy / Squad Watch data remains usable.
-
-## Local rendering
-
-No npm packages are required. Node.js 22 is enough.
-
-```bash
-node scripts/render-static-dashboard.mjs
-node scripts/render-home-assistant.mjs
-```
-
-To fetch live data as well:
-
-```bash
-FOOTBALL_DATA_TOKEN=your_token node scripts/update-football.mjs
-node scripts/update-squad-watch.mjs
-node scripts/update-fantasy.mjs
-node scripts/render-static-dashboard.mjs
-node scripts/render-home-assistant.mjs
-```
-
-## Data sources
-
-- Football-Data.org API — Premier League table, Arsenal fixtures and results
-- Fantasy Premier League public API — Main FPL player, entry, gameweek and league data
-- Fantasy Premier League Draft endpoints — Draft entry / league data
-- FPL bootstrap data — Arsenal availability information
-- Google News RSS — lightweight Arsenal transfer-watch feed
-
-## September 2026 live-data hardening
-
-The Fantasy updater now accepts both array-shaped Classic FPL live data and object-shaped FPL Draft live data. Main FPL, D1 and D2 are updated independently, so a temporary issue with one source does not discard successful updates from the others. The workflow no longer hides Fantasy updater failures behind `continue-on-error`.
-
-Squad Watch also filters transfer/departure news from FPL availability text so a player who has joined another club is not incorrectly displayed as an Arsenal injury.
-
-## Troubleshooting
-
-### E1002 still shows the previous layout
-
-Check that GitHub Actions completed and GitHub Pages has deployed the new `index.html`. Then refresh / republish the E1002 page if necessary.
-
-### Home Assistant shows an old page
-
-Reload the iframe card or refresh the Home Assistant client. The GitHub Pages HTML itself is regenerated by the workflow.
-
-### Fantasy points show `—`
-
-The fallback squad is active. Add the correct numeric IDs to `config/fantasy-config.json` and manually run the workflow once.
-
-### Draft squad is not updating
-
-Confirm both `leagueId` and `entryId` are from the correct Draft league. D1 and D2 must not share IDs unless they genuinely point to the same league / entry.
-
-### C1 does not update automatically
-
-That is expected until a stable Challenge source is configured. The fallback preserves the last known Challenge squad.
+No `configuration.yaml` change is required for the webpage-card approach.
 
 ---
 
-This repository is intentionally kept dependency-free and static so the same data pipeline can reliably serve a low-power e-paper display and Home Assistant without running another server.
+# SenseCraft HMI setup
 
-### Configured Draft IDs (Sep 2026)
+For the physical E1002 use:
 
-The verified team mapping is:
+```text
+https://vasanthan1276.github.io/arsenal-e1002/arsenal.bmp
+```
 
-- **Golden Eagles D1** — league `66570`, entry `351274`
-- **Golden Eagles D2** — league `66701`, entry `351935`
+Target dimensions:
 
-These entry IDs are intentionally different from the initial URL-order assumption; live squad validation showed the first mapping was reversed. The updater also derives Draft total/rank from the league standings table when the API does not expose the top-level row fields directly.
+```text
+Width:  800
+Height: 480
+```
 
-## SenseCraft HMI compatibility note
+The E1002 should no longer use the root `index.html` as its normal production source.
 
-The E1002 `index.html` now deliberately uses the same proven DOM/CSS structure as the earlier Arsenal dashboard that rendered successfully in SenseCraft. The generated file is ASCII-only, uses a standard `width=device-width` viewport, contains no JavaScript or external assets, and keeps the E1002 view focused on Arsenal fixtures, Squad Watch, and the full league table.
+## Important crop / copied-page note
 
-Fantasy detail remains available in `ha.html` for Home Assistant. This separation is intentional: it preserves the reliable E1002 renderer while keeping the richer Main FPL / D1 / D2 / C1 experience in Home Assistant.
+When changing an existing SenseCraft page from HTML or PNG to a direct BMP, old crop / scale / position settings may remain associated with a copied page.
 
-A small `sensecraft-test.html` file remains included for renderer diagnostics.
+If the BMP preview shows:
 
+- a large black area;
+- only part of the dashboard;
+- the dashboard shifted vertically;
+- unexpected zoom or crop;
 
-## E1002 delivery method — static PNG
+first test the BMP in a **brand-new SenseCraft page** with no inherited crop/zoom settings.
 
-The E1002 now uses a rendered **800 x 480 PNG** instead of asking SenseCraft's Web renderer to interpret a large HTML/CSS dashboard.
+Do not modify the GitHub renderer only to compensate for stale SenseCraft crop settings unless the BMP itself is also wrong when opened directly in a browser.
 
-The workflow generates:
+---
 
-- `e1002.png` — the actual E1002 dashboard image
-- `index.html` — a tiny wrapper that displays `e1002.png`
-- `ha.html` — the separate rich Home Assistant dashboard
+# BMP generation validation
 
-### Recommended SenseCraft setup
+`scripts/render-e1002-bmp.mjs` renders the generated `index.html` in Chromium using:
 
-Use **Gallery** and import this public image URL:
+```text
+Viewport: 800 × 480
+Device scale factor: 1
+```
 
-`https://vasanthan1276.github.io/arsenal-e1002/e1002.png`
+Before taking the screenshot it validates that the rendered document has not exceeded the 800×480 E1002 canvas.
 
-This is the most reliable option for the E1002.
+`scripts/png_to_bmp.py` then checks the intermediate screenshot dimensions again before saving:
 
-You can also test the tiny Web wrapper:
+```text
+arsenal.bmp
+```
 
-`https://vasanthan1276.github.io/arsenal-e1002/index.html`
+The BMP is RGB and exactly 800×480.
 
-If the Web function remains unreliable, keep using Gallery with the PNG URL.
+---
 
-### Automatic updates
+# Troubleshooting
 
-GitHub Actions regenerates `e1002.png` from the same `football.json` and `fantasy.json` data on the normal schedule. No API calls are made by the E1002 itself.
+## `arsenal.bmp` does not exist
+
+Run:
+
+```text
+Actions
+→ Update Arsenal + Fantasy Hub
+→ Run workflow
+```
+
+Confirm these workflow steps succeed:
+
+```text
+Install E1002 render dependencies
+Generate static E1002 HTML source
+Render direct E1002 BMP
+Commit updated dashboards
+```
+
+## GitHub Action fails during Chromium installation
+
+Check the log for:
+
+```text
+Install E1002 render dependencies
+```
+
+The workflow installs Playwright and Chromium on the GitHub runner.
+
+## `arsenal.bmp` is the wrong size
+
+The workflow should fail rather than commit an incorrectly sized BMP.
+
+Expected size:
+
+```text
+800 × 480
+```
+
+## SenseCraft shows an old image
+
+1. open the BMP URL directly in a browser;
+2. verify GitHub Pages has deployed the latest commit;
+3. reopen or refresh the SenseCraft page;
+4. republish if necessary.
+
+## SenseCraft crops the BMP
+
+Create a new clean SenseCraft page and use the direct BMP URL without inherited crop / zoom settings.
+
+## Home Assistant shows an old dashboard
+
+Refresh the Home Assistant webpage card / client.
+
+The Home Assistant page remains:
+
+```text
+https://vasanthan1276.github.io/arsenal-e1002/ha.html
+```
+
+## Fantasy points show `—`
+
+Check:
+
+```text
+config/fantasy-config.json
+```
+
+and confirm the configured entry / league IDs are correct.
+
+## C1 does not update automatically
+
+This can be expected until a reliable FPL Challenge source is configured.
+
+---
+
+# September 2026 architecture standard
+
+The Arsenal project now follows the same preferred physical-E1002 delivery model as the F1 and calendar projects:
+
+```text
+External data
+    ↓
+GitHub Actions
+    ↓
+Pre-rendered 800×480 BMP
+    ↓
+SenseCraft HMI
+    ↓
+E1002
+```
+
+This keeps API work and rendering off the battery-powered E1002 and provides a consistent page-delivery method across the project.
+
+---
+
+# Current production links
+
+```text
+Arsenal E1002:
+https://vasanthan1276.github.io/arsenal-e1002/arsenal.bmp
+
+Arsenal browser preview:
+https://vasanthan1276.github.io/arsenal-e1002/
+
+Home Assistant:
+https://vasanthan1276.github.io/arsenal-e1002/ha.html
+```
