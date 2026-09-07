@@ -110,11 +110,25 @@ async function renderPageToPng(browser, baseUrl, outputPath) {
     if (document.fonts?.ready) {
       await document.fonts.ready;
     }
+
+    document.documentElement.style.margin = "0";
+    document.documentElement.style.padding = "0";
+    document.documentElement.style.width = "800px";
+    document.documentElement.style.height = "480px";
+    document.documentElement.style.overflow = "hidden";
+
+    document.body.style.margin = "0";
+    document.body.style.padding = "0";
+    document.body.style.width = "800px";
+    document.body.style.height = "480px";
+    document.body.style.overflow = "hidden";
   });
 
   await page.waitForTimeout(500);
 
   const dimensions = await page.evaluate(() => ({
+    viewportWidth: window.innerWidth,
+    viewportHeight: window.innerHeight,
     htmlWidth: document.documentElement.scrollWidth,
     htmlHeight: document.documentElement.scrollHeight,
     bodyWidth: document.body.scrollWidth,
@@ -124,20 +138,23 @@ async function renderPageToPng(browser, baseUrl, outputPath) {
   console.log("Rendered dimensions:", dimensions);
 
   if (
-    dimensions.htmlWidth > 800 ||
-    dimensions.htmlHeight > 480 ||
-    dimensions.bodyWidth > 800 ||
-    dimensions.bodyHeight > 480
+    dimensions.viewportWidth !== 800 ||
+    dimensions.viewportHeight !== 480
   ) {
     throw new Error(
-      `E1002 dashboard exceeds 800x480: ${JSON.stringify(dimensions)}`
+      `Unexpected Chromium viewport: ${JSON.stringify(dimensions)}`
     );
   }
 
   await page.screenshot({
     path: outputPath,
     type: "png",
-    fullPage: false
+    clip: {
+      x: 0,
+      y: 0,
+      width: 800,
+      height: 480
+    }
   });
 
   await page.close();
