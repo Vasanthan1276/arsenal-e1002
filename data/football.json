@@ -1,5 +1,5 @@
 {
-  "updated": "07 SEP 20:44 SGT",
+  "updated": "08 SEP 02:46 SGT",
   "fixtures": [
     {
       "date": "13 SEP",
@@ -317,11 +317,11 @@
     {
       "type": "INJURY",
       "player": "Cristhian Mosquera",
-      "status": "Unspecified injury"
+      "status": "Muscular injury"
     },
     {
       "type": "TRANSFER",
-      "player": "Ethan Nwaneri",
+      "player": "Julian Alvarez",
       "status": "Reported target"
     }
   ]
