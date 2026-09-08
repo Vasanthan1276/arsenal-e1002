@@ -26,14 +26,14 @@
       display: block;
 
       /*
-       * 72% visual scale.
-       * Width is increased so that after scaling
-       * the dashboard still fills the HA panel.
+       * 90% visual scale.
+       * Width/height are expanded so that after scaling,
+       * the dashboard still fills the Home Assistant panel.
        */
-      width: 138.89%;
-      height: 138.89%;
+      width: 111.11%;
+      height: 111.11%;
 
-      transform: scale(0.72);
+      transform: scale(0.90);
       transform-origin: top left;
 
       background: #f3f4f6;
@@ -68,8 +68,8 @@
 
         /*
          * Compact the original dashboard slightly.
-         * We reduce wasted vertical space rather than
-         * shrinking everything aggressively.
+         * This reduces vertical space while keeping
+         * the page readable inside Home Assistant.
          */
 
         const style = doc.createElement("style");
@@ -86,7 +86,9 @@
           }
 
 
-          /* HEADER */
+          /* ======================================================
+             HEADER
+             ====================================================== */
 
           .hero {
             padding: 10px 15px !important;
@@ -112,7 +114,9 @@
           }
 
 
-          /* TAB BUTTONS */
+          /* ======================================================
+             TOP TAB BUTTONS
+             ====================================================== */
 
           .tabs {
             padding: 6px 0 !important;
@@ -125,7 +129,9 @@
           }
 
 
-          /* OVERVIEW GRID */
+          /* ======================================================
+             MAIN OVERVIEW GRID
+             ====================================================== */
 
           .overview-grid {
             gap: 9px !important;
@@ -138,7 +144,9 @@
           }
 
 
-          /* HEADINGS */
+          /* ======================================================
+             HEADINGS
+             ====================================================== */
 
           .card h2 {
             font-size: 18px !important;
@@ -151,7 +159,9 @@
           }
 
 
-          /* ARSENAL SUMMARY */
+          /* ======================================================
+             ARSENAL SUMMARY
+             ====================================================== */
 
           .arsenal-big {
             margin-top: 9px !important;
@@ -181,7 +191,9 @@
           }
 
 
-          /* FIXTURES / INJURIES */
+          /* ======================================================
+             FIXTURES / SQUAD WATCH / TABLE ROWS
+             ====================================================== */
 
           .fixture,
           .watch,
@@ -202,7 +214,9 @@
           }
 
 
-          /* FPL CARDS */
+          /* ======================================================
+             FANTASY TEAM CARDS
+             ====================================================== */
 
           .fantasy-grid {
             gap: 9px !important;
@@ -235,7 +249,9 @@
           }
 
 
-          /* PREMIER LEAGUE TABLE */
+          /* ======================================================
+             PREMIER LEAGUE TABLE
+             ====================================================== */
 
           .pl-head {
             padding: 4px 0 !important;
@@ -246,7 +262,9 @@
           }
 
 
-          /* SNAPSHOT */
+          /* ======================================================
+             FANTASY SNAPSHOT
+             ====================================================== */
 
           .snapshot-grid {
             gap: 6px !important;
@@ -273,6 +291,52 @@
           .freshness-strip {
             margin-top: 5px !important;
             padding-top: 5px !important;
+          }
+
+
+          /* ======================================================
+             DETAIL TABS
+             ====================================================== */
+
+          .tab-panel {
+            padding: 10px !important;
+            border-radius: 11px !important;
+          }
+
+          .detail-title h2 {
+            font-size: 18px !important;
+            margin: 2px 0 8px !important;
+          }
+
+          .detail-metrics {
+            gap: 6px !important;
+            margin-bottom: 8px !important;
+          }
+
+          .detail-metrics b {
+            font-size: 22px !important;
+          }
+
+          .extras {
+            gap: 6px !important;
+            margin-bottom: 10px !important;
+          }
+
+          .extras > div {
+            padding: 7px !important;
+          }
+
+          .detail-grid {
+            gap: 12px !important;
+          }
+
+          .player-head,
+          .player-row {
+            font-size: 10px !important;
+          }
+
+          .mini-table > div {
+            font-size: 10px !important;
           }
 
         `;
