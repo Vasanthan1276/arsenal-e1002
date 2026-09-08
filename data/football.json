@@ -1,5 +1,5 @@
 {
-  "updated": "08 SEP 06:52 SGT",
+  "updated": "08 SEP 12:47 SGT",
   "fixtures": [
     {
       "date": "13 SEP",
@@ -318,11 +318,6 @@
       "type": "INJURY",
       "player": "Cristhian Mosquera",
       "status": "Muscular injury"
-    },
-    {
-      "type": "TRANSFER",
-      "player": "Julian Alvarez",
-      "status": "Reported target"
     }
   ]
 }
