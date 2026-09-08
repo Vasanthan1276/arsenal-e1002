@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Arsenal + Fantasy Hub - Home Assistant Compact</title>
+  <title>Arsenal + Fantasy Hub - Home Assistant</title>
 
   <style>
     html,
@@ -16,19 +16,26 @@
     }
 
     #stage {
-      position: relative;
       width: 100%;
       height: 100%;
       overflow: hidden;
     }
 
     #hub {
-      position: absolute;
-      inset: 0 auto auto 0;
-      width: 100%;
-      height: 100%;
       border: 0;
+      display: block;
+
+      /*
+       * 72% visual scale.
+       * Width is increased so that after scaling
+       * the dashboard still fills the HA panel.
+       */
+      width: 138.89%;
+      height: 138.89%;
+
+      transform: scale(0.72);
       transform-origin: top left;
+
       background: #f3f4f6;
     }
   </style>
@@ -37,508 +44,253 @@
 <body>
 
   <div id="stage">
+
     <iframe
       id="hub"
       src="./ha.html"
       title="Arsenal + Fantasy Hub">
     </iframe>
+
   </div>
 
   <script>
+
     const hub = document.getElementById("hub");
-    const stage = document.getElementById("stage");
 
-    function injectCompactStyles() {
-      const doc = hub.contentDocument;
-
-      if (!doc || doc.getElementById("ha-compact-overrides")) {
-        return;
-      }
-
-      const style = doc.createElement("style");
-
-      style.id = "ha-compact-overrides";
-
-      style.textContent = `
-
-        html,
-        body {
-          min-height: 0 !important;
-        }
-
-        body {
-          font-size: 12px !important;
-        }
-
-        .shell {
-          max-width: none !important;
-          padding: 7px 9px !important;
-        }
-
-
-        /* =========================================================
-           HEADER
-           ========================================================= */
-
-        .hero {
-          padding: 8px 13px !important;
-          border-radius: 11px !important;
-          gap: 10px !important;
-          box-shadow: 0 3px 10px #0002 !important;
-        }
-
-        .hero h1 {
-          font-size: 22px !important;
-        }
-
-        .hero p {
-          margin: 1px 0 0 !important;
-          font-size: 11px !important;
-        }
-
-        .hero .next b {
-          font-size: 16px !important;
-        }
-
-        .hero .next small,
-        .hero .next span {
-          font-size: 9px !important;
-        }
-
-
-        /* =========================================================
-           TOP NAVIGATION
-           ========================================================= */
-
-        .tabs {
-          padding: 5px 0 !important;
-          gap: 5px !important;
-        }
-
-        .tab-btn {
-          padding: 5px 10px !important;
-          font-size: 11px !important;
-        }
-
-
-        /* =========================================================
-           MAIN OVERVIEW
-           ========================================================= */
-
-        .overview-grid {
-          gap: 7px !important;
-        }
-
-        .card,
-        .team-card {
-          padding: 8px !important;
-          border-radius: 10px !important;
-          box-shadow: 0 2px 7px #0001 !important;
-        }
-
-        .card h2,
-        .card h3 {
-          margin: 0 0 5px !important;
-        }
-
-        .card h2 {
-          font-size: 16px !important;
-        }
-
-        .team-card h3 {
-          margin: 1px 0 5px !important;
-          font-size: 14px !important;
-        }
-
-        .section-sub {
-          margin: -2px 0 5px !important;
-          font-size: 8px !important;
-        }
-
-
-        /* =========================================================
-           ARSENAL SUMMARY
-           ========================================================= */
-
-        .arsenal-big {
-          gap: 4px !important;
-          margin-top: 6px !important;
-        }
-
-        .arsenal-big div,
-        .metrics div,
-        .detail-metrics div {
-          padding: 5px !important;
-          border-radius: 7px !important;
-        }
-
-        .arsenal-big b {
-          font-size: 19px !important;
-        }
-
-        .arsenal-big span,
-        .metrics span,
-        .detail-metrics span {
-          font-size: 8px !important;
-        }
-
-        .form {
-          width: 20px !important;
-          height: 20px !important;
-          border-radius: 5px !important;
-          margin-right: 3px !important;
-          font-size: 11px !important;
-        }
-
-
-        /* =========================================================
-           FIXTURES / WATCH / TABLE ROWS
-           ========================================================= */
-
-        .fixture,
-        .watch,
-        .pl-row,
-        .player-row,
-        .player-head,
-        .mini-table > div {
-          min-height: 24px !important;
-          gap: 4px !important;
-        }
-
-        .fixture {
-          grid-template-columns: 55px 1fr 72px !important;
-          font-size: 10px !important;
-        }
-
-        .watch {
-          grid-template-columns:
-            54px
-            minmax(74px, .85fr)
-            minmax(92px, 1.35fr) !important;
-
-          gap: 4px !important;
-        }
-
-        .watch b,
-        .watch > span:last-child {
-          font-size: 8px !important;
-        }
-
-        .watch-type {
-          font-size: 7px !important;
-          padding: 2px 4px !important;
-        }
-
-
-        /* =========================================================
-           FANTASY TEAM CARDS
-           ========================================================= */
-
-        .fantasy-grid {
-          gap: 7px !important;
-        }
-
-        .team-card-top {
-          gap: 5px !important;
-        }
-
-        .team-card small,
-        .detail-title small {
-          font-size: 8px !important;
-        }
-
-        .badge {
-          font-size: 7px !important;
-          padding: 2px 5px !important;
-        }
-
-        .metrics {
-          gap: 4px !important;
-        }
-
-        .metrics b {
-          font-size: 16px !important;
-        }
-
-        .team-highlight {
-          margin-top: 4px !important;
-          padding: 3px 5px !important;
-          border-radius: 6px !important;
-        }
-
-        .team-highlight span {
-          font-size: 7px !important;
-        }
-
-        .team-highlight b {
-          font-size: 8px !important;
-        }
-
-        .team-card p {
-          font-size: 8px !important;
-          margin: 3px 0 0 !important;
-        }
-
-
-        /* =========================================================
-           PREMIER LEAGUE TABLE
-           ========================================================= */
-
-        .pl-head {
-          padding: 3px 0 !important;
-          font-size: 8px !important;
-        }
-
-        .pl-row {
-          padding: 0 2px !important;
-          font-size: 10px !important;
-        }
-
-
-        /* =========================================================
-           FANTASY SNAPSHOT
-           ========================================================= */
-
-        .snapshot-grid {
-          gap: 4px !important;
-        }
-
-        .snapshot-grid > div {
-          padding: 5px !important;
-          border-radius: 7px !important;
-        }
-
-        .snapshot-grid small,
-        .snapshot-insights small {
-          font-size: 7px !important;
-        }
-
-        .snapshot-grid b {
-          font-size: 16px !important;
-          margin: 1px 0 !important;
-        }
-
-        .snapshot-grid span {
-          font-size: 8px !important;
-        }
-
-        .snapshot-insights {
-          gap: 4px !important;
-          margin-top: 5px !important;
-        }
-
-        .snapshot-insights > div {
-          padding: 5px !important;
-          min-height: 48px !important;
-          border-radius: 7px !important;
-        }
-
-        .insight-main {
-          margin: 2px 0 3px !important;
-        }
-
-        .insight-main b {
-          font-size: 12px !important;
-        }
-
-        .insight-main strong {
-          font-size: 8px !important;
-        }
-
-        .snapshot-insights span {
-          font-size: 8px !important;
-        }
-
-        .freshness-strip {
-          margin-top: 4px !important;
-          padding-top: 4px !important;
-          gap: 5px !important;
-          font-size: 7px !important;
-        }
-
-
-        /* =========================================================
-           TEAM DETAIL TABS
-           ========================================================= */
-
-        .tab-panel {
-          padding: 8px !important;
-          border-radius: 10px !important;
-        }
-
-        .detail-title h2 {
-          margin: 1px 0 5px !important;
-          font-size: 16px !important;
-        }
-
-        .detail-metrics {
-          gap: 5px !important;
-          margin-bottom: 5px !important;
-        }
-
-        .detail-metrics b {
-          font-size: 18px !important;
-        }
-
-        .extras {
-          gap: 4px !important;
-          margin-bottom: 6px !important;
-        }
-
-        .extras > div {
-          padding: 5px !important;
-          border-radius: 6px !important;
-        }
-
-        .detail-grid {
-          gap: 8px !important;
-        }
-
-        .player-head,
-        .player-row {
-          padding: 0 4px !important;
-          font-size: 9px !important;
-        }
-
-        .mini-table > div {
-          padding: 0 4px !important;
-          font-size: 9px !important;
-        }
-
-      `;
-
-      doc.head.appendChild(style);
-    }
-
-
-    function fitPage() {
+    hub.addEventListener("load", () => {
 
       try {
 
         const doc = hub.contentDocument;
 
-        if (!doc) {
-          return;
-        }
-
-        injectCompactStyles();
+        if (!doc) return;
 
 
         /*
-         * First render at the full Home Assistant panel width.
+         * Compact the original dashboard slightly.
+         * We reduce wasted vertical space rather than
+         * shrinking everything aggressively.
          */
 
-        hub.style.transform = "none";
+        const style = doc.createElement("style");
 
-        hub.style.width =
-          stage.clientWidth + "px";
+        style.textContent = `
 
-        hub.style.height =
-          "2000px";
+          body {
+            font-size: 13px !important;
+          }
 
-
-        requestAnimationFrame(() => {
-
-          const naturalHeight = Math.max(
-            doc.body.scrollHeight,
-            doc.documentElement.scrollHeight
-          );
-
-          const availableHeight =
-            stage.clientHeight;
+          .shell {
+            max-width: none !important;
+            padding: 10px !important;
+          }
 
 
-          /*
-           * Keep scale at 100% whenever possible.
-           *
-           * Only shrink if the compact page is still taller
-           * than the Home Assistant iframe.
-           */
+          /* HEADER */
 
-          let scale =
-            Math.min(
-              1,
-              availableHeight / naturalHeight
-            );
+          .hero {
+            padding: 10px 15px !important;
+            border-radius: 12px !important;
+          }
 
+          .hero h1 {
+            font-size: 24px !important;
+          }
 
-          /*
-           * Increase iframe width before scaling so that
-           * after scaling it still occupies the complete
-           * Home Assistant dashboard width.
-           */
+          .hero p {
+            margin-top: 2px !important;
+            font-size: 11px !important;
+          }
 
-          hub.style.width =
-            (stage.clientWidth / scale) + "px";
+          .hero .next b {
+            font-size: 17px !important;
+          }
 
-
-          requestAnimationFrame(() => {
-
-            const adjustedHeight =
-              Math.max(
-                doc.body.scrollHeight,
-                doc.documentElement.scrollHeight
-              );
+          .hero .next small,
+          .hero .next span {
+            font-size: 10px !important;
+          }
 
 
-            scale =
-              Math.min(
-                1,
-                availableHeight / adjustedHeight
-              );
+          /* TAB BUTTONS */
+
+          .tabs {
+            padding: 6px 0 !important;
+            gap: 6px !important;
+          }
+
+          .tab-btn {
+            padding: 6px 11px !important;
+            font-size: 11px !important;
+          }
 
 
-            hub.style.width =
-              (stage.clientWidth / scale) + "px";
+          /* OVERVIEW GRID */
 
-            hub.style.height =
-              adjustedHeight + "px";
+          .overview-grid {
+            gap: 9px !important;
+          }
 
-            hub.style.transform =
-              `scale(${scale})`;
+          .card,
+          .team-card {
+            padding: 10px !important;
+            border-radius: 11px !important;
+          }
 
-          });
 
-        });
+          /* HEADINGS */
+
+          .card h2 {
+            font-size: 18px !important;
+            margin-bottom: 7px !important;
+          }
+
+          .team-card h3 {
+            font-size: 15px !important;
+            margin: 2px 0 7px !important;
+          }
+
+
+          /* ARSENAL SUMMARY */
+
+          .arsenal-big {
+            margin-top: 9px !important;
+            gap: 6px !important;
+          }
+
+          .arsenal-big div,
+          .metrics div,
+          .detail-metrics div {
+            padding: 6px !important;
+          }
+
+          .arsenal-big b {
+            font-size: 22px !important;
+          }
+
+          .arsenal-big span,
+          .metrics span,
+          .detail-metrics span {
+            font-size: 9px !important;
+          }
+
+          .form {
+            width: 22px !important;
+            height: 22px !important;
+            font-size: 12px !important;
+          }
+
+
+          /* FIXTURES / INJURIES */
+
+          .fixture,
+          .watch,
+          .pl-row,
+          .player-row,
+          .player-head,
+          .mini-table > div {
+            min-height: 27px !important;
+          }
+
+          .fixture {
+            font-size: 11px !important;
+          }
+
+          .watch b,
+          .watch > span:last-child {
+            font-size: 9px !important;
+          }
+
+
+          /* FPL CARDS */
+
+          .fantasy-grid {
+            gap: 9px !important;
+          }
+
+          .metrics {
+            gap: 5px !important;
+          }
+
+          .metrics b {
+            font-size: 18px !important;
+          }
+
+          .team-highlight {
+            margin-top: 5px !important;
+            padding: 5px 7px !important;
+          }
+
+          .team-highlight span {
+            font-size: 8px !important;
+          }
+
+          .team-highlight b {
+            font-size: 9px !important;
+          }
+
+          .team-card p {
+            margin-top: 4px !important;
+            font-size: 8px !important;
+          }
+
+
+          /* PREMIER LEAGUE TABLE */
+
+          .pl-head {
+            padding: 4px 0 !important;
+          }
+
+          .pl-row {
+            font-size: 10px !important;
+          }
+
+
+          /* SNAPSHOT */
+
+          .snapshot-grid {
+            gap: 6px !important;
+          }
+
+          .snapshot-grid > div {
+            padding: 6px !important;
+          }
+
+          .snapshot-grid b {
+            font-size: 18px !important;
+          }
+
+          .snapshot-insights {
+            gap: 6px !important;
+            margin-top: 6px !important;
+          }
+
+          .snapshot-insights > div {
+            min-height: 55px !important;
+            padding: 6px !important;
+          }
+
+          .freshness-strip {
+            margin-top: 5px !important;
+            padding-top: 5px !important;
+          }
+
+        `;
+
+        doc.head.appendChild(style);
 
       }
 
       catch (err) {
 
         console.error(
-          "Unable to fit Arsenal dashboard:",
+          "Unable to apply Home Assistant styling:",
           err
         );
 
       }
 
-    }
-
-
-    hub.addEventListener(
-      "load",
-      () => {
-
-        fitPage();
-
-        setTimeout(
-          fitPage,
-          350
-        );
-
-        setTimeout(
-          fitPage,
-          1200
-        );
-
-      }
-    );
-
-
-    window.addEventListener(
-      "resize",
-      fitPage
-    );
+    });
 
   </script>
 
