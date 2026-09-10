@@ -1,5 +1,5 @@
 {
-  "updated": "11 SEP 01:44 SGT",
+  "updated": "11 SEP 04:56 SGT",
   "fixtures": [
     {
       "date": "13 SEP",
@@ -318,6 +318,11 @@
       "type": "INJURY",
       "player": "Cristhian Mosquera",
       "status": "Muscular injury"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "Vinicius Junior",
+      "status": "Reported target"
     }
   ]
 }
