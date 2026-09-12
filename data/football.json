@@ -1,13 +1,6 @@
 {
-  "updated": "13 SEP 02:28 SGT",
+  "updated": "13 SEP 06:23 SGT",
   "fixtures": [
-    {
-      "date": "13 SEP",
-      "home": "SUNDERLAND",
-      "away": "ARSENAL",
-      "time": "03:00 SGT",
-      "utcDate": "2026-09-12T19:00:00Z"
-    },
     {
       "date": "19 SEP",
       "home": "BRIGHTON",
@@ -28,9 +21,24 @@
       "away": "ARSENAL",
       "time": "23:30 SGT",
       "utcDate": "2026-10-18T15:30:00Z"
+    },
+    {
+      "date": "24 OCT",
+      "home": "ARSENAL",
+      "away": "EVERTON",
+      "time": "22:00 SGT",
+      "utcDate": "2026-10-24T14:00:00Z"
     }
   ],
   "results": [
+    {
+      "date": "13 SEP",
+      "home": "SUNDERLAND",
+      "away": "ARSENAL",
+      "homeScore": 0,
+      "awayScore": 2,
+      "outcome": "W"
+    },
     {
       "date": "06 SEP",
       "home": "ARSENAL",
@@ -59,11 +67,24 @@
   "form": [
     "W",
     "W",
+    "W",
     "W"
   ],
   "standings": [
     {
       "pos": 1,
+      "team": "Arsenal",
+      "played": 4,
+      "won": 4,
+      "draw": 0,
+      "lost": 0,
+      "gf": 8,
+      "ga": 1,
+      "gd": 7,
+      "pts": 12
+    },
+    {
+      "pos": 2,
       "team": "Man City",
       "played": 3,
       "won": 3,
@@ -71,18 +92,6 @@
       "lost": 0,
       "gf": 7,
       "ga": 2,
-      "gd": 5,
-      "pts": 9
-    },
-    {
-      "pos": 2,
-      "team": "Arsenal",
-      "played": 3,
-      "won": 3,
-      "draw": 0,
-      "lost": 0,
-      "gf": 6,
-      "ga": 1,
       "gd": 5,
       "pts": 9
     },
@@ -221,13 +230,13 @@
     {
       "pos": 14,
       "team": "Sunderland",
-      "played": 3,
+      "played": 4,
       "won": 1,
       "draw": 1,
-      "lost": 1,
+      "lost": 2,
       "gf": 3,
-      "ga": 3,
-      "gd": 0,
+      "ga": 5,
+      "gd": -2,
       "pts": 4
     },
     {

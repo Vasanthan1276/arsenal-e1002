@@ -1,5 +1,5 @@
 {
-  "updated": "13 SEPT, 02:28 SGT",
+  "updated": "13 SEPT, 06:23 SGT",
   "gameweek": 4,
   "main": {
     "key": "main",
@@ -10,8 +10,8 @@
     "entryId": 6522273,
     "gameweek": 4,
     "gameweekPoints": 0,
-    "totalPoints": 253,
-    "overallRank": 712764,
+    "totalPoints": 262,
+    "overallRank": 1075068,
     "bank": 0.7,
     "value": 100.3,
     "activeChip": null,
@@ -35,9 +35,9 @@
         "name": "Calafiori",
         "position": "DEF",
         "club": "ARS",
-        "totalPoints": 22,
-        "gwPoints": 0,
-        "contribution": 0,
+        "totalPoints": 28,
+        "gwPoints": 6,
+        "contribution": 6,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -119,9 +119,9 @@
         "name": "Tzolis",
         "position": "MID",
         "club": "ARS",
-        "totalPoints": 11,
-        "gwPoints": 0,
-        "contribution": 0,
+        "totalPoints": 14,
+        "gwPoints": 3,
+        "contribution": 3,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 4,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 9,
+      "gameweekPoints": 12,
       "totalPoints": 148,
       "leaguePoints": 6,
       "leagueRank": 2,
@@ -303,9 +303,9 @@
           "name": "Tzolis",
           "position": "MID",
           "club": "ARS",
-          "totalPoints": 11,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 14,
+          "gwPoints": 3,
+          "contribution": 3,
           "starter": true,
           "benchOrder": null
         },
@@ -482,8 +482,8 @@
       "entryId": 351935,
       "gameweek": 4,
       "entryName": "Golden Eagles D2",
-      "gameweekPoints": 22,
-      "totalPoints": 172,
+      "gameweekPoints": 26,
+      "totalPoints": 198,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -514,9 +514,9 @@
           "name": "White",
           "position": "DEF",
           "club": "ARS",
-          "totalPoints": 20,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 21,
+          "gwPoints": 1,
+          "contribution": 1,
           "starter": true,
           "benchOrder": null
         },
@@ -569,9 +569,9 @@
           "name": "Ødegaard",
           "position": "MID",
           "club": "ARS",
-          "totalPoints": 24,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 27,
+          "gwPoints": 3,
+          "contribution": 3,
           "starter": true,
           "benchOrder": null
         },
@@ -635,9 +635,9 @@
           "name": "Eze",
           "position": "MID",
           "club": "ARS",
-          "totalPoints": 2,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 3,
+          "gwPoints": 1,
+          "contribution": 1,
           "starter": false,
           "benchOrder": 3
         },
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 172,
-          "leaguePoints": 172
+          "points": 198,
+          "leaguePoints": 198
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 155,
-          "leaguePoints": 155
+          "points": 177,
+          "leaguePoints": 177
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 123,
-          "leaguePoints": 123
+          "points": 150,
+          "leaguePoints": 150
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 121,
-          "leaguePoints": 121
+          "points": 138,
+          "leaguePoints": 138
         },
         {
           "rank": 5,
           "name": "Kubsi FC",
-          "points": 89,
-          "leaguePoints": 89
+          "points": 119,
+          "leaguePoints": 119
         },
         {
           "rank": 6,
-          "name": "DontBottleIt",
-          "points": 84,
-          "leaguePoints": 84
+          "name": "y0y0y",
+          "points": 109,
+          "leaguePoints": 109
         },
         {
           "rank": 7,
-          "name": "y0y0y",
-          "points": 80,
-          "leaguePoints": 80
+          "name": "DontBottleIt",
+          "points": 100,
+          "leaguePoints": 100
         },
         {
           "rank": 8,
           "name": "Dinezine Dizane",
-          "points": 78,
-          "leaguePoints": 78
+          "points": 91,
+          "leaguePoints": 91
         }
       ]
     }
