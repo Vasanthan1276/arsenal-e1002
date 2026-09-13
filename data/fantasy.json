@@ -1,5 +1,5 @@
 {
-  "updated": "14 SEPT, 00:25 SGT",
+  "updated": "14 SEPT, 04:55 SGT",
   "gameweek": 4,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 4,
-    "gameweekPoints": 34,
-    "totalPoints": 300,
-    "overallRank": 257029,
+    "gameweekPoints": 89,
+    "totalPoints": 318,
+    "overallRank": 140774,
     "bank": 0.7,
     "value": 100.3,
     "activeChip": null,
@@ -49,9 +49,9 @@
         "name": "Gvardiol",
         "position": "DEF",
         "club": "MCI",
-        "totalPoints": 23,
-        "gwPoints": 1,
-        "contribution": 1,
+        "totalPoints": 33,
+        "gwPoints": 11,
+        "contribution": 11,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -147,9 +147,9 @@
         "name": "Haaland",
         "position": "FWD",
         "club": "MCI",
-        "totalPoints": 25,
-        "gwPoints": 1,
-        "contribution": 1,
+        "totalPoints": 33,
+        "gwPoints": 9,
+        "contribution": 9,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -189,8 +189,8 @@
         "name": "Mbeumo",
         "position": "MID",
         "club": "MUN",
-        "totalPoints": 22,
-        "gwPoints": 1,
+        "totalPoints": 23,
+        "gwPoints": 2,
         "contribution": 0,
         "starter": false,
         "benchOrder": 2,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 4,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 21,
+      "gameweekPoints": 32,
       "totalPoints": 148,
       "leaguePoints": 6,
       "leagueRank": 2,
@@ -270,9 +270,9 @@
           "name": "Gvardiol",
           "position": "DEF",
           "club": "MCI",
-          "totalPoints": 23,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 33,
+          "gwPoints": 11,
+          "contribution": 11,
           "starter": true,
           "benchOrder": null
         },
@@ -325,9 +325,9 @@
           "name": "Mbeumo",
           "position": "MID",
           "club": "MUN",
-          "totalPoints": 22,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 23,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -380,9 +380,9 @@
           "name": "Donnarumma",
           "position": "GKP",
           "club": "MCI",
-          "totalPoints": 11,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 17,
+          "gwPoints": 7,
+          "contribution": 7,
           "starter": false,
           "benchOrder": 1
         },
@@ -402,9 +402,9 @@
           "name": "Guéhi",
           "position": "DEF",
           "club": "MCI",
-          "totalPoints": 21,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 26,
+          "gwPoints": 6,
+          "contribution": 6,
           "starter": false,
           "benchOrder": 3
         },
@@ -482,8 +482,8 @@
       "entryId": 351935,
       "gameweek": 4,
       "entryName": "Golden Eagles D2",
-      "gameweekPoints": 35,
-      "totalPoints": 198,
+      "gameweekPoints": 36,
+      "totalPoints": 208,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -536,9 +536,9 @@
           "name": "B.Fernandes",
           "position": "MID",
           "club": "MUN",
-          "totalPoints": 28,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 29,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -624,9 +624,9 @@
           "name": "Gvardiol",
           "position": "DEF",
           "club": "MCI",
-          "totalPoints": 23,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 33,
+          "gwPoints": 11,
+          "contribution": 11,
           "starter": false,
           "benchOrder": 2
         },
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 198,
-          "leaguePoints": 198
+          "points": 208,
+          "leaguePoints": 208
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 177,
-          "leaguePoints": 177
+          "points": 194,
+          "leaguePoints": 194
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 150,
-          "leaguePoints": 150
+          "points": 159,
+          "leaguePoints": 159
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 138,
-          "leaguePoints": 138
+          "points": 150,
+          "leaguePoints": 150
         },
         {
           "rank": 5,
           "name": "Kubsi FC",
-          "points": 119,
-          "leaguePoints": 119
+          "points": 126,
+          "leaguePoints": 126
         },
         {
           "rank": 6,
           "name": "y0y0y",
-          "points": 109,
-          "leaguePoints": 109
+          "points": 110,
+          "leaguePoints": 110
         },
         {
           "rank": 7,
           "name": "DontBottleIt",
-          "points": 100,
-          "leaguePoints": 100
+          "points": 107,
+          "leaguePoints": 107
         },
         {
           "rank": 8,
           "name": "Dinezine Dizane",
-          "points": 91,
-          "leaguePoints": 91
+          "points": 94,
+          "leaguePoints": 94
         }
       ]
     }
