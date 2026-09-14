@@ -1,5 +1,5 @@
 {
-  "updated": "14 SEP 13:08 SGT",
+  "updated": "14 SEP 20:59 SGT",
   "fixtures": [
     {
       "date": "19 SEP",
@@ -325,7 +325,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Vinicius Jr",
+      "player": "Vinicius Junior",
       "status": "Reported target"
     }
   ]
