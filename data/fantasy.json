@@ -1,5 +1,5 @@
 {
-  "updated": "15 SEPT, 03:27 SGT",
+  "updated": "15 SEPT, 07:12 SGT",
   "gameweek": 4,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 4,
-    "gameweekPoints": 89,
-    "totalPoints": 319,
-    "overallRank": 140037,
+    "gameweekPoints": 92,
+    "totalPoints": 320,
+    "overallRank": 172177,
     "bank": 0.7,
     "value": 100.3,
     "activeChip": null,
@@ -133,9 +133,9 @@
         "name": "Wissa",
         "position": "FWD",
         "club": "NEW",
-        "totalPoints": 14,
-        "gwPoints": 1,
-        "contribution": 1,
+        "totalPoints": 15,
+        "gwPoints": 2,
+        "contribution": 2,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 4,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 33,
+      "gameweekPoints": 34,
       "totalPoints": 148,
       "leaguePoints": 6,
       "leagueRank": 2,
@@ -369,9 +369,9 @@
           "name": "Wissa",
           "position": "FWD",
           "club": "NEW",
-          "totalPoints": 14,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 15,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -613,9 +613,9 @@
           "name": "Trafford",
           "position": "GKP",
           "club": "LEE",
-          "totalPoints": 16,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 18,
+          "gwPoints": 3,
+          "contribution": 3,
           "starter": false,
           "benchOrder": 1
         },
@@ -663,8 +663,8 @@
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 194,
-          "leaguePoints": 194
+          "points": 195,
+          "leaguePoints": 195
         },
         {
           "rank": 3,
@@ -699,8 +699,8 @@
         {
           "rank": 8,
           "name": "Dinezine Dizane",
-          "points": 94,
-          "leaguePoints": 94
+          "points": 95,
+          "leaguePoints": 95
         }
       ]
     }
