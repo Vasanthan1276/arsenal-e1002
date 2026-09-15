@@ -1,5 +1,5 @@
 {
-  "updated": "16 SEP 01:06 SGT",
+  "updated": "16 SEP 05:28 SGT",
   "fixtures": [
     {
       "date": "19 SEP",
@@ -324,8 +324,13 @@
       "status": "Muscular injury"
     },
     {
+      "type": "INJURY",
+      "player": "Benjamin White",
+      "status": "Muscular injury"
+    },
+    {
       "type": "TRANSFER",
-      "player": "Vinicius Junior",
+      "player": "Vinicius Jr",
       "status": "Reported target"
     }
   ]
