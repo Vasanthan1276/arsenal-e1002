@@ -1,5 +1,5 @@
 {
-  "updated": "19 SEP 00:31 SGT",
+  "updated": "19 SEP 04:58 SGT",
   "fixtures": [
     {
       "date": "19 SEP",
@@ -97,6 +97,18 @@
     },
     {
       "pos": 3,
+      "team": "Brentford",
+      "played": 5,
+      "won": 2,
+      "draw": 3,
+      "lost": 0,
+      "gf": 9,
+      "ga": 4,
+      "gd": 5,
+      "pts": 9
+    },
+    {
+      "pos": 4,
       "team": "Leeds",
       "played": 4,
       "won": 2,
@@ -108,7 +120,7 @@
       "pts": 8
     },
     {
-      "pos": 4,
+      "pos": 5,
       "team": "Hull City",
       "played": 4,
       "won": 2,
@@ -120,7 +132,7 @@
       "pts": 8
     },
     {
-      "pos": 5,
+      "pos": 6,
       "team": "Brighton",
       "played": 4,
       "won": 2,
@@ -132,28 +144,16 @@
       "pts": 7
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "Chelsea",
-      "played": 4,
+      "played": 5,
       "won": 2,
       "draw": 1,
-      "lost": 1,
+      "lost": 2,
       "gf": 10,
-      "ga": 9,
-      "gd": 1,
+      "ga": 11,
+      "gd": -1,
       "pts": 7
-    },
-    {
-      "pos": 7,
-      "team": "Brentford",
-      "played": 4,
-      "won": 1,
-      "draw": 3,
-      "lost": 0,
-      "gf": 7,
-      "ga": 4,
-      "gd": 3,
-      "pts": 6
     },
     {
       "pos": 8,
