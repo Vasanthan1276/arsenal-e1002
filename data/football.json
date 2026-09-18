@@ -1,5 +1,5 @@
 {
-  "updated": "18 SEP 12:52 SGT",
+  "updated": "18 SEP 19:25 SGT",
   "fixtures": [
     {
       "date": "19 SEP",
@@ -317,16 +317,6 @@
       "type": "INJURY",
       "player": "William Saliba",
       "status": "Back injury"
-    },
-    {
-      "type": "INJURY",
-      "player": "Cristhian Mosquera",
-      "status": "Muscular injury"
-    },
-    {
-      "type": "INJURY",
-      "player": "Benjamin White",
-      "status": "Muscular injury"
     },
     {
       "type": "TRANSFER",
