@@ -1,5 +1,5 @@
 {
-  "updated": "19 SEP 04:58 SGT",
+  "updated": "19 SEP 08:25 SGT",
   "fixtures": [
     {
       "date": "19 SEP",
@@ -102,9 +102,9 @@
       "won": 2,
       "draw": 3,
       "lost": 0,
-      "gf": 9,
+      "gf": 10,
       "ga": 4,
-      "gd": 5,
+      "gd": 6,
       "pts": 9
     },
     {
@@ -151,8 +151,8 @@
       "draw": 1,
       "lost": 2,
       "gf": 10,
-      "ga": 11,
-      "gd": -1,
+      "ga": 12,
+      "gd": -2,
       "pts": 7
     },
     {

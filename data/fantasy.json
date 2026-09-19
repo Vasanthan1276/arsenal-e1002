@@ -1,5 +1,5 @@
 {
-  "updated": "19 SEPT, 04:58 SGT",
+  "updated": "19 SEPT, 08:25 SGT",
   "gameweek": 5,
   "main": {
     "key": "main",
@@ -9,7 +9,7 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 5,
-    "gameweekPoints": 0,
+    "gameweekPoints": 2,
     "totalPoints": 322,
     "overallRank": 197725,
     "bank": 0.7,
@@ -663,8 +663,8 @@
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 211,
-          "leaguePoints": 211
+          "points": 215,
+          "leaguePoints": 215
         },
         {
           "rank": 3,
@@ -675,8 +675,8 @@
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 151,
-          "leaguePoints": 151
+          "points": 154,
+          "leaguePoints": 154
         },
         {
           "rank": 5,
@@ -686,21 +686,21 @@
         },
         {
           "rank": 6,
-          "name": "DontBottleIt",
-          "points": 112,
-          "leaguePoints": 112
+          "name": "y0y0y",
+          "points": 116,
+          "leaguePoints": 116
         },
         {
           "rank": 7,
-          "name": "y0y0y",
-          "points": 110,
-          "leaguePoints": 110
+          "name": "DontBottleIt",
+          "points": 115,
+          "leaguePoints": 115
         },
         {
           "rank": 8,
           "name": "Dinezine Dizane",
-          "points": 96,
-          "leaguePoints": 96
+          "points": 104,
+          "leaguePoints": 104
         }
       ]
     }
