@@ -1,5 +1,5 @@
 {
-  "updated": "20 SEP 01:18 SGT",
+  "updated": "20 SEP 04:48 SGT",
   "fixtures": [
     {
       "date": "10 OCT",
@@ -202,18 +202,6 @@
     },
     {
       "pos": 11,
-      "team": "Nott'm Forest",
-      "played": 5,
-      "won": 1,
-      "draw": 3,
-      "lost": 1,
-      "gf": 4,
-      "ga": 4,
-      "gd": 0,
-      "pts": 6
-    },
-    {
-      "pos": 12,
       "team": "Ipswich",
       "played": 5,
       "won": 2,
@@ -223,6 +211,18 @@
       "ga": 11,
       "gd": -4,
       "pts": 6
+    },
+    {
+      "pos": 12,
+      "team": "Nott'm Forest",
+      "played": 5,
+      "won": 1,
+      "draw": 2,
+      "lost": 2,
+      "gf": 4,
+      "ga": 5,
+      "gd": -1,
+      "pts": 5
     },
     {
       "pos": 13,
@@ -286,6 +286,18 @@
     },
     {
       "pos": 18,
+      "team": "Coventry",
+      "played": 5,
+      "won": 1,
+      "draw": 0,
+      "lost": 4,
+      "gf": 1,
+      "ga": 10,
+      "gd": -9,
+      "pts": 3
+    },
+    {
+      "pos": 19,
       "team": "Tottenham",
       "played": 5,
       "won": 0,
@@ -297,7 +309,7 @@
       "pts": 2
     },
     {
-      "pos": 19,
+      "pos": 20,
       "team": "Fulham",
       "played": 4,
       "won": 0,
@@ -306,18 +318,6 @@
       "gf": 4,
       "ga": 7,
       "gd": -3,
-      "pts": 1
-    },
-    {
-      "pos": 20,
-      "team": "Coventry",
-      "played": 5,
-      "won": 0,
-      "draw": 1,
-      "lost": 4,
-      "gf": 0,
-      "ga": 10,
-      "gd": -10,
       "pts": 1
     }
   ],
@@ -329,7 +329,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Man Utd's",
+      "player": "JJ Gabriel",
       "status": "Reported target"
     }
   ]
