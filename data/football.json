@@ -1,5 +1,5 @@
 {
-  "updated": "19 SEP 15:24 SGT",
+  "updated": "19 SEP 20:33 SGT",
   "fixtures": [
     {
       "date": "19 SEP",
@@ -241,6 +241,18 @@
     },
     {
       "pos": 15,
+      "team": "Aston Villa",
+      "played": 5,
+      "won": 1,
+      "draw": 1,
+      "lost": 3,
+      "gf": 2,
+      "ga": 7,
+      "gd": -5,
+      "pts": 4
+    },
+    {
+      "pos": 16,
       "team": "Bournemouth",
       "played": 4,
       "won": 0,
@@ -252,7 +264,7 @@
       "pts": 3
     },
     {
-      "pos": 16,
+      "pos": 17,
       "team": "Crystal Palace",
       "played": 4,
       "won": 1,
@@ -264,19 +276,19 @@
       "pts": 3
     },
     {
-      "pos": 17,
+      "pos": 18,
       "team": "Tottenham",
-      "played": 4,
+      "played": 5,
       "won": 0,
       "draw": 2,
-      "lost": 2,
+      "lost": 3,
       "gf": 0,
-      "ga": 5,
-      "gd": -5,
+      "ga": 6,
+      "gd": -6,
       "pts": 2
     },
     {
-      "pos": 18,
+      "pos": 19,
       "team": "Fulham",
       "played": 4,
       "won": 0,
@@ -285,18 +297,6 @@
       "gf": 4,
       "ga": 7,
       "gd": -3,
-      "pts": 1
-    },
-    {
-      "pos": 19,
-      "team": "Aston Villa",
-      "played": 4,
-      "won": 0,
-      "draw": 1,
-      "lost": 3,
-      "gf": 1,
-      "ga": 7,
-      "gd": -6,
       "pts": 1
     },
     {
