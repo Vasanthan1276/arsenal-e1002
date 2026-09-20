@@ -1,5 +1,5 @@
 {
-  "updated": "20 SEP 19:33 SGT",
+  "updated": "21 SEP 00:14 SGT",
   "fixtures": [
     {
       "date": "10 OCT",
@@ -83,14 +83,14 @@
     {
       "pos": 1,
       "team": "Man City",
-      "played": 4,
-      "won": 4,
+      "played": 5,
+      "won": 5,
       "draw": 0,
       "lost": 0,
-      "gf": 8,
-      "ga": 2,
-      "gd": 6,
-      "pts": 12
+      "gf": 13,
+      "ga": 5,
+      "gd": 8,
+      "pts": 15
     },
     {
       "pos": 2,
@@ -130,6 +130,30 @@
     },
     {
       "pos": 5,
+      "team": "Leeds",
+      "played": 5,
+      "won": 2,
+      "draw": 3,
+      "lost": 0,
+      "gf": 7,
+      "ga": 3,
+      "gd": 4,
+      "pts": 9
+    },
+    {
+      "pos": 6,
+      "team": "Liverpool",
+      "played": 5,
+      "won": 2,
+      "draw": 3,
+      "lost": 0,
+      "gf": 7,
+      "ga": 4,
+      "gd": 3,
+      "pts": 9
+    },
+    {
+      "pos": 7,
       "team": "Everton",
       "played": 5,
       "won": 2,
@@ -141,19 +165,7 @@
       "pts": 9
     },
     {
-      "pos": 6,
-      "team": "Leeds",
-      "played": 4,
-      "won": 2,
-      "draw": 2,
-      "lost": 0,
-      "gf": 7,
-      "ga": 3,
-      "gd": 4,
-      "pts": 8
-    },
-    {
-      "pos": 7,
+      "pos": 8,
       "team": "Hull City",
       "played": 5,
       "won": 2,
@@ -165,7 +177,7 @@
       "pts": 8
     },
     {
-      "pos": 8,
+      "pos": 9,
       "team": "Newcastle",
       "played": 5,
       "won": 2,
@@ -177,7 +189,7 @@
       "pts": 8
     },
     {
-      "pos": 9,
+      "pos": 10,
       "team": "Chelsea",
       "played": 5,
       "won": 2,
@@ -187,18 +199,6 @@
       "ga": 12,
       "gd": -2,
       "pts": 7
-    },
-    {
-      "pos": 10,
-      "team": "Liverpool",
-      "played": 4,
-      "won": 1,
-      "draw": 3,
-      "lost": 0,
-      "gf": 6,
-      "ga": 4,
-      "gd": 2,
-      "pts": 6
     },
     {
       "pos": 11,
@@ -214,6 +214,18 @@
     },
     {
       "pos": 12,
+      "team": "Man United",
+      "played": 5,
+      "won": 1,
+      "draw": 2,
+      "lost": 2,
+      "gf": 7,
+      "ga": 7,
+      "gd": 0,
+      "pts": 5
+    },
+    {
+      "pos": 13,
       "team": "Nott'm Forest",
       "played": 5,
       "won": 1,
@@ -225,31 +237,31 @@
       "pts": 5
     },
     {
-      "pos": 13,
-      "team": "Man United",
-      "played": 4,
-      "won": 1,
-      "draw": 1,
-      "lost": 2,
-      "gf": 7,
-      "ga": 7,
-      "gd": 0,
-      "pts": 4
-    },
-    {
       "pos": 14,
       "team": "Sunderland",
-      "played": 4,
+      "played": 5,
       "won": 1,
       "draw": 1,
-      "lost": 2,
-      "gf": 3,
-      "ga": 5,
-      "gd": -2,
+      "lost": 3,
+      "gf": 6,
+      "ga": 10,
+      "gd": -4,
       "pts": 4
     },
     {
       "pos": 15,
+      "team": "Crystal Palace",
+      "played": 5,
+      "won": 1,
+      "draw": 1,
+      "lost": 3,
+      "gf": 6,
+      "ga": 11,
+      "gd": -5,
+      "pts": 4
+    },
+    {
+      "pos": 16,
       "team": "Aston Villa",
       "played": 5,
       "won": 1,
@@ -261,27 +273,15 @@
       "pts": 4
     },
     {
-      "pos": 16,
+      "pos": 17,
       "team": "Bournemouth",
-      "played": 4,
+      "played": 5,
       "won": 0,
       "draw": 3,
-      "lost": 1,
+      "lost": 2,
       "gf": 6,
-      "ga": 7,
-      "gd": -1,
-      "pts": 3
-    },
-    {
-      "pos": 17,
-      "team": "Crystal Palace",
-      "played": 4,
-      "won": 1,
-      "draw": 0,
-      "lost": 3,
-      "gf": 6,
-      "ga": 11,
-      "gd": -5,
+      "ga": 8,
+      "gd": -2,
       "pts": 3
     },
     {
@@ -298,6 +298,18 @@
     },
     {
       "pos": 19,
+      "team": "Fulham",
+      "played": 5,
+      "won": 0,
+      "draw": 2,
+      "lost": 3,
+      "gf": 4,
+      "ga": 7,
+      "gd": -3,
+      "pts": 2
+    },
+    {
+      "pos": 20,
       "team": "Tottenham",
       "played": 5,
       "won": 0,
@@ -307,18 +319,6 @@
       "ga": 8,
       "gd": -6,
       "pts": 2
-    },
-    {
-      "pos": 20,
-      "team": "Fulham",
-      "played": 4,
-      "won": 0,
-      "draw": 1,
-      "lost": 3,
-      "gf": 4,
-      "ga": 7,
-      "gd": -3,
-      "pts": 1
     }
   ],
   "squadWatch": [
@@ -329,8 +329,8 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Man Utd's",
-      "status": "Reported target"
+      "player": "Man Utd",
+      "status": "Talks reported"
     }
   ]
 }
