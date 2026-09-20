@@ -1,5 +1,5 @@
 {
-  "updated": "21 SEPT, 00:14 SGT",
+  "updated": "21 SEPT, 02:52 SGT",
   "gameweek": 5,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 5,
-    "gameweekPoints": 26,
-    "totalPoints": 370,
-    "overallRank": 129711,
+    "gameweekPoints": 51,
+    "totalPoints": 371,
+    "overallRank": 126686,
     "bank": 0.7,
     "value": 100.7,
     "activeChip": null,
@@ -133,9 +133,9 @@
         "name": "Mbeumo",
         "position": "MID",
         "club": "MUN",
-        "totalPoints": 24,
-        "gwPoints": 1,
-        "contribution": 1,
+        "totalPoints": 25,
+        "gwPoints": 2,
+        "contribution": 2,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 5,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 38,
+      "gameweekPoints": 40,
       "totalPoints": 183,
       "leaguePoints": 9,
       "leagueRank": 2,
@@ -336,9 +336,9 @@
           "name": "Mbeumo",
           "position": "MID",
           "club": "MUN",
-          "totalPoints": 24,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 25,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -347,9 +347,9 @@
           "name": "Gonzalo",
           "position": "FWD",
           "club": "FUL",
-          "totalPoints": 13,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 14,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -391,9 +391,9 @@
           "name": "Maguire",
           "position": "DEF",
           "club": "MUN",
-          "totalPoints": 9,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 10,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": false,
           "benchOrder": 2
         },
@@ -482,8 +482,8 @@
       "entryId": 351935,
       "gameweek": 5,
       "entryName": "Golden Eagles D2",
-      "gameweekPoints": 41,
-      "totalPoints": 240,
+      "gameweekPoints": 42,
+      "totalPoints": 264,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -547,9 +547,9 @@
           "name": "B.Fernandes",
           "position": "MID",
           "club": "MUN",
-          "totalPoints": 30,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 31,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 240,
-          "leaguePoints": 240
+          "points": 264,
+          "leaguePoints": 264
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 220,
-          "leaguePoints": 220
+          "points": 233,
+          "leaguePoints": 233
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 193,
-          "leaguePoints": 193
+          "points": 213,
+          "leaguePoints": 213
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 163,
-          "leaguePoints": 163
+          "points": 183,
+          "leaguePoints": 183
         },
         {
           "rank": 5,
+          "name": "Kubsi FC",
+          "points": 148,
+          "leaguePoints": 148
+        },
+        {
+          "rank": 6,
           "name": "DontBottleIt",
+          "points": 142,
+          "leaguePoints": 142
+        },
+        {
+          "rank": 7,
+          "name": "Dinezine Dizane",
           "points": 133,
           "leaguePoints": 133
         },
         {
-          "rank": 6,
-          "name": "Kubsi FC",
-          "points": 129,
-          "leaguePoints": 129
-        },
-        {
-          "rank": 7,
-          "name": "y0y0y",
-          "points": 123,
-          "leaguePoints": 123
-        },
-        {
           "rank": 8,
-          "name": "Dinezine Dizane",
-          "points": 108,
-          "leaguePoints": 108
+          "name": "y0y0y",
+          "points": 125,
+          "leaguePoints": 125
         }
       ]
     }
