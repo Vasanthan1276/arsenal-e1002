@@ -1,5 +1,5 @@
 {
-  "updated": "21 SEP 06:31 SGT",
+  "updated": "21 SEP 13:05 SGT",
   "fixtures": [
     {
       "date": "10 OCT",
@@ -334,8 +334,8 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Man Utd",
-      "status": "Talks reported"
+      "player": "Man Utd's",
+      "status": "Reported target"
     }
   ]
 }
