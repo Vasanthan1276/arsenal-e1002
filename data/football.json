@@ -1,5 +1,5 @@
 {
-  "updated": "21 SEP 20:58 SGT",
+  "updated": "22 SEP 03:33 SGT",
   "fixtures": [
     {
       "date": "10 OCT",
@@ -331,6 +331,11 @@
       "type": "INJURY",
       "player": "Benjamin White",
       "status": "Groin injury"
+    },
+    {
+      "type": "INJURY",
+      "player": "Declan Rice",
+      "status": "Unspecified injury"
     },
     {
       "type": "TRANSFER",
