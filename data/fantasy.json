@@ -1,5 +1,5 @@
 {
-  "updated": "21 SEPT, 13:05 SGT",
+  "updated": "21 SEPT, 20:58 SGT",
   "gameweek": 5,
   "main": {
     "key": "main",
@@ -11,7 +11,7 @@
     "gameweek": 5,
     "gameweekPoints": 51,
     "totalPoints": 371,
-    "overallRank": 126669,
+    "overallRank": 174866,
     "bank": 0.7,
     "value": 100.7,
     "activeChip": null,
@@ -250,8 +250,8 @@
       "gameweek": 5,
       "entryName": "Golden Eagles D1",
       "gameweekPoints": 40,
-      "totalPoints": 183,
-      "leaguePoints": 9,
+      "totalPoints": 223,
+      "leaguePoints": 12,
       "leagueRank": 2,
       "players": [
         {
@@ -424,50 +424,50 @@
         {
           "rank": 1,
           "name": "FC Rote Funken 01",
-          "points": 194,
-          "leaguePoints": 12
+          "points": 253,
+          "leaguePoints": 15
         },
         {
           "rank": 2,
           "name": "Golden Eagles D1",
-          "points": 183,
-          "leaguePoints": 9
+          "points": 223,
+          "leaguePoints": 12
         },
         {
           "rank": 3,
-          "name": "Coldah fc",
-          "points": 183,
-          "leaguePoints": 6
+          "name": "Mr Vệ",
+          "points": 151,
+          "leaguePoints": 9
         },
         {
           "rank": 4,
-          "name": "A-ROLE",
-          "points": 178,
-          "leaguePoints": 6
+          "name": "Coldah fc",
+          "points": 217,
+          "leaguePoints": 7
         },
         {
           "rank": 5,
           "name": "XabiXI",
-          "points": 166,
+          "points": 207,
           "leaguePoints": 6
         },
         {
           "rank": 6,
-          "name": "Mr Vệ",
-          "points": 121,
+          "name": "A-ROLE",
+          "points": 197,
           "leaguePoints": 6
         },
         {
           "rank": 7,
           "name": "Danny",
-          "points": 119,
+          "points": 149,
           "leaguePoints": 3
         },
         {
           "rank": 8,
           "name": "Selborne FC",
-          "points": 88,
-          "leaguePoints": 0
+          "points": 122,
+          "leaguePoints": 1
         }
       ]
     },
@@ -663,38 +663,38 @@
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 233,
-          "leaguePoints": 233
+          "points": 239,
+          "leaguePoints": 239
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 213,
-          "leaguePoints": 213
+          "points": 215,
+          "leaguePoints": 215
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 183,
-          "leaguePoints": 183
+          "points": 200,
+          "leaguePoints": 200
         },
         {
           "rank": 5,
           "name": "Kubsi FC",
-          "points": 148,
-          "leaguePoints": 148
+          "points": 155,
+          "leaguePoints": 155
         },
         {
           "rank": 6,
           "name": "DontBottleIt",
-          "points": 142,
-          "leaguePoints": 142
+          "points": 146,
+          "leaguePoints": 146
         },
         {
           "rank": 7,
           "name": "Dinezine Dizane",
-          "points": 133,
-          "leaguePoints": 133
+          "points": 139,
+          "leaguePoints": 139
         },
         {
           "rank": 8,
