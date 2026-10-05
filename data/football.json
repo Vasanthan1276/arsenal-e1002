@@ -1,5 +1,5 @@
 {
-  "updated": "05 OCT 22:54 SGT",
+  "updated": "06 OCT 06:44 SGT",
   "fixtures": [
     {
       "date": "10 OCT",
@@ -339,8 +339,8 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Breno Bidon",
-      "status": "Bid reported"
+      "player": "Erling Haaland",
+      "status": "Reported target"
     }
   ]
 }
