@@ -1,5 +1,5 @@
 {
-  "updated": "09 OCT 17:13 SGT",
+  "updated": "10 OCT 01:02 SGT",
   "fixtures": [
     {
       "date": "10 OCT",
@@ -329,8 +329,8 @@
     },
     {
       "type": "INJURY",
-      "player": "Benjamin White",
-      "status": "Groin injury"
+      "player": "Christos Tzolis",
+      "status": "Hamstring"
     },
     {
       "type": "INJURY",
