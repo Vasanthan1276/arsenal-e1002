@@ -1,5 +1,5 @@
 {
-  "updated": "11 OCT, 02:41 SGT",
+  "updated": "11 OCT, 07:38 SGT",
   "gameweek": 6,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 6,
-    "gameweekPoints": 0,
+    "gameweekPoints": 68,
     "totalPoints": 439,
-    "overallRank": 71521,
+    "overallRank": 71964,
     "bank": 0.8,
     "value": 100.8,
     "activeChip": null,
@@ -483,7 +483,7 @@
       "gameweek": 6,
       "entryName": "Golden Eagles D2",
       "gameweekPoints": 36,
-      "totalPoints": 264,
+      "totalPoints": 300,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 264,
-          "leaguePoints": 264
+          "points": 300,
+          "leaguePoints": 300
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 239,
-          "leaguePoints": 239
+          "points": 261,
+          "leaguePoints": 261
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 215,
-          "leaguePoints": 215
+          "points": 258,
+          "leaguePoints": 258
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 200,
-          "leaguePoints": 200
+          "points": 233,
+          "leaguePoints": 233
         },
         {
           "rank": 5,
           "name": "Kubsi FC",
-          "points": 155,
-          "leaguePoints": 155
+          "points": 159,
+          "leaguePoints": 159
         },
         {
-          "rank": 6,
+          "rank": 5,
           "name": "DontBottleIt",
-          "points": 146,
-          "leaguePoints": 146
+          "points": 159,
+          "leaguePoints": 159
         },
         {
           "rank": 7,
           "name": "Dinezine Dizane",
-          "points": 139,
-          "leaguePoints": 139
+          "points": 155,
+          "leaguePoints": 155
         },
         {
           "rank": 8,
           "name": "y0y0y",
-          "points": 125,
-          "leaguePoints": 125
+          "points": 133,
+          "leaguePoints": 133
         }
       ]
     }
