@@ -1,13 +1,6 @@
 {
-  "updated": "10 OCT 14:01 SGT",
+  "updated": "10 OCT 20:41 SGT",
   "fixtures": [
-    {
-      "date": "10 OCT",
-      "home": "ARSENAL",
-      "away": "LEEDS",
-      "time": "19:30 SGT",
-      "utcDate": "2026-10-10T11:30:00Z"
-    },
     {
       "date": "18 OCT",
       "home": "NOTT'M FOREST",
@@ -28,6 +21,13 @@
       "away": "ARSENAL",
       "time": "00:30 SGT",
       "utcDate": "2026-11-01T16:30:00Z"
+    },
+    {
+      "date": "07 NOV",
+      "home": "ARSENAL",
+      "away": "HULL CITY",
+      "time": "23:00 SGT",
+      "utcDate": "2026-11-07T15:00:00Z"
     }
   ],
   "results": [
@@ -95,14 +95,14 @@
     {
       "pos": 2,
       "team": "Arsenal",
-      "played": 5,
+      "played": 6,
       "won": 4,
-      "draw": 0,
+      "draw": 1,
       "lost": 1,
       "gf": 8,
       "ga": 4,
       "gd": 4,
-      "pts": 12
+      "pts": 13
     },
     {
       "pos": 3,
@@ -118,6 +118,18 @@
     },
     {
       "pos": 4,
+      "team": "Leeds",
+      "played": 6,
+      "won": 2,
+      "draw": 4,
+      "lost": 0,
+      "gf": 7,
+      "ga": 3,
+      "gd": 4,
+      "pts": 10
+    },
+    {
+      "pos": 5,
       "team": "Brentford",
       "played": 5,
       "won": 2,
@@ -126,18 +138,6 @@
       "gf": 10,
       "ga": 4,
       "gd": 6,
-      "pts": 9
-    },
-    {
-      "pos": 5,
-      "team": "Leeds",
-      "played": 5,
-      "won": 2,
-      "draw": 3,
-      "lost": 0,
-      "gf": 7,
-      "ga": 3,
-      "gd": 4,
       "pts": 9
     },
     {
@@ -333,13 +333,8 @@
       "status": "Hamstring"
     },
     {
-      "type": "INJURY",
-      "player": "Declan Rice",
-      "status": "Unspecified injury"
-    },
-    {
       "type": "TRANSFER",
-      "player": "Erling Haaland",
+      "player": "Julian Alvarez",
       "status": "Reported target"
     }
   ]
