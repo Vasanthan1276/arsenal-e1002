@@ -1,5 +1,5 @@
 {
-  "updated": "11 OCT 21:03 SGT",
+  "updated": "12 OCT 02:59 SGT",
   "fixtures": [
     {
       "date": "18 OCT",
@@ -83,14 +83,14 @@
     {
       "pos": 1,
       "team": "Man City",
-      "played": 5,
-      "won": 5,
+      "played": 6,
+      "won": 6,
       "draw": 0,
       "lost": 0,
-      "gf": 13,
+      "gf": 16,
       "ga": 5,
-      "gd": 8,
-      "pts": 15
+      "gd": 11,
+      "pts": 18
     },
     {
       "pos": 2,
@@ -135,8 +135,8 @@
       "won": 2,
       "draw": 4,
       "lost": 0,
-      "gf": 6,
-      "ga": 3,
+      "gf": 8,
+      "ga": 5,
       "gd": 3,
       "pts": 10
     },
@@ -166,26 +166,26 @@
     },
     {
       "pos": 8,
-      "team": "Liverpool",
-      "played": 5,
-      "won": 2,
-      "draw": 3,
-      "lost": 0,
-      "gf": 7,
-      "ga": 4,
-      "gd": 3,
-      "pts": 9
-    },
-    {
-      "pos": 9,
       "team": "Hull City",
       "played": 6,
       "won": 2,
       "draw": 3,
       "lost": 1,
-      "gf": 6,
-      "ga": 4,
+      "gf": 8,
+      "ga": 6,
       "gd": 2,
+      "pts": 9
+    },
+    {
+      "pos": 9,
+      "team": "Liverpool",
+      "played": 6,
+      "won": 2,
+      "draw": 3,
+      "lost": 1,
+      "gf": 7,
+      "ga": 7,
+      "gd": 0,
       "pts": 9
     },
     {
@@ -214,6 +214,18 @@
     },
     {
       "pos": 12,
+      "team": "Crystal Palace",
+      "played": 6,
+      "won": 2,
+      "draw": 1,
+      "lost": 3,
+      "gf": 9,
+      "ga": 12,
+      "gd": -3,
+      "pts": 7
+    },
+    {
+      "pos": 13,
       "team": "Man United",
       "played": 6,
       "won": 1,
@@ -225,32 +237,20 @@
       "pts": 6
     },
     {
-      "pos": 13,
-      "team": "Nott'm Forest",
-      "played": 6,
-      "won": 1,
-      "draw": 3,
-      "lost": 2,
-      "gf": 4,
-      "ga": 5,
-      "gd": -1,
-      "pts": 6
-    },
-    {
       "pos": 14,
-      "team": "Aston Villa",
+      "team": "Nott'm Forest",
       "played": 6,
       "won": 1,
       "draw": 2,
       "lost": 3,
-      "gf": 6,
-      "ga": 11,
-      "gd": -5,
+      "gf": 5,
+      "ga": 8,
+      "gd": -3,
       "pts": 5
     },
     {
-      "pos": 14,
-      "team": "Crystal Palace",
+      "pos": 15,
+      "team": "Aston Villa",
       "played": 6,
       "won": 1,
       "draw": 2,
@@ -331,11 +331,6 @@
       "type": "INJURY",
       "player": "Christos Tzolis",
       "status": "Hamstring"
-    },
-    {
-      "type": "TRANSFER",
-      "player": "Erling Haaland",
-      "status": "Reported target"
     }
   ]
 }
