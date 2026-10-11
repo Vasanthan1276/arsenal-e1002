@@ -1,5 +1,5 @@
 {
-  "updated": "11 OCT, 13:58 SGT",
+  "updated": "11 OCT, 21:03 SGT",
   "gameweek": 6,
   "main": {
     "key": "main",
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 6,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 36,
+      "gameweekPoints": 37,
       "totalPoints": 223,
       "leaguePoints": 12,
       "leagueRank": 2,
@@ -359,8 +359,8 @@
           "position": "FWD",
           "club": "EVE",
           "totalPoints": 20,
-          "gwPoints": 0,
-          "contribution": 0,
+          "gwPoints": 1,
+          "contribution": 1,
           "starter": true,
           "benchOrder": null
         },
