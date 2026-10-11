@@ -1,5 +1,5 @@
 {
-  "updated": "12 OCT 02:59 SGT",
+  "updated": "12 OCT 07:44 SGT",
   "fixtures": [
     {
       "date": "18 OCT",
@@ -331,6 +331,11 @@
       "type": "INJURY",
       "player": "Christos Tzolis",
       "status": "Hamstring"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "Erling Haaland",
+      "status": "Reported target"
     }
   ]
 }
