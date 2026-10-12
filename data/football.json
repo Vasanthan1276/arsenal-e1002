@@ -1,5 +1,5 @@
 {
-  "updated": "12 OCT 23:41 SGT",
+  "updated": "13 OCT 07:03 SGT",
   "fixtures": [
     {
       "date": "18 OCT",
@@ -203,13 +203,13 @@
     {
       "pos": 11,
       "team": "Newcastle",
-      "played": 5,
+      "played": 6,
       "won": 2,
       "draw": 2,
-      "lost": 1,
-      "gf": 9,
-      "ga": 9,
-      "gd": 0,
+      "lost": 2,
+      "gf": 10,
+      "ga": 13,
+      "gd": -3,
       "pts": 8
     },
     {
@@ -238,6 +238,18 @@
     },
     {
       "pos": 14,
+      "team": "Coventry",
+      "played": 6,
+      "won": 2,
+      "draw": 0,
+      "lost": 4,
+      "gf": 5,
+      "ga": 11,
+      "gd": -6,
+      "pts": 6
+    },
+    {
+      "pos": 15,
       "team": "Nott'm Forest",
       "played": 6,
       "won": 1,
@@ -249,7 +261,7 @@
       "pts": 5
     },
     {
-      "pos": 15,
+      "pos": 16,
       "team": "Aston Villa",
       "played": 6,
       "won": 1,
@@ -261,7 +273,7 @@
       "pts": 5
     },
     {
-      "pos": 16,
+      "pos": 17,
       "team": "Sunderland",
       "played": 6,
       "won": 1,
@@ -273,7 +285,7 @@
       "pts": 4
     },
     {
-      "pos": 17,
+      "pos": 18,
       "team": "Bournemouth",
       "played": 6,
       "won": 0,
@@ -285,7 +297,7 @@
       "pts": 3
     },
     {
-      "pos": 18,
+      "pos": 19,
       "team": "Tottenham",
       "played": 6,
       "won": 0,
@@ -294,18 +306,6 @@
       "gf": 3,
       "ga": 9,
       "gd": -6,
-      "pts": 3
-    },
-    {
-      "pos": 19,
-      "team": "Coventry",
-      "played": 5,
-      "won": 1,
-      "draw": 0,
-      "lost": 4,
-      "gf": 1,
-      "ga": 10,
-      "gd": -9,
       "pts": 3
     },
     {
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Erling Haaland",
+      "player": "Ryan Augusto",
       "status": "Reported target"
     }
   ]
