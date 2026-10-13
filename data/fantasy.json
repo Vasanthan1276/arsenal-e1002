@@ -1,5 +1,5 @@
 {
-  "updated": "13 OCT, 14:52 SGT",
+  "updated": "14 OCT, 00:05 SGT",
   "gameweek": 6,
   "main": {
     "key": "main",
@@ -11,7 +11,7 @@
     "gameweek": 6,
     "gameweekPoints": 86,
     "totalPoints": 457,
-    "overallRank": 49147,
+    "overallRank": 54661,
     "bank": 0.8,
     "value": 100.8,
     "activeChip": null,
@@ -250,7 +250,7 @@
       "gameweek": 6,
       "entryName": "Golden Eagles D1",
       "gameweekPoints": 49,
-      "totalPoints": 223,
+      "totalPoints": 272,
       "leaguePoints": 12,
       "leagueRank": 2,
       "players": [
@@ -424,50 +424,50 @@
         {
           "rank": 1,
           "name": "FC Rote Funken 01",
-          "points": 253,
-          "leaguePoints": 15
+          "points": 308,
+          "leaguePoints": 18
         },
         {
           "rank": 2,
           "name": "Golden Eagles D1",
-          "points": 223,
+          "points": 272,
           "leaguePoints": 12
         },
         {
           "rank": 3,
-          "name": "Mr Vệ",
-          "points": 151,
+          "name": "XabiXI",
+          "points": 248,
           "leaguePoints": 9
         },
         {
           "rank": 4,
-          "name": "Coldah fc",
-          "points": 217,
-          "leaguePoints": 7
+          "name": "Mr Vệ",
+          "points": 173,
+          "leaguePoints": 9
         },
         {
           "rank": 5,
-          "name": "XabiXI",
-          "points": 207,
-          "leaguePoints": 6
+          "name": "Coldah fc",
+          "points": 256,
+          "leaguePoints": 7
         },
         {
           "rank": 6,
           "name": "A-ROLE",
-          "points": 197,
+          "points": 219,
           "leaguePoints": 6
         },
         {
           "rank": 7,
           "name": "Danny",
-          "points": 149,
-          "leaguePoints": 3
+          "points": 189,
+          "leaguePoints": 6
         },
         {
           "rank": 8,
           "name": "Selborne FC",
-          "points": 122,
-          "leaguePoints": 1
+          "points": 152,
+          "leaguePoints": 4
         }
       ]
     },
@@ -482,8 +482,8 @@
       "entryId": 351935,
       "gameweek": 6,
       "entryName": "Golden Eagles D2",
-      "gameweekPoints": 43,
-      "totalPoints": 307,
+      "gameweekPoints": 44,
+      "totalPoints": 308,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -499,17 +499,6 @@
           "benchOrder": null
         },
         {
-          "id": 391,
-          "name": "Gvardiol",
-          "position": "DEF",
-          "club": "MCI",
-          "totalPoints": 41,
-          "gwPoints": 4,
-          "contribution": 4,
-          "starter": true,
-          "benchOrder": null
-        },
-        {
           "id": 201,
           "name": "Muñoz",
           "position": "DEF",
@@ -521,6 +510,17 @@
           "benchOrder": null
         },
         {
+          "id": 391,
+          "name": "Gvardiol",
+          "position": "DEF",
+          "club": "MCI",
+          "totalPoints": 41,
+          "gwPoints": 4,
+          "contribution": 4,
+          "starter": true,
+          "benchOrder": null
+        },
+        {
           "id": 10,
           "name": "White",
           "position": "DEF",
@@ -528,6 +528,17 @@
           "totalPoints": 26,
           "gwPoints": 5,
           "contribution": 5,
+          "starter": true,
+          "benchOrder": null
+        },
+        {
+          "id": 469,
+          "name": "N.Williams",
+          "position": "DEF",
+          "club": "NFO",
+          "totalPoints": 20,
+          "gwPoints": 1,
+          "contribution": 1,
           "starter": true,
           "benchOrder": null
         },
@@ -554,17 +565,6 @@
           "benchOrder": null
         },
         {
-          "id": 14,
-          "name": "Eze",
-          "position": "MID",
-          "club": "ARS",
-          "totalPoints": 4,
-          "gwPoints": 0,
-          "contribution": 0,
-          "starter": true,
-          "benchOrder": null
-        },
-        {
           "id": 15,
           "name": "Ødegaard",
           "position": "MID",
@@ -587,17 +587,6 @@
           "benchOrder": null
         },
         {
-          "id": 79,
-          "name": "Evanilson",
-          "position": "FWD",
-          "club": "BOU",
-          "totalPoints": 25,
-          "gwPoints": 7,
-          "contribution": 7,
-          "starter": true,
-          "benchOrder": null
-        },
-        {
           "id": 138,
           "name": "Kostoulas",
           "position": "FWD",
@@ -605,6 +594,17 @@
           "totalPoints": 29,
           "gwPoints": 1,
           "contribution": 1,
+          "starter": true,
+          "benchOrder": null
+        },
+        {
+          "id": 79,
+          "name": "Evanilson",
+          "position": "FWD",
+          "club": "BOU",
+          "totalPoints": 25,
+          "gwPoints": 7,
+          "contribution": 7,
           "starter": true,
           "benchOrder": null
         },
@@ -620,13 +620,13 @@
           "benchOrder": 1
         },
         {
-          "id": 469,
-          "name": "N.Williams",
-          "position": "DEF",
-          "club": "NFO",
-          "totalPoints": 20,
-          "gwPoints": 1,
-          "contribution": 1,
+          "id": 14,
+          "name": "Eze",
+          "position": "MID",
+          "club": "ARS",
+          "totalPoints": 4,
+          "gwPoints": 0,
+          "contribution": 0,
           "starter": false,
           "benchOrder": 2
         },
@@ -657,14 +657,14 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 307,
-          "leaguePoints": 307
+          "points": 308,
+          "leaguePoints": 308
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 276,
-          "leaguePoints": 276
+          "points": 281,
+          "leaguePoints": 281
         },
         {
           "rank": 3,
@@ -675,32 +675,32 @@
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 249,
-          "leaguePoints": 249
+          "points": 250,
+          "leaguePoints": 250
         },
         {
           "rank": 5,
-          "name": "DontBottleIt",
-          "points": 173,
-          "leaguePoints": 173
+          "name": "Kubsi FC",
+          "points": 176,
+          "leaguePoints": 176
         },
         {
           "rank": 6,
-          "name": "Kubsi FC",
-          "points": 167,
-          "leaguePoints": 167
+          "name": "DontBottleIt",
+          "points": 175,
+          "leaguePoints": 175
         },
         {
           "rank": 7,
           "name": "y0y0y",
-          "points": 165,
-          "leaguePoints": 165
+          "points": 168,
+          "leaguePoints": 168
         },
         {
           "rank": 8,
           "name": "Dinezine Dizane",
-          "points": 158,
-          "leaguePoints": 158
+          "points": 160,
+          "leaguePoints": 160
         }
       ]
     }
