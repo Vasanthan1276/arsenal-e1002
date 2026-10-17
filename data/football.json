@@ -1,5 +1,5 @@
 {
-  "updated": "17 OCT 15:01 SGT",
+  "updated": "17 OCT 20:15 SGT",
   "fixtures": [
     {
       "date": "18 OCT",
@@ -118,6 +118,30 @@
     },
     {
       "pos": 4,
+      "team": "Everton",
+      "played": 7,
+      "won": 2,
+      "draw": 5,
+      "lost": 0,
+      "gf": 8,
+      "ga": 5,
+      "gd": 3,
+      "pts": 11
+    },
+    {
+      "pos": 5,
+      "team": "Chelsea",
+      "played": 7,
+      "won": 3,
+      "draw": 2,
+      "lost": 2,
+      "gf": 15,
+      "ga": 13,
+      "gd": 2,
+      "pts": 11
+    },
+    {
+      "pos": 6,
       "team": "Brentford",
       "played": 6,
       "won": 2,
@@ -126,30 +150,6 @@
       "gf": 12,
       "ga": 6,
       "gd": 6,
-      "pts": 10
-    },
-    {
-      "pos": 5,
-      "team": "Everton",
-      "played": 6,
-      "won": 2,
-      "draw": 4,
-      "lost": 0,
-      "gf": 8,
-      "ga": 5,
-      "gd": 3,
-      "pts": 10
-    },
-    {
-      "pos": 6,
-      "team": "Chelsea",
-      "played": 6,
-      "won": 3,
-      "draw": 1,
-      "lost": 2,
-      "gf": 15,
-      "ga": 13,
-      "gd": 2,
       "pts": 10
     },
     {
