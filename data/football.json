@@ -1,13 +1,6 @@
 {
-  "updated": "18 OCT 19:19 SGT",
+  "updated": "18 OCT 23:57 SGT",
   "fixtures": [
-    {
-      "date": "18 OCT",
-      "home": "NOTT'M FOREST",
-      "away": "ARSENAL",
-      "time": "23:30 SGT",
-      "utcDate": "2026-10-18T15:30:00Z"
-    },
     {
       "date": "24 OCT",
       "home": "ARSENAL",
@@ -28,6 +21,13 @@
       "away": "HULL CITY",
       "time": "23:00 SGT",
       "utcDate": "2026-11-07T15:00:00Z"
+    },
+    {
+      "date": "22 NOV",
+      "home": "NEWCASTLE",
+      "away": "ARSENAL",
+      "time": "01:30 SGT",
+      "utcDate": "2026-11-21T17:30:00Z"
     }
   ],
   "results": [
@@ -94,27 +94,27 @@
     },
     {
       "pos": 2,
-      "team": "Arsenal",
-      "played": 6,
+      "team": "Brighton",
+      "played": 7,
       "won": 5,
-      "draw": 0,
+      "draw": 1,
+      "lost": 1,
+      "gf": 23,
+      "ga": 5,
+      "gd": 18,
+      "pts": 16
+    },
+    {
+      "pos": 3,
+      "team": "Arsenal",
+      "played": 7,
+      "won": 5,
+      "draw": 1,
       "lost": 1,
       "gf": 10,
       "ga": 5,
       "gd": 5,
-      "pts": 15
-    },
-    {
-      "pos": 3,
-      "team": "Brighton",
-      "played": 6,
-      "won": 4,
-      "draw": 1,
-      "lost": 1,
-      "gf": 18,
-      "ga": 5,
-      "gd": 13,
-      "pts": 13
+      "pts": 16
     },
     {
       "pos": 4,
@@ -154,6 +154,18 @@
     },
     {
       "pos": 7,
+      "team": "Leeds",
+      "played": 7,
+      "won": 2,
+      "draw": 4,
+      "lost": 1,
+      "gf": 9,
+      "ga": 6,
+      "gd": 3,
+      "pts": 10
+    },
+    {
+      "pos": 8,
       "team": "Everton",
       "played": 7,
       "won": 2,
@@ -163,18 +175,6 @@
       "ga": 7,
       "gd": 1,
       "pts": 10
-    },
-    {
-      "pos": 8,
-      "team": "Leeds",
-      "played": 6,
-      "won": 2,
-      "draw": 3,
-      "lost": 1,
-      "gf": 8,
-      "ga": 5,
-      "gd": 3,
-      "pts": 9
     },
     {
       "pos": 9,
@@ -226,30 +226,54 @@
     },
     {
       "pos": 13,
-      "team": "Crystal Palace",
-      "played": 6,
-      "won": 2,
-      "draw": 1,
-      "lost": 3,
-      "gf": 9,
-      "ga": 12,
-      "gd": -3,
+      "team": "Man United",
+      "played": 7,
+      "won": 1,
+      "draw": 4,
+      "lost": 2,
+      "gf": 10,
+      "ga": 10,
+      "gd": 0,
       "pts": 7
     },
     {
       "pos": 14,
-      "team": "Man United",
-      "played": 6,
-      "won": 1,
-      "draw": 3,
-      "lost": 2,
+      "team": "Crystal Palace",
+      "played": 7,
+      "won": 2,
+      "draw": 1,
+      "lost": 4,
       "gf": 9,
-      "ga": 9,
-      "gd": 0,
-      "pts": 6
+      "ga": 17,
+      "gd": -8,
+      "pts": 7
     },
     {
       "pos": 15,
+      "team": "Nott'm Forest",
+      "played": 7,
+      "won": 1,
+      "draw": 3,
+      "lost": 3,
+      "gf": 5,
+      "ga": 8,
+      "gd": -3,
+      "pts": 6
+    },
+    {
+      "pos": 16,
+      "team": "Bournemouth",
+      "played": 7,
+      "won": 1,
+      "draw": 3,
+      "lost": 3,
+      "gf": 9,
+      "ga": 13,
+      "gd": -4,
+      "pts": 6
+    },
+    {
+      "pos": 17,
       "team": "Coventry",
       "played": 6,
       "won": 2,
@@ -261,7 +285,7 @@
       "pts": 6
     },
     {
-      "pos": 16,
+      "pos": 18,
       "team": "Fulham",
       "played": 7,
       "won": 1,
@@ -273,40 +297,16 @@
       "pts": 5
     },
     {
-      "pos": 17,
-      "team": "Nott'm Forest",
-      "played": 6,
-      "won": 1,
-      "draw": 2,
-      "lost": 3,
-      "gf": 5,
-      "ga": 8,
-      "gd": -3,
-      "pts": 5
-    },
-    {
-      "pos": 18,
+      "pos": 19,
       "team": "Sunderland",
-      "played": 6,
+      "played": 7,
       "won": 1,
       "draw": 1,
-      "lost": 4,
+      "lost": 5,
       "gf": 6,
-      "ga": 12,
-      "gd": -6,
+      "ga": 14,
+      "gd": -8,
       "pts": 4
-    },
-    {
-      "pos": 19,
-      "team": "Bournemouth",
-      "played": 6,
-      "won": 0,
-      "draw": 3,
-      "lost": 3,
-      "gf": 7,
-      "ga": 13,
-      "gd": -6,
-      "pts": 3
     },
     {
       "pos": 20,
