@@ -1,5 +1,5 @@
 {
-  "updated": "18 OCT 23:57 SGT",
+  "updated": "19 OCT 02:41 SGT",
   "fixtures": [
     {
       "date": "24 OCT",
@@ -32,6 +32,14 @@
   ],
   "results": [
     {
+      "date": "18 OCT",
+      "home": "NOTT'M FOREST",
+      "away": "ARSENAL",
+      "homeScore": 0,
+      "awayScore": 1,
+      "outcome": "W"
+    },
+    {
       "date": "10 OCT",
       "home": "ARSENAL",
       "away": "LEEDS",
@@ -62,21 +70,13 @@
       "homeScore": 2,
       "awayScore": 1,
       "outcome": "W"
-    },
-    {
-      "date": "01 SEP",
-      "home": "ASTON VILLA",
-      "away": "ARSENAL",
-      "homeScore": 0,
-      "awayScore": 1,
-      "outcome": "W"
     }
   ],
   "form": [
     "W",
     "W",
-    "W",
     "L",
+    "W",
     "W"
   ],
   "standings": [
@@ -94,6 +94,18 @@
     },
     {
       "pos": 2,
+      "team": "Arsenal",
+      "played": 7,
+      "won": 6,
+      "draw": 0,
+      "lost": 1,
+      "gf": 11,
+      "ga": 5,
+      "gd": 6,
+      "pts": 18
+    },
+    {
+      "pos": 3,
       "team": "Brighton",
       "played": 7,
       "won": 5,
@@ -102,18 +114,6 @@
       "gf": 23,
       "ga": 5,
       "gd": 18,
-      "pts": 16
-    },
-    {
-      "pos": 3,
-      "team": "Arsenal",
-      "played": 7,
-      "won": 5,
-      "draw": 1,
-      "lost": 1,
-      "gf": 10,
-      "ga": 5,
-      "gd": 5,
       "pts": 16
     },
     {
@@ -250,18 +250,6 @@
     },
     {
       "pos": 15,
-      "team": "Nott'm Forest",
-      "played": 7,
-      "won": 1,
-      "draw": 3,
-      "lost": 3,
-      "gf": 5,
-      "ga": 8,
-      "gd": -3,
-      "pts": 6
-    },
-    {
-      "pos": 16,
       "team": "Bournemouth",
       "played": 7,
       "won": 1,
@@ -273,7 +261,7 @@
       "pts": 6
     },
     {
-      "pos": 17,
+      "pos": 16,
       "team": "Coventry",
       "played": 6,
       "won": 2,
@@ -285,7 +273,7 @@
       "pts": 6
     },
     {
-      "pos": 18,
+      "pos": 17,
       "team": "Fulham",
       "played": 7,
       "won": 1,
@@ -294,6 +282,18 @@
       "gf": 7,
       "ga": 10,
       "gd": -3,
+      "pts": 5
+    },
+    {
+      "pos": 18,
+      "team": "Nott'm Forest",
+      "played": 7,
+      "won": 1,
+      "draw": 2,
+      "lost": 4,
+      "gf": 5,
+      "ga": 9,
+      "gd": -4,
       "pts": 5
     },
     {
