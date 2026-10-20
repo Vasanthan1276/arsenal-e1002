@@ -1,5 +1,5 @@
 {
-  "updated": "20 OCT, 13:00 SGT",
+  "updated": "20 OCT, 19:48 SGT",
   "gameweek": 7,
   "main": {
     "key": "main",
@@ -11,7 +11,7 @@
     "gameweek": 7,
     "gameweekPoints": 68,
     "totalPoints": 525,
-    "overallRank": 73395,
+    "overallRank": 81557,
     "bank": 1.3,
     "value": 101.4,
     "activeChip": null,
@@ -250,7 +250,7 @@
       "gameweek": 7,
       "entryName": "Golden Eagles D1",
       "gameweekPoints": 37,
-      "totalPoints": 272,
+      "totalPoints": 309,
       "leaguePoints": 12,
       "leagueRank": 2,
       "players": [
@@ -262,17 +262,6 @@
           "totalPoints": 29,
           "gwPoints": 1,
           "contribution": 1,
-          "starter": true,
-          "benchOrder": null
-        },
-        {
-          "id": 115,
-          "name": "De Cuyper",
-          "position": "DEF",
-          "club": "BHA",
-          "totalPoints": 59,
-          "gwPoints": 6,
-          "contribution": 6,
           "starter": true,
           "benchOrder": null
         },
@@ -299,24 +288,24 @@
           "benchOrder": null
         },
         {
-          "id": 124,
-          "name": "Groß",
-          "position": "MID",
+          "id": 115,
+          "name": "De Cuyper",
+          "position": "DEF",
           "club": "BHA",
-          "totalPoints": 58,
-          "gwPoints": 5,
-          "contribution": 5,
+          "totalPoints": 59,
+          "gwPoints": 6,
+          "contribution": 6,
           "starter": true,
           "benchOrder": null
         },
         {
-          "id": 398,
-          "name": "Foden",
-          "position": "MID",
+          "id": 391,
+          "name": "Gvardiol",
+          "position": "DEF",
           "club": "MCI",
-          "totalPoints": 18,
-          "gwPoints": 9,
-          "contribution": 9,
+          "totalPoints": 41,
+          "gwPoints": 0,
+          "contribution": 0,
           "starter": true,
           "benchOrder": null
         },
@@ -343,13 +332,24 @@
           "benchOrder": null
         },
         {
-          "id": 552,
-          "name": "Brobbey",
-          "position": "FWD",
-          "club": "SUN",
-          "totalPoints": 24,
-          "gwPoints": 0,
-          "contribution": 0,
+          "id": 398,
+          "name": "Foden",
+          "position": "MID",
+          "club": "MCI",
+          "totalPoints": 18,
+          "gwPoints": 9,
+          "contribution": 9,
+          "starter": true,
+          "benchOrder": null
+        },
+        {
+          "id": 124,
+          "name": "Groß",
+          "position": "MID",
+          "club": "BHA",
+          "totalPoints": 58,
+          "gwPoints": 5,
+          "contribution": 5,
           "starter": true,
           "benchOrder": null
         },
@@ -387,11 +387,11 @@
           "benchOrder": 1
         },
         {
-          "id": 391,
-          "name": "Gvardiol",
-          "position": "DEF",
-          "club": "MCI",
-          "totalPoints": 41,
+          "id": 552,
+          "name": "Brobbey",
+          "position": "FWD",
+          "club": "SUN",
+          "totalPoints": 24,
           "gwPoints": 0,
           "contribution": 0,
           "starter": false,
@@ -424,49 +424,49 @@
         {
           "rank": 1,
           "name": "FC Rote Funken 01",
-          "points": 308,
+          "points": 332,
           "leaguePoints": 18
         },
         {
           "rank": 2,
           "name": "Golden Eagles D1",
-          "points": 272,
+          "points": 309,
           "leaguePoints": 12
         },
         {
           "rank": 3,
-          "name": "XabiXI",
-          "points": 248,
-          "leaguePoints": 9
+          "name": "Mr Vệ",
+          "points": 212,
+          "leaguePoints": 12
         },
         {
           "rank": 4,
-          "name": "Mr Vệ",
-          "points": 173,
-          "leaguePoints": 9
+          "name": "Coldah fc",
+          "points": 322,
+          "leaguePoints": 10
         },
         {
           "rank": 5,
-          "name": "Coldah fc",
-          "points": 256,
-          "leaguePoints": 7
+          "name": "XabiXI",
+          "points": 261,
+          "leaguePoints": 9
         },
         {
           "rank": 6,
           "name": "A-ROLE",
-          "points": 219,
-          "leaguePoints": 6
+          "points": 258,
+          "leaguePoints": 9
         },
         {
           "rank": 7,
           "name": "Danny",
-          "points": 189,
-          "leaguePoints": 6
+          "points": 235,
+          "leaguePoints": 9
         },
         {
           "rank": 8,
           "name": "Selborne FC",
-          "points": 152,
+          "points": 188,
           "leaguePoints": 4
         }
       ]
@@ -663,8 +663,8 @@
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 333,
-          "leaguePoints": 333
+          "points": 343,
+          "leaguePoints": 343
         },
         {
           "rank": 3,
@@ -675,20 +675,20 @@
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 276,
-          "leaguePoints": 276
+          "points": 277,
+          "leaguePoints": 277
         },
         {
           "rank": 5,
           "name": "Dinezine Dizane",
-          "points": 196,
-          "leaguePoints": 196
+          "points": 204,
+          "leaguePoints": 204
         },
         {
           "rank": 6,
           "name": "Kubsi FC",
-          "points": 195,
-          "leaguePoints": 195
+          "points": 200,
+          "leaguePoints": 200
         },
         {
           "rank": 7,
@@ -699,8 +699,8 @@
         {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 186,
-          "leaguePoints": 186
+          "points": 188,
+          "leaguePoints": 188
         }
       ]
     }
