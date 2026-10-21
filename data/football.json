@@ -1,5 +1,5 @@
 {
-  "updated": "21 OCT 08:40 SGT",
+  "updated": "21 OCT 15:47 SGT",
   "fixtures": [
     {
       "date": "24 OCT",
@@ -329,13 +329,13 @@
     },
     {
       "type": "INJURY",
-      "player": "Piero Hincapié",
-      "status": "Ankle injury"
+      "player": "Christos Tzolis",
+      "status": "Hamstring"
     },
     {
       "type": "INJURY",
-      "player": "Christos Tzolis",
-      "status": "Hamstring"
+      "player": "Piero Hincapié",
+      "status": "Ankle injury"
     },
     {
       "type": "TRANSFER",
