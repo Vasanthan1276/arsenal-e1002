@@ -1,5 +1,5 @@
 {
-  "updated": "24 OCT, 02:27 SGT",
+  "updated": "24 OCT, 07:12 SGT",
   "gameweek": 8,
   "main": {
     "key": "main",
@@ -11,7 +11,7 @@
     "gameweek": 8,
     "gameweekPoints": 0,
     "totalPoints": 525,
-    "overallRank": 72820,
+    "overallRank": 78536,
     "bank": 0.9,
     "value": 102,
     "activeChip": null,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 8,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 0,
+      "gameweekPoints": 10,
       "totalPoints": 309,
       "leaguePoints": 12,
       "leagueRank": 2,
@@ -281,9 +281,9 @@
           "name": "N.Williams",
           "position": "DEF",
           "club": "NFO",
-          "totalPoints": 23,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 31,
+          "gwPoints": 8,
+          "contribution": 8,
           "starter": true,
           "benchOrder": null
         },
@@ -292,9 +292,9 @@
           "name": "O'Shea",
           "position": "DEF",
           "club": "IPS",
-          "totalPoints": 24,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 26,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -635,9 +635,9 @@
           "name": "Muñoz",
           "position": "DEF",
           "club": "NFO",
-          "totalPoints": 8,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 15,
+          "gwPoints": 7,
+          "contribution": 7,
           "starter": false,
           "benchOrder": 3
         },
@@ -646,9 +646,9 @@
           "name": "N.Williams",
           "position": "DEF",
           "club": "NFO",
-          "totalPoints": 23,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 31,
+          "gwPoints": 8,
+          "contribution": 8,
           "starter": false,
           "benchOrder": 4
         }
@@ -663,14 +663,14 @@
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 343,
-          "leaguePoints": 343
+          "points": 347,
+          "leaguePoints": 347
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 308,
-          "leaguePoints": 308
+          "points": 309,
+          "leaguePoints": 309
         },
         {
           "rank": 4,
@@ -693,8 +693,8 @@
         {
           "rank": 7,
           "name": "y0y0y",
-          "points": 193,
-          "leaguePoints": 193
+          "points": 195,
+          "leaguePoints": 195
         },
         {
           "rank": 8,
