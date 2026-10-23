@@ -1,5 +1,5 @@
 {
-  "updated": "23 OCT 15:40 SGT",
+  "updated": "23 OCT 21:45 SGT",
   "fixtures": [
     {
       "date": "24 OCT",
@@ -329,13 +329,13 @@
     },
     {
       "type": "INJURY",
-      "player": "Christos Tzolis",
-      "status": "Hamstring"
+      "player": "Bukayo Saka",
+      "status": "Thigh injury"
     },
     {
       "type": "INJURY",
-      "player": "Bukayo Saka",
-      "status": "Thigh injury"
+      "player": "Christos Tzolis",
+      "status": "Hamstring"
     },
     {
       "type": "TRANSFER",
