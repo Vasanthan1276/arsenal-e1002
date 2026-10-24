@@ -1,5 +1,5 @@
 {
-  "updated": "24 OCT 19:13 SGT",
+  "updated": "25 OCT 00:03 SGT",
   "fixtures": [
     {
       "date": "24 OCT",
@@ -83,26 +83,26 @@
     {
       "pos": 1,
       "team": "Man City",
-      "played": 7,
+      "played": 8,
       "won": 7,
       "draw": 0,
-      "lost": 0,
-      "gf": 19,
-      "ga": 7,
-      "gd": 12,
+      "lost": 1,
+      "gf": 20,
+      "ga": 9,
+      "gd": 11,
       "pts": 21
     },
     {
       "pos": 2,
       "team": "Arsenal",
-      "played": 7,
-      "won": 6,
+      "played": 8,
+      "won": 7,
       "draw": 0,
       "lost": 1,
-      "gf": 11,
+      "gf": 13,
       "ga": 5,
-      "gd": 6,
-      "pts": 18
+      "gd": 8,
+      "pts": 21
     },
     {
       "pos": 3,
@@ -142,6 +142,18 @@
     },
     {
       "pos": 6,
+      "team": "Aston Villa",
+      "played": 8,
+      "won": 3,
+      "draw": 2,
+      "lost": 3,
+      "gf": 9,
+      "ga": 12,
+      "gd": -3,
+      "pts": 11
+    },
+    {
+      "pos": 7,
       "team": "Brentford",
       "played": 7,
       "won": 2,
@@ -153,7 +165,7 @@
       "pts": 10
     },
     {
-      "pos": 7,
+      "pos": 8,
       "team": "Leeds",
       "played": 7,
       "won": 2,
@@ -165,19 +177,19 @@
       "pts": 10
     },
     {
-      "pos": 8,
+      "pos": 9,
       "team": "Everton",
-      "played": 7,
+      "played": 8,
       "won": 2,
       "draw": 4,
-      "lost": 1,
+      "lost": 2,
       "gf": 8,
-      "ga": 7,
-      "gd": 1,
+      "ga": 9,
+      "gd": -1,
       "pts": 10
     },
     {
-      "pos": 9,
+      "pos": 10,
       "team": "Ipswich",
       "played": 8,
       "won": 3,
@@ -189,7 +201,7 @@
       "pts": 10
     },
     {
-      "pos": 10,
+      "pos": 11,
       "team": "Hull City",
       "played": 7,
       "won": 2,
@@ -201,7 +213,19 @@
       "pts": 9
     },
     {
-      "pos": 11,
+      "pos": 12,
+      "team": "Fulham",
+      "played": 8,
+      "won": 2,
+      "draw": 2,
+      "lost": 4,
+      "gf": 8,
+      "ga": 10,
+      "gd": -2,
+      "pts": 8
+    },
+    {
+      "pos": 13,
       "team": "Newcastle",
       "played": 7,
       "won": 2,
@@ -213,19 +237,7 @@
       "pts": 8
     },
     {
-      "pos": 12,
-      "team": "Aston Villa",
-      "played": 7,
-      "won": 2,
-      "draw": 2,
-      "lost": 3,
-      "gf": 7,
-      "ga": 11,
-      "gd": -4,
-      "pts": 8
-    },
-    {
-      "pos": 13,
+      "pos": 14,
       "team": "Man United",
       "played": 7,
       "won": 1,
@@ -237,7 +249,7 @@
       "pts": 7
     },
     {
-      "pos": 14,
+      "pos": 15,
       "team": "Crystal Palace",
       "played": 7,
       "won": 2,
@@ -249,7 +261,7 @@
       "pts": 7
     },
     {
-      "pos": 15,
+      "pos": 16,
       "team": "Bournemouth",
       "played": 7,
       "won": 1,
@@ -261,7 +273,7 @@
       "pts": 6
     },
     {
-      "pos": 16,
+      "pos": 17,
       "team": "Nott'm Forest",
       "played": 8,
       "won": 1,
@@ -273,7 +285,7 @@
       "pts": 6
     },
     {
-      "pos": 16,
+      "pos": 17,
       "team": "Tottenham",
       "played": 7,
       "won": 1,
@@ -285,28 +297,16 @@
       "pts": 6
     },
     {
-      "pos": 18,
+      "pos": 19,
       "team": "Coventry",
-      "played": 7,
+      "played": 8,
       "won": 2,
       "draw": 0,
-      "lost": 5,
+      "lost": 6,
       "gf": 6,
-      "ga": 14,
-      "gd": -8,
+      "ga": 15,
+      "gd": -9,
       "pts": 6
-    },
-    {
-      "pos": 19,
-      "team": "Fulham",
-      "played": 7,
-      "won": 1,
-      "draw": 2,
-      "lost": 4,
-      "gf": 7,
-      "ga": 10,
-      "gd": -3,
-      "pts": 5
     },
     {
       "pos": 20,
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Khvicha Kvaratskhelia",
+      "player": "Vini Jr",
       "status": "Reported target"
     }
   ]
