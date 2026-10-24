@@ -1,13 +1,6 @@
 {
-  "updated": "25 OCT 00:03 SGT",
+  "updated": "25 OCT 02:50 SGT",
   "fixtures": [
-    {
-      "date": "24 OCT",
-      "home": "ARSENAL",
-      "away": "EVERTON",
-      "time": "22:00 SGT",
-      "utcDate": "2026-10-24T14:00:00Z"
-    },
     {
       "date": "02 NOV",
       "home": "LIVERPOOL",
@@ -28,6 +21,13 @@
       "away": "ARSENAL",
       "time": "01:30 SGT",
       "utcDate": "2026-11-21T17:30:00Z"
+    },
+    {
+      "date": "30 NOV",
+      "home": "ARSENAL",
+      "away": "MAN CITY",
+      "time": "00:30 SGT",
+      "utcDate": "2026-11-29T16:30:00Z"
     }
   ],
   "results": [
@@ -119,13 +119,13 @@
     {
       "pos": 4,
       "team": "Chelsea",
-      "played": 7,
+      "played": 8,
       "won": 4,
       "draw": 1,
-      "lost": 2,
+      "lost": 3,
       "gf": 17,
-      "ga": 13,
-      "gd": 4,
+      "ga": 15,
+      "gd": 2,
       "pts": 13
     },
     {
@@ -214,6 +214,18 @@
     },
     {
       "pos": 12,
+      "team": "Tottenham",
+      "played": 8,
+      "won": 2,
+      "draw": 3,
+      "lost": 3,
+      "gf": 8,
+      "ga": 10,
+      "gd": -2,
+      "pts": 9
+    },
+    {
+      "pos": 13,
       "team": "Fulham",
       "played": 8,
       "won": 2,
@@ -225,7 +237,7 @@
       "pts": 8
     },
     {
-      "pos": 13,
+      "pos": 14,
       "team": "Newcastle",
       "played": 7,
       "won": 2,
@@ -237,7 +249,7 @@
       "pts": 8
     },
     {
-      "pos": 14,
+      "pos": 15,
       "team": "Man United",
       "played": 7,
       "won": 1,
@@ -249,7 +261,7 @@
       "pts": 7
     },
     {
-      "pos": 15,
+      "pos": 16,
       "team": "Crystal Palace",
       "played": 7,
       "won": 2,
@@ -261,7 +273,7 @@
       "pts": 7
     },
     {
-      "pos": 16,
+      "pos": 17,
       "team": "Bournemouth",
       "played": 7,
       "won": 1,
@@ -273,24 +285,12 @@
       "pts": 6
     },
     {
-      "pos": 17,
+      "pos": 18,
       "team": "Nott'm Forest",
       "played": 8,
       "won": 1,
       "draw": 3,
       "lost": 4,
-      "gf": 6,
-      "ga": 10,
-      "gd": -4,
-      "pts": 6
-    },
-    {
-      "pos": 17,
-      "team": "Tottenham",
-      "played": 7,
-      "won": 1,
-      "draw": 3,
-      "lost": 3,
       "gf": 6,
       "ga": 10,
       "gd": -4,
