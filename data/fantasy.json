@@ -1,5 +1,5 @@
 {
-  "updated": "25 OCT, 02:50 SGT",
+  "updated": "25 OCT, 06:33 SGT",
   "gameweek": 8,
   "main": {
     "key": "main",
@@ -9,7 +9,7 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 8,
-    "gameweekPoints": 0,
+    "gameweekPoints": 17,
     "totalPoints": 542,
     "overallRank": 240729,
     "bank": 0.9,
@@ -483,7 +483,7 @@
       "gameweek": 8,
       "entryName": "Golden Eagles D2",
       "gameweekPoints": 17,
-      "totalPoints": 353,
+      "totalPoints": 370,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 353,
-          "leaguePoints": 353
+          "points": 370,
+          "leaguePoints": 370
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 347,
-          "leaguePoints": 347
+          "points": 364,
+          "leaguePoints": 364
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 309,
-          "leaguePoints": 309
+          "points": 313,
+          "leaguePoints": 313
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 277,
-          "leaguePoints": 277
+          "points": 294,
+          "leaguePoints": 294
         },
         {
           "rank": 5,
-          "name": "Dinezine Dizane",
-          "points": 204,
-          "leaguePoints": 204
+          "name": "y0y0y",
+          "points": 218,
+          "leaguePoints": 218
         },
         {
           "rank": 6,
           "name": "Kubsi FC",
-          "points": 200,
-          "leaguePoints": 200
+          "points": 211,
+          "leaguePoints": 211
         },
         {
           "rank": 7,
-          "name": "y0y0y",
-          "points": 195,
-          "leaguePoints": 195
+          "name": "Dinezine Dizane",
+          "points": 208,
+          "leaguePoints": 208
         },
         {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 188,
-          "leaguePoints": 188
+          "points": 197,
+          "leaguePoints": 197
         }
       ]
     }

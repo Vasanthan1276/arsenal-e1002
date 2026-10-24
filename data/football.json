@@ -1,6 +1,13 @@
 {
-  "updated": "25 OCT 02:50 SGT",
+  "updated": "25 OCT 06:33 SGT",
   "fixtures": [
+    {
+      "date": "24 OCT",
+      "home": "ARSENAL",
+      "away": "EVERTON",
+      "time": "22:00 SGT",
+      "utcDate": "2026-10-24T14:00:00Z"
+    },
     {
       "date": "02 NOV",
       "home": "LIVERPOOL",
@@ -21,13 +28,6 @@
       "away": "ARSENAL",
       "time": "01:30 SGT",
       "utcDate": "2026-11-21T17:30:00Z"
-    },
-    {
-      "date": "30 NOV",
-      "home": "ARSENAL",
-      "away": "MAN CITY",
-      "time": "00:30 SGT",
-      "utcDate": "2026-11-29T16:30:00Z"
     }
   ],
   "results": [
