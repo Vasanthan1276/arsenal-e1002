@@ -1,5 +1,5 @@
 {
-  "updated": "25 OCT 19:43 SGT",
+  "updated": "26 OCT 00:32 SGT",
   "fixtures": [
     {
       "date": "02 NOV",
@@ -107,17 +107,29 @@
     {
       "pos": 3,
       "team": "Brighton",
-      "played": 7,
+      "played": 8,
       "won": 5,
       "draw": 1,
-      "lost": 1,
+      "lost": 2,
       "gf": 23,
-      "ga": 5,
-      "gd": 18,
+      "ga": 7,
+      "gd": 16,
       "pts": 16
     },
     {
       "pos": 4,
+      "team": "Liverpool",
+      "played": 8,
+      "won": 4,
+      "draw": 3,
+      "lost": 1,
+      "gf": 11,
+      "ga": 8,
+      "gd": 3,
+      "pts": 15
+    },
+    {
+      "pos": 5,
       "team": "Chelsea",
       "played": 8,
       "won": 4,
@@ -129,19 +141,43 @@
       "pts": 13
     },
     {
-      "pos": 5,
-      "team": "Liverpool",
-      "played": 7,
-      "won": 3,
-      "draw": 3,
+      "pos": 6,
+      "team": "Brentford",
+      "played": 8,
+      "won": 2,
+      "draw": 5,
       "lost": 1,
-      "gf": 9,
-      "ga": 8,
-      "gd": 1,
-      "pts": 12
+      "gf": 14,
+      "ga": 9,
+      "gd": 5,
+      "pts": 11
     },
     {
-      "pos": 6,
+      "pos": 7,
+      "team": "Leeds",
+      "played": 8,
+      "won": 2,
+      "draw": 5,
+      "lost": 1,
+      "gf": 9,
+      "ga": 6,
+      "gd": 3,
+      "pts": 11
+    },
+    {
+      "pos": 8,
+      "team": "Newcastle",
+      "played": 8,
+      "won": 3,
+      "draw": 2,
+      "lost": 3,
+      "gf": 12,
+      "ga": 14,
+      "gd": -2,
+      "pts": 11
+    },
+    {
+      "pos": 9,
       "team": "Aston Villa",
       "played": 8,
       "won": 3,
@@ -153,31 +189,19 @@
       "pts": 11
     },
     {
-      "pos": 7,
-      "team": "Brentford",
-      "played": 7,
+      "pos": 10,
+      "team": "Hull City",
+      "played": 8,
       "won": 2,
       "draw": 4,
-      "lost": 1,
-      "gf": 13,
-      "ga": 8,
-      "gd": 5,
-      "pts": 10
-    },
-    {
-      "pos": 8,
-      "team": "Leeds",
-      "played": 7,
-      "won": 2,
-      "draw": 4,
-      "lost": 1,
+      "lost": 2,
       "gf": 9,
-      "ga": 6,
-      "gd": 3,
+      "ga": 8,
+      "gd": 1,
       "pts": 10
     },
     {
-      "pos": 9,
+      "pos": 11,
       "team": "Everton",
       "played": 8,
       "won": 2,
@@ -189,7 +213,7 @@
       "pts": 10
     },
     {
-      "pos": 10,
+      "pos": 12,
       "team": "Ipswich",
       "played": 8,
       "won": 3,
@@ -201,19 +225,19 @@
       "pts": 10
     },
     {
-      "pos": 11,
-      "team": "Hull City",
-      "played": 7,
+      "pos": 13,
+      "team": "Bournemouth",
+      "played": 8,
       "won": 2,
       "draw": 3,
-      "lost": 2,
-      "gf": 8,
-      "ga": 7,
-      "gd": 1,
+      "lost": 3,
+      "gf": 12,
+      "ga": 13,
+      "gd": -1,
       "pts": 9
     },
     {
-      "pos": 12,
+      "pos": 14,
       "team": "Tottenham",
       "played": 8,
       "won": 2,
@@ -225,7 +249,7 @@
       "pts": 9
     },
     {
-      "pos": 13,
+      "pos": 15,
       "team": "Fulham",
       "played": 8,
       "won": 2,
@@ -237,52 +261,28 @@
       "pts": 8
     },
     {
-      "pos": 14,
-      "team": "Newcastle",
-      "played": 7,
-      "won": 2,
-      "draw": 2,
-      "lost": 3,
-      "gf": 10,
-      "ga": 14,
-      "gd": -4,
-      "pts": 8
-    },
-    {
-      "pos": 15,
+      "pos": 16,
       "team": "Man United",
-      "played": 7,
+      "played": 8,
       "won": 1,
       "draw": 4,
-      "lost": 2,
+      "lost": 3,
       "gf": 10,
-      "ga": 10,
-      "gd": 0,
-      "pts": 7
-    },
-    {
-      "pos": 16,
-      "team": "Crystal Palace",
-      "played": 7,
-      "won": 2,
-      "draw": 1,
-      "lost": 4,
-      "gf": 9,
-      "ga": 17,
-      "gd": -8,
+      "ga": 13,
+      "gd": -3,
       "pts": 7
     },
     {
       "pos": 17,
-      "team": "Bournemouth",
-      "played": 7,
-      "won": 1,
-      "draw": 3,
-      "lost": 3,
+      "team": "Crystal Palace",
+      "played": 8,
+      "won": 2,
+      "draw": 1,
+      "lost": 5,
       "gf": 9,
-      "ga": 13,
-      "gd": -4,
-      "pts": 6
+      "ga": 19,
+      "gd": -10,
+      "pts": 7
     },
     {
       "pos": 18,
@@ -311,14 +311,14 @@
     {
       "pos": 20,
       "team": "Sunderland",
-      "played": 7,
+      "played": 8,
       "won": 1,
-      "draw": 1,
+      "draw": 2,
       "lost": 5,
       "gf": 6,
       "ga": 14,
       "gd": -8,
-      "pts": 4
+      "pts": 5
     }
   ],
   "squadWatch": [
