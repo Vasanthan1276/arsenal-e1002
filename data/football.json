@@ -1,5 +1,5 @@
 {
-  "updated": "25 OCT 12:53 SGT",
+  "updated": "25 OCT 19:43 SGT",
   "fixtures": [
     {
       "date": "02 NOV",
@@ -32,6 +32,14 @@
   ],
   "results": [
     {
+      "date": "24 OCT",
+      "home": "ARSENAL",
+      "away": "EVERTON",
+      "homeScore": 2,
+      "awayScore": 0,
+      "outcome": "W"
+    },
+    {
       "date": "18 OCT",
       "home": "NOTT'M FOREST",
       "away": "ARSENAL",
@@ -62,20 +70,12 @@
       "homeScore": 0,
       "awayScore": 2,
       "outcome": "W"
-    },
-    {
-      "date": "06 SEP",
-      "home": "ARSENAL",
-      "away": "CHELSEA",
-      "homeScore": 2,
-      "awayScore": 1,
-      "outcome": "W"
     }
   ],
   "form": [
     "W",
-    "W",
     "L",
+    "W",
     "W",
     "W"
   ],
