@@ -1,5 +1,5 @@
 {
-  "updated": "26 OCT 16:04 SGT",
+  "updated": "26 OCT 23:16 SGT",
   "fixtures": [
     {
       "date": "02 NOV",
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Vini Jr",
+      "player": "Gustavo Varela",
       "status": "Reported target"
     }
   ]
