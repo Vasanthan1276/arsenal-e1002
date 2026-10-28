@@ -1,5 +1,5 @@
 {
-  "updated": "28 OCT 09:27 SGT",
+  "updated": "28 OCT 16:42 SGT",
   "fixtures": [
     {
       "date": "02 NOV",
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Julian Alvarez",
+      "player": "Gustavo Varela",
       "status": "Reported target"
     }
   ]
