@@ -1,5 +1,5 @@
 {
-  "updated": "28 OCT 04:46 SGT",
+  "updated": "28 OCT 09:27 SGT",
   "fixtures": [
     {
       "date": "02 NOV",
@@ -333,9 +333,9 @@
       "status": "Thigh injury"
     },
     {
-      "type": "INJURY",
-      "player": "Christos Tzolis",
-      "status": "Hamstring"
+      "type": "SUSPEND",
+      "player": "Max Dowman",
+      "status": "Suspended until 29 Nov"
     },
     {
       "type": "TRANSFER",
