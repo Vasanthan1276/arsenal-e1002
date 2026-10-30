@@ -1,5 +1,5 @@
 {
-  "updated": "30 OCT 21:08 SGT",
+  "updated": "31 OCT 03:28 SGT",
   "fixtures": [
     {
       "date": "02 NOV",
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Alex Baena",
+      "player": "Julian Alvarez",
       "status": "Reported target"
     }
   ]
