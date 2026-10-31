@@ -1,5 +1,5 @@
 {
-  "updated": "01 NOV 02:38 SGT",
+  "updated": "01 NOV 07:27 SGT",
   "fixtures": [
     {
       "date": "02 NOV",
@@ -171,13 +171,25 @@
       "won": 3,
       "draw": 3,
       "lost": 3,
-      "gf": 9,
+      "gf": 10,
       "ga": 10,
-      "gd": -1,
+      "gd": 0,
       "pts": 12
     },
     {
       "pos": 9,
+      "team": "Aston Villa",
+      "played": 9,
+      "won": 3,
+      "draw": 3,
+      "lost": 3,
+      "gf": 10,
+      "ga": 13,
+      "gd": -3,
+      "pts": 12
+    },
+    {
+      "pos": 10,
       "team": "Hull City",
       "played": 9,
       "won": 2,
@@ -189,7 +201,7 @@
       "pts": 11
     },
     {
-      "pos": 10,
+      "pos": 11,
       "team": "Leeds",
       "played": 9,
       "won": 2,
@@ -201,7 +213,7 @@
       "pts": 11
     },
     {
-      "pos": 11,
+      "pos": 12,
       "team": "Newcastle",
       "played": 8,
       "won": 3,
@@ -210,18 +222,6 @@
       "gf": 12,
       "ga": 14,
       "gd": -2,
-      "pts": 11
-    },
-    {
-      "pos": 12,
-      "team": "Aston Villa",
-      "played": 8,
-      "won": 3,
-      "draw": 2,
-      "lost": 3,
-      "gf": 9,
-      "ga": 12,
-      "gd": -3,
       "pts": 11
     },
     {
@@ -250,6 +250,18 @@
     },
     {
       "pos": 15,
+      "team": "Fulham",
+      "played": 9,
+      "won": 2,
+      "draw": 3,
+      "lost": 4,
+      "gf": 9,
+      "ga": 11,
+      "gd": -2,
+      "pts": 9
+    },
+    {
+      "pos": 16,
       "team": "Coventry",
       "played": 9,
       "won": 3,
@@ -259,18 +271,6 @@
       "ga": 16,
       "gd": -7,
       "pts": 9
-    },
-    {
-      "pos": 16,
-      "team": "Fulham",
-      "played": 8,
-      "won": 2,
-      "draw": 2,
-      "lost": 4,
-      "gf": 8,
-      "ga": 10,
-      "gd": -2,
-      "pts": 8
     },
     {
       "pos": 17,
@@ -292,8 +292,8 @@
       "draw": 1,
       "lost": 6,
       "gf": 9,
-      "ga": 20,
-      "gd": -11,
+      "ga": 21,
+      "gd": -12,
       "pts": 7
     },
     {

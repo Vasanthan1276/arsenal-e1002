@@ -1,5 +1,5 @@
 {
-  "updated": "01 NOV, 02:38 SGT",
+  "updated": "01 NOV, 07:27 SGT",
   "gameweek": 9,
   "main": {
     "key": "main",
@@ -10,8 +10,8 @@
     "entryId": 6522273,
     "gameweek": 9,
     "gameweekPoints": 0,
-    "totalPoints": 607,
-    "overallRank": 87882,
+    "totalPoints": 616,
+    "overallRank": 127389,
     "bank": 0.7,
     "value": 101.8,
     "activeChip": null,
@@ -147,9 +147,9 @@
         "name": "N.Jackson",
         "position": "FWD",
         "club": "AVL",
-        "totalPoints": 34,
-        "gwPoints": 0,
-        "contribution": 0,
+        "totalPoints": 43,
+        "gwPoints": 9,
+        "contribution": 9,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -175,8 +175,8 @@
         "name": "Kinsky",
         "position": "GKP",
         "club": "TOT",
-        "totalPoints": 33,
-        "gwPoints": 1,
+        "totalPoints": 38,
+        "gwPoints": 6,
         "contribution": 0,
         "starter": false,
         "benchOrder": 1,
@@ -391,9 +391,9 @@
           "name": "Gonzalo",
           "position": "FWD",
           "club": "FUL",
-          "totalPoints": 20,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 22,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": false,
           "benchOrder": 2
         },
@@ -482,8 +482,8 @@
       "entryId": 351935,
       "gameweek": 9,
       "entryName": "Golden Eagles D2",
-      "gameweekPoints": 21,
-      "totalPoints": 394,
+      "gameweekPoints": 22,
+      "totalPoints": 416,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -602,9 +602,9 @@
           "name": "Solanke",
           "position": "FWD",
           "club": "TOT",
-          "totalPoints": 20,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 21,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 394,
-          "leaguePoints": 394
+          "points": 416,
+          "leaguePoints": 416
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 369,
-          "leaguePoints": 369
+          "points": 386,
+          "leaguePoints": 386
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 340,
-          "leaguePoints": 340
+          "points": 362,
+          "leaguePoints": 362
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 299,
-          "leaguePoints": 299
+          "points": 313,
+          "leaguePoints": 313
         },
         {
           "rank": 5,
           "name": "Dinezine Dizane",
-          "points": 256,
-          "leaguePoints": 256
+          "points": 292,
+          "leaguePoints": 292
         },
         {
           "rank": 6,
-          "name": "Kubsi FC",
-          "points": 236,
-          "leaguePoints": 236
+          "name": "y0y0y",
+          "points": 247,
+          "leaguePoints": 247
         },
         {
           "rank": 7,
-          "name": "y0y0y",
-          "points": 231,
-          "leaguePoints": 231
+          "name": "Kubsi FC",
+          "points": 240,
+          "leaguePoints": 240
         },
         {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 212,
-          "leaguePoints": 212
+          "points": 232,
+          "leaguePoints": 232
         }
       ]
     }
