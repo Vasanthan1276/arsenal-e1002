@@ -1,5 +1,5 @@
 {
-  "updated": "31 OCT 13:54 SGT",
+  "updated": "31 OCT 20:45 SGT",
   "fixtures": [
     {
       "date": "02 NOV",
@@ -131,14 +131,14 @@
     {
       "pos": 5,
       "team": "Chelsea",
-      "played": 8,
+      "played": 9,
       "won": 4,
-      "draw": 1,
+      "draw": 2,
       "lost": 3,
       "gf": 17,
       "ga": 15,
       "gd": 2,
-      "pts": 13
+      "pts": 14
     },
     {
       "pos": 6,
@@ -263,14 +263,14 @@
     {
       "pos": 16,
       "team": "Man United",
-      "played": 8,
+      "played": 9,
       "won": 1,
-      "draw": 4,
+      "draw": 5,
       "lost": 3,
       "gf": 10,
       "ga": 13,
       "gd": -3,
-      "pts": 7
+      "pts": 8
     },
     {
       "pos": 17,
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Alex Baena",
+      "player": "Julian Alvarez",
       "status": "Reported target"
     }
   ]
