@@ -1,5 +1,5 @@
 {
-  "updated": "01 NOV, 07:27 SGT",
+  "updated": "01 NOV, 14:20 SGT",
   "gameweek": 9,
   "main": {
     "key": "main",
@@ -9,7 +9,7 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 9,
-    "gameweekPoints": 0,
+    "gameweekPoints": 55,
     "totalPoints": 616,
     "overallRank": 127389,
     "bank": 0.7,
