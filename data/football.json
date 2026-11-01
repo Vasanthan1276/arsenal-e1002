@@ -1,13 +1,6 @@
 {
-  "updated": "01 NOV 23:16 SGT",
+  "updated": "02 NOV 04:35 SGT",
   "fixtures": [
-    {
-      "date": "02 NOV",
-      "home": "LIVERPOOL",
-      "away": "ARSENAL",
-      "time": "00:30 SGT",
-      "utcDate": "2026-11-01T16:30:00Z"
-    },
     {
       "date": "07 NOV",
       "home": "ARSENAL",
@@ -28,9 +21,24 @@
       "away": "MAN CITY",
       "time": "00:30 SGT",
       "utcDate": "2026-11-29T16:30:00Z"
+    },
+    {
+      "date": "03 DEC",
+      "home": "BRENTFORD",
+      "away": "ARSENAL",
+      "time": "04:15 SGT",
+      "utcDate": "2026-12-02T20:15:00Z"
     }
   ],
   "results": [
+    {
+      "date": "02 NOV",
+      "home": "LIVERPOOL",
+      "away": "ARSENAL",
+      "homeScore": 0,
+      "awayScore": 1,
+      "outcome": "W"
+    },
     {
       "date": "24 OCT",
       "home": "ARSENAL",
@@ -62,19 +70,11 @@
       "homeScore": 3,
       "awayScore": 0,
       "outcome": "L"
-    },
-    {
-      "date": "13 SEP",
-      "home": "SUNDERLAND",
-      "away": "ARSENAL",
-      "homeScore": 0,
-      "awayScore": 2,
-      "outcome": "W"
     }
   ],
   "form": [
-    "W",
     "L",
+    "W",
     "W",
     "W",
     "W"
@@ -82,6 +82,18 @@
   "standings": [
     {
       "pos": 1,
+      "team": "Arsenal",
+      "played": 9,
+      "won": 8,
+      "draw": 0,
+      "lost": 1,
+      "gf": 14,
+      "ga": 5,
+      "gd": 9,
+      "pts": 24
+    },
+    {
+      "pos": 2,
       "team": "Man City",
       "played": 9,
       "won": 7,
@@ -90,18 +102,6 @@
       "gf": 20,
       "ga": 10,
       "gd": 10,
-      "pts": 21
-    },
-    {
-      "pos": 2,
-      "team": "Arsenal",
-      "played": 8,
-      "won": 7,
-      "draw": 0,
-      "lost": 1,
-      "gf": 13,
-      "ga": 5,
-      "gd": 8,
       "pts": 21
     },
     {
@@ -131,13 +131,13 @@
     {
       "pos": 5,
       "team": "Liverpool",
-      "played": 8,
+      "played": 9,
       "won": 4,
       "draw": 3,
-      "lost": 1,
+      "lost": 2,
       "gf": 11,
-      "ga": 8,
-      "gd": 3,
+      "ga": 9,
+      "gd": 2,
       "pts": 15
     },
     {
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Julian Alvarez",
+      "player": "Alex Baena",
       "status": "Reported target"
     }
   ]

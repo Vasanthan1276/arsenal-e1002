@@ -1,5 +1,5 @@
 {
-  "updated": "01 NOV, 23:16 SGT",
+  "updated": "02 NOV, 04:35 SGT",
   "gameweek": 9,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 9,
-    "gameweekPoints": 55,
-    "totalPoints": 616,
-    "overallRank": 127389,
+    "gameweekPoints": 57,
+    "totalPoints": 618,
+    "overallRank": 208253,
     "bank": 0.7,
     "value": 101.8,
     "activeChip": null,
@@ -91,9 +91,9 @@
         "name": "Wirtz",
         "position": "MID",
         "club": "LIV",
-        "totalPoints": 31,
-        "gwPoints": 0,
-        "contribution": 0,
+        "totalPoints": 33,
+        "gwPoints": 2,
+        "contribution": 2,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -217,8 +217,8 @@
         "name": "Calafiori",
         "position": "DEF",
         "club": "ARS",
-        "totalPoints": 45,
-        "gwPoints": 0,
+        "totalPoints": 53,
+        "gwPoints": 8,
         "contribution": 0,
         "starter": false,
         "benchOrder": 4,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 9,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 22,
+      "gameweekPoints": 32,
       "totalPoints": 329,
       "leaguePoints": 12,
       "leagueRank": 4,
@@ -281,9 +281,9 @@
           "name": "Konsa",
           "position": "DEF",
           "club": "ARS",
-          "totalPoints": 39,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 49,
+          "gwPoints": 10,
+          "contribution": 10,
           "starter": true,
           "benchOrder": null
         },
@@ -482,8 +482,8 @@
       "entryId": 351935,
       "gameweek": 9,
       "entryName": "Golden Eagles D2",
-      "gameweekPoints": 22,
-      "totalPoints": 416,
+      "gameweekPoints": 27,
+      "totalPoints": 421,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -547,9 +547,9 @@
           "name": "Wirtz",
           "position": "MID",
           "club": "LIV",
-          "totalPoints": 31,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 33,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -558,9 +558,9 @@
           "name": "Ødegaard",
           "position": "MID",
           "club": "ARS",
-          "totalPoints": 36,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 39,
+          "gwPoints": 3,
+          "contribution": 3,
           "starter": true,
           "benchOrder": null
         },
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 416,
-          "leaguePoints": 416
+          "points": 421,
+          "leaguePoints": 421
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 386,
-          "leaguePoints": 386
+          "points": 396,
+          "leaguePoints": 396
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 362,
-          "leaguePoints": 362
+          "points": 382,
+          "leaguePoints": 382
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 313,
-          "leaguePoints": 313
+          "points": 316,
+          "leaguePoints": 316
         },
         {
           "rank": 5,
           "name": "Dinezine Dizane",
-          "points": 292,
-          "leaguePoints": 292
+          "points": 297,
+          "leaguePoints": 297
         },
         {
           "rank": 6,
           "name": "y0y0y",
-          "points": 247,
-          "leaguePoints": 247
+          "points": 255,
+          "leaguePoints": 255
         },
         {
           "rank": 7,
           "name": "Kubsi FC",
-          "points": 240,
-          "leaguePoints": 240
+          "points": 248,
+          "leaguePoints": 248
         },
         {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 232,
-          "leaguePoints": 232
+          "points": 233,
+          "leaguePoints": 233
         }
       ]
     }
