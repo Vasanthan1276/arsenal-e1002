@@ -1,5 +1,5 @@
 {
-  "updated": "02 NOV, 17:37 SGT",
+  "updated": "03 NOV, 04:24 SGT",
   "gameweek": 9,
   "main": {
     "key": "main",
@@ -11,7 +11,7 @@
     "gameweek": 9,
     "gameweekPoints": 57,
     "totalPoints": 618,
-    "overallRank": 200166,
+    "overallRank": 206506,
     "bank": 0.7,
     "value": 101.8,
     "activeChip": null,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 9,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 32,
+      "gameweekPoints": 33,
       "totalPoints": 329,
       "leaguePoints": 12,
       "leagueRank": 4,
@@ -369,9 +369,9 @@
           "name": "Barry",
           "position": "FWD",
           "club": "EVE",
-          "totalPoints": 30,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 31,
+          "gwPoints": 1,
+          "contribution": 1,
           "starter": true,
           "benchOrder": null
         },
