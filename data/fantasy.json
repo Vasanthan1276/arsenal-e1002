@@ -1,5 +1,5 @@
 {
-  "updated": "02 NOV, 04:35 SGT",
+  "updated": "02 NOV, 09:34 SGT",
   "gameweek": 9,
   "main": {
     "key": "main",
@@ -11,7 +11,7 @@
     "gameweek": 9,
     "gameweekPoints": 57,
     "totalPoints": 618,
-    "overallRank": 208253,
+    "overallRank": 200166,
     "bank": 0.7,
     "value": 101.8,
     "activeChip": null,
@@ -217,8 +217,8 @@
         "name": "Calafiori",
         "position": "DEF",
         "club": "ARS",
-        "totalPoints": 53,
-        "gwPoints": 8,
+        "totalPoints": 51,
+        "gwPoints": 6,
         "contribution": 0,
         "starter": false,
         "benchOrder": 4,
