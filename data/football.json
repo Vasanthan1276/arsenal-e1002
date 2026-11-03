@@ -1,5 +1,5 @@
 {
-  "updated": "03 NOV 04:24 SGT",
+  "updated": "03 NOV 11:29 SGT",
   "fixtures": [
     {
       "date": "07 NOV",
@@ -154,6 +154,18 @@
     },
     {
       "pos": 7,
+      "team": "Everton",
+      "played": 9,
+      "won": 3,
+      "draw": 4,
+      "lost": 2,
+      "gf": 9,
+      "ga": 9,
+      "gd": 0,
+      "pts": 13
+    },
+    {
+      "pos": 8,
       "team": "Bournemouth",
       "played": 9,
       "won": 3,
@@ -165,7 +177,7 @@
       "pts": 12
     },
     {
-      "pos": 8,
+      "pos": 9,
       "team": "Tottenham",
       "played": 9,
       "won": 3,
@@ -174,18 +186,6 @@
       "gf": 10,
       "ga": 10,
       "gd": 0,
-      "pts": 12
-    },
-    {
-      "pos": 9,
-      "team": "Newcastle",
-      "played": 9,
-      "won": 3,
-      "draw": 3,
-      "lost": 3,
-      "gf": 12,
-      "ga": 14,
-      "gd": -2,
       "pts": 12
     },
     {
@@ -226,14 +226,14 @@
     },
     {
       "pos": 13,
-      "team": "Everton",
+      "team": "Newcastle",
       "played": 9,
-      "won": 2,
-      "draw": 5,
-      "lost": 2,
-      "gf": 8,
-      "ga": 9,
-      "gd": -1,
+      "won": 3,
+      "draw": 2,
+      "lost": 4,
+      "gf": 12,
+      "ga": 15,
+      "gd": -3,
       "pts": 11
     },
     {
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Vini Jr",
+      "player": "Kenan Yildiz",
       "status": "Reported target"
     }
   ]

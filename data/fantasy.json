@@ -1,5 +1,5 @@
 {
-  "updated": "03 NOV, 04:24 SGT",
+  "updated": "03 NOV, 11:29 SGT",
   "gameweek": 9,
   "main": {
     "key": "main",
@@ -11,7 +11,7 @@
     "gameweek": 9,
     "gameweekPoints": 57,
     "totalPoints": 618,
-    "overallRank": 206506,
+    "overallRank": 225829,
     "bank": 0.7,
     "value": 101.8,
     "activeChip": null,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 9,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 33,
+      "gameweekPoints": 41,
       "totalPoints": 329,
       "leaguePoints": 12,
       "leagueRank": 4,
@@ -369,9 +369,9 @@
           "name": "Barry",
           "position": "FWD",
           "club": "EVE",
-          "totalPoints": 31,
-          "gwPoints": 1,
-          "contribution": 1,
+          "totalPoints": 39,
+          "gwPoints": 9,
+          "contribution": 9,
           "starter": true,
           "benchOrder": null
         },
@@ -669,8 +669,8 @@
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 382,
-          "leaguePoints": 382
+          "points": 388,
+          "leaguePoints": 388
         },
         {
           "rank": 4,
@@ -686,21 +686,21 @@
         },
         {
           "rank": 6,
-          "name": "y0y0y",
-          "points": 255,
-          "leaguePoints": 255
+          "name": "Kubsi FC",
+          "points": 258,
+          "leaguePoints": 258
         },
         {
-          "rank": 7,
-          "name": "Kubsi FC",
-          "points": 248,
-          "leaguePoints": 248
+          "rank": 6,
+          "name": "y0y0y",
+          "points": 258,
+          "leaguePoints": 258
         },
         {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 233,
-          "leaguePoints": 233
+          "points": 239,
+          "leaguePoints": 239
         }
       ]
     }
