@@ -1,5 +1,5 @@
 {
-  "updated": "03 NOV, 11:29 SGT",
+  "updated": "03 NOV, 20:01 SGT",
   "gameweek": 9,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 9,
-    "gameweekPoints": 57,
-    "totalPoints": 618,
-    "overallRank": 225829,
+    "gameweekPoints": 66,
+    "totalPoints": 627,
+    "overallRank": 143591,
     "bank": 0.7,
     "value": 101.8,
     "activeChip": null,
@@ -24,34 +24,6 @@
         "totalPoints": 51,
         "gwPoints": 11,
         "contribution": 11,
-        "starter": true,
-        "benchOrder": null,
-        "captain": false,
-        "viceCaptain": false,
-        "multiplier": 1
-      },
-      {
-        "id": 306,
-        "name": "Greaves",
-        "position": "DEF",
-        "club": "IPS",
-        "totalPoints": 4,
-        "gwPoints": 0,
-        "contribution": 0,
-        "starter": true,
-        "benchOrder": null,
-        "captain": false,
-        "viceCaptain": false,
-        "multiplier": 1
-      },
-      {
-        "id": 566,
-        "name": "Silva",
-        "position": "DEF",
-        "club": "BOU",
-        "totalPoints": 37,
-        "gwPoints": 8,
-        "contribution": 8,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -73,11 +45,25 @@
         "multiplier": 1
       },
       {
-        "id": 154,
-        "name": "Palmer",
-        "position": "MID",
-        "club": "CHE",
-        "totalPoints": 45,
+        "id": 115,
+        "name": "De Cuyper",
+        "position": "DEF",
+        "club": "BHA",
+        "totalPoints": 69,
+        "gwPoints": 9,
+        "contribution": 9,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
+      },
+      {
+        "id": 566,
+        "name": "Silva",
+        "position": "DEF",
+        "club": "BOU",
+        "totalPoints": 37,
         "gwPoints": 8,
         "contribution": 8,
         "starter": true,
@@ -87,13 +73,13 @@
         "multiplier": 1
       },
       {
-        "id": 366,
-        "name": "Wirtz",
+        "id": 154,
+        "name": "Palmer",
         "position": "MID",
-        "club": "LIV",
-        "totalPoints": 33,
-        "gwPoints": 2,
-        "contribution": 2,
+        "club": "CHE",
+        "totalPoints": 45,
+        "gwPoints": 8,
+        "contribution": 8,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -115,6 +101,20 @@
         "multiplier": 1
       },
       {
+        "id": 366,
+        "name": "Wirtz",
+        "position": "MID",
+        "club": "LIV",
+        "totalPoints": 33,
+        "gwPoints": 2,
+        "contribution": 2,
+        "starter": true,
+        "benchOrder": null,
+        "captain": false,
+        "viceCaptain": false,
+        "multiplier": 1
+      },
+      {
         "id": 94,
         "name": "Schade",
         "position": "MID",
@@ -129,18 +129,18 @@
         "multiplier": 1
       },
       {
-        "id": 79,
-        "name": "Evanilson",
+        "id": 411,
+        "name": "Haaland",
         "position": "FWD",
-        "club": "BOU",
-        "totalPoints": 52,
-        "gwPoints": 9,
-        "contribution": 9,
+        "club": "MCI",
+        "totalPoints": 68,
+        "gwPoints": 2,
+        "contribution": 4,
         "starter": true,
         "benchOrder": null,
-        "captain": false,
+        "captain": true,
         "viceCaptain": false,
-        "multiplier": 1
+        "multiplier": 2
       },
       {
         "id": 166,
@@ -157,18 +157,18 @@
         "multiplier": 1
       },
       {
-        "id": 411,
-        "name": "Haaland",
+        "id": 79,
+        "name": "Evanilson",
         "position": "FWD",
-        "club": "MCI",
-        "totalPoints": 68,
-        "gwPoints": 2,
-        "contribution": 4,
+        "club": "BOU",
+        "totalPoints": 52,
+        "gwPoints": 9,
+        "contribution": 9,
         "starter": true,
         "benchOrder": null,
-        "captain": true,
+        "captain": false,
         "viceCaptain": false,
-        "multiplier": 2
+        "multiplier": 1
       },
       {
         "id": 496,
@@ -199,12 +199,12 @@
         "multiplier": 0
       },
       {
-        "id": 115,
-        "name": "De Cuyper",
+        "id": 306,
+        "name": "Greaves",
         "position": "DEF",
-        "club": "BHA",
-        "totalPoints": 69,
-        "gwPoints": 9,
+        "club": "IPS",
+        "totalPoints": 4,
+        "gwPoints": 0,
         "contribution": 0,
         "starter": false,
         "benchOrder": 3,
@@ -250,9 +250,9 @@
       "gameweek": 9,
       "entryName": "Golden Eagles D1",
       "gameweekPoints": 41,
-      "totalPoints": 329,
-      "leaguePoints": 12,
-      "leagueRank": 4,
+      "totalPoints": 370,
+      "leaguePoints": 15,
+      "leagueRank": 3,
       "players": [
         {
           "id": 384,
@@ -424,50 +424,50 @@
         {
           "rank": 1,
           "name": "FC Rote Funken 01",
-          "points": 363,
+          "points": 400,
           "leaguePoints": 18
         },
         {
           "rank": 2,
-          "name": "Mr Vệ",
-          "points": 246,
-          "leaguePoints": 15
+          "name": "Coldah fc",
+          "points": 406,
+          "leaguePoints": 16
         },
         {
           "rank": 3,
-          "name": "Coldah fc",
-          "points": 358,
-          "leaguePoints": 13
+          "name": "Golden Eagles D1",
+          "points": 370,
+          "leaguePoints": 15
         },
         {
           "rank": 4,
-          "name": "Golden Eagles D1",
-          "points": 329,
-          "leaguePoints": 12
+          "name": "Mr Vệ",
+          "points": 260,
+          "leaguePoints": 15
         },
         {
           "rank": 5,
           "name": "A-ROLE",
-          "points": 302,
+          "points": 334,
           "leaguePoints": 12
         },
         {
           "rank": 6,
-          "name": "XabiXI",
-          "points": 289,
-          "leaguePoints": 9
+          "name": "Danny",
+          "points": 308,
+          "leaguePoints": 12
         },
         {
           "rank": 7,
-          "name": "Danny",
-          "points": 273,
-          "leaguePoints": 9
+          "name": "Selborne FC",
+          "points": 279,
+          "leaguePoints": 10
         },
         {
           "rank": 8,
-          "name": "Selborne FC",
-          "points": 236,
-          "leaguePoints": 7
+          "name": "XabiXI",
+          "points": 318,
+          "leaguePoints": 9
         }
       ]
     },
@@ -663,44 +663,44 @@
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 396,
-          "leaguePoints": 396
+          "points": 407,
+          "leaguePoints": 407
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 388,
-          "leaguePoints": 388
+          "points": 389,
+          "leaguePoints": 389
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 316,
-          "leaguePoints": 316
+          "points": 324,
+          "leaguePoints": 324
         },
         {
           "rank": 5,
           "name": "Dinezine Dizane",
-          "points": 297,
-          "leaguePoints": 297
-        },
-        {
-          "rank": 6,
-          "name": "Kubsi FC",
-          "points": 258,
-          "leaguePoints": 258
+          "points": 309,
+          "leaguePoints": 309
         },
         {
           "rank": 6,
           "name": "y0y0y",
-          "points": 258,
-          "leaguePoints": 258
+          "points": 263,
+          "leaguePoints": 263
+        },
+        {
+          "rank": 7,
+          "name": "Kubsi FC",
+          "points": 262,
+          "leaguePoints": 262
         },
         {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 239,
-          "leaguePoints": 239
+          "points": 244,
+          "leaguePoints": 244
         }
       ]
     }
