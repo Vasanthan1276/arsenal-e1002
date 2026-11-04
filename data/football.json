@@ -1,5 +1,5 @@
 {
-  "updated": "04 NOV 03:34 SGT",
+  "updated": "04 NOV 08:40 SGT",
   "fixtures": [
     {
       "date": "07 NOV",
@@ -324,11 +324,6 @@
   "squadWatch": [
     {
       "type": "INJURY",
-      "player": "William Saliba",
-      "status": "Back injury"
-    },
-    {
-      "type": "INJURY",
       "player": "Bukayo Saka",
       "status": "Thigh injury"
     },
@@ -336,6 +331,11 @@
       "type": "SUSPEND",
       "player": "Max Dowman",
       "status": "Suspended until 29 Nov"
+    },
+    {
+      "type": "INJURY",
+      "player": "William Saliba",
+      "status": "Back injury"
     },
     {
       "type": "TRANSFER",
