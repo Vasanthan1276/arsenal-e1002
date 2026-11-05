@@ -1,5 +1,5 @@
 {
-  "updated": "05 NOV 14:58 SGT",
+  "updated": "06 NOV 00:31 SGT",
   "fixtures": [
     {
       "date": "07 NOV",
@@ -331,11 +331,6 @@
       "type": "SUSPEND",
       "player": "Max Dowman",
       "status": "Suspended until 29 Nov"
-    },
-    {
-      "type": "TRANSFER",
-      "player": "Kenan Yildiz",
-      "status": "Reported target"
     }
   ]
 }
