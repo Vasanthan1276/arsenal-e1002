@@ -1,5 +1,5 @@
 {
-  "updated": "06 NOV 00:31 SGT",
+  "updated": "06 NOV 07:52 SGT",
   "fixtures": [
     {
       "date": "07 NOV",
@@ -331,6 +331,16 @@
       "type": "SUSPEND",
       "player": "Max Dowman",
       "status": "Suspended until 29 Nov"
+    },
+    {
+      "type": "INJURY",
+      "player": "Ezri Konsa Ngoyo",
+      "status": "Knee injury"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "Alex Baena",
+      "status": "Reported target"
     }
   ]
 }
