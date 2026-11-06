@@ -1,5 +1,5 @@
 {
-  "updated": "06 NOV 14:57 SGT",
+  "updated": "07 NOV 00:09 SGT",
   "fixtures": [
     {
       "date": "07 NOV",
@@ -331,11 +331,6 @@
       "type": "SUSPEND",
       "player": "Max Dowman",
       "status": "Suspended until 29 Nov"
-    },
-    {
-      "type": "INJURY",
-      "player": "Ezri Konsa Ngoyo",
-      "status": "Knee injury"
     },
     {
       "type": "TRANSFER",
