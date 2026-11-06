@@ -1,5 +1,5 @@
 {
-  "updated": "07 NOV 00:09 SGT",
+  "updated": "07 NOV 05:35 SGT",
   "fixtures": [
     {
       "date": "07 NOV",
@@ -130,6 +130,18 @@
     },
     {
       "pos": 5,
+      "team": "Everton",
+      "played": 10,
+      "won": 4,
+      "draw": 4,
+      "lost": 2,
+      "gf": 11,
+      "ga": 10,
+      "gd": 1,
+      "pts": 16
+    },
+    {
+      "pos": 6,
       "team": "Liverpool",
       "played": 9,
       "won": 4,
@@ -141,7 +153,7 @@
       "pts": 15
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "Brentford",
       "played": 9,
       "won": 3,
@@ -151,18 +163,6 @@
       "ga": 9,
       "gd": 7,
       "pts": 14
-    },
-    {
-      "pos": 7,
-      "team": "Everton",
-      "played": 9,
-      "won": 3,
-      "draw": 4,
-      "lost": 2,
-      "gf": 9,
-      "ga": 9,
-      "gd": 0,
-      "pts": 13
     },
     {
       "pos": 8,
@@ -263,13 +263,13 @@
     {
       "pos": 16,
       "team": "Coventry",
-      "played": 9,
+      "played": 10,
       "won": 3,
       "draw": 0,
-      "lost": 6,
-      "gf": 9,
-      "ga": 16,
-      "gd": -7,
+      "lost": 7,
+      "gf": 10,
+      "ga": 18,
+      "gd": -8,
       "pts": 9
     },
     {
