@@ -1,5 +1,5 @@
 {
-  "updated": "08 NOV, 00:30 SGT",
+  "updated": "08 NOV, 05:58 SGT",
   "gameweek": 10,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 10,
-    "gameweekPoints": 0,
-    "totalPoints": 638,
-    "overallRank": 295156,
+    "gameweekPoints": 14,
+    "totalPoints": 641,
+    "overallRank": 326642,
     "bank": 1.3,
     "value": 102.1,
     "activeChip": null,
@@ -35,9 +35,9 @@
         "name": "Calafiori",
         "position": "DEF",
         "club": "ARS",
-        "totalPoints": 58,
-        "gwPoints": 7,
-        "contribution": 7,
+        "totalPoints": 57,
+        "gwPoints": 6,
+        "contribution": 6,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -161,9 +161,9 @@
         "name": "Haaland",
         "position": "FWD",
         "club": "MCI",
-        "totalPoints": 68,
-        "gwPoints": 0,
-        "contribution": 0,
+        "totalPoints": 70,
+        "gwPoints": 2,
+        "contribution": 4,
         "starter": true,
         "benchOrder": null,
         "captain": true,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 10,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 23,
+      "gameweekPoints": 26,
       "totalPoints": 370,
       "leaguePoints": 15,
       "leagueRank": 3,
@@ -259,9 +259,9 @@
           "name": "Donnarumma",
           "position": "GKP",
           "club": "MCI",
-          "totalPoints": 32,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 33,
+          "gwPoints": 1,
+          "contribution": 1,
           "starter": true,
           "benchOrder": null
         },
@@ -281,9 +281,9 @@
           "name": "Konsa",
           "position": "DEF",
           "club": "ARS",
-          "totalPoints": 55,
-          "gwPoints": 7,
-          "contribution": 7,
+          "totalPoints": 57,
+          "gwPoints": 8,
+          "contribution": 8,
           "starter": true,
           "benchOrder": null
         },
@@ -325,9 +325,9 @@
           "name": "Foden",
           "position": "MID",
           "club": "MCI",
-          "totalPoints": 20,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 21,
+          "gwPoints": 1,
+          "contribution": 1,
           "starter": true,
           "benchOrder": null
         },
@@ -482,8 +482,8 @@
       "entryId": 351935,
       "gameweek": 10,
       "entryName": "Golden Eagles D2",
-      "gameweekPoints": 4,
-      "totalPoints": 421,
+      "gameweekPoints": 13,
+      "totalPoints": 434,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -558,9 +558,9 @@
           "name": "Ødegaard",
           "position": "MID",
           "club": "ARS",
-          "totalPoints": 42,
-          "gwPoints": 3,
-          "contribution": 3,
+          "totalPoints": 50,
+          "gwPoints": 11,
+          "contribution": 11,
           "starter": true,
           "benchOrder": null
         },
@@ -569,9 +569,9 @@
           "name": "Foden",
           "position": "MID",
           "club": "MCI",
-          "totalPoints": 20,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 21,
+          "gwPoints": 1,
+          "contribution": 1,
           "starter": true,
           "benchOrder": null
         },
@@ -646,9 +646,9 @@
           "name": "Muñoz",
           "position": "DEF",
           "club": "NFO",
-          "totalPoints": 15,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 17,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": false,
           "benchOrder": 4
         }
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 421,
-          "leaguePoints": 421
+          "points": 434,
+          "leaguePoints": 434
         },
         {
           "rank": 2,
           "name": "1MDD",
-          "points": 407,
-          "leaguePoints": 407
+          "points": 419,
+          "leaguePoints": 419
         },
         {
           "rank": 3,
           "name": "Dont stop Baleba-ing",
-          "points": 389,
-          "leaguePoints": 389
+          "points": 406,
+          "leaguePoints": 406
         },
         {
           "rank": 4,
           "name": "Mighty",
-          "points": 324,
-          "leaguePoints": 324
+          "points": 336,
+          "leaguePoints": 336
         },
         {
           "rank": 5,
           "name": "Dinezine Dizane",
-          "points": 309,
-          "leaguePoints": 309
+          "points": 318,
+          "leaguePoints": 318
         },
         {
           "rank": 6,
-          "name": "Kubsi FC",
-          "points": 278,
-          "leaguePoints": 278
+          "name": "y0y0y",
+          "points": 296,
+          "leaguePoints": 296
         },
         {
           "rank": 7,
-          "name": "y0y0y",
-          "points": 272,
-          "leaguePoints": 272
+          "name": "Kubsi FC",
+          "points": 294,
+          "leaguePoints": 294
         },
         {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 246,
-          "leaguePoints": 246
+          "points": 251,
+          "leaguePoints": 251
         }
       ]
     }
