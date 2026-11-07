@@ -1,5 +1,5 @@
 {
-  "updated": "07 NOV 05:35 SGT",
+  "updated": "07 NOV 09:59 SGT",
   "fixtures": [
     {
       "date": "07 NOV",
@@ -135,9 +135,9 @@
       "won": 4,
       "draw": 4,
       "lost": 2,
-      "gf": 11,
+      "gf": 12,
       "ga": 10,
-      "gd": 1,
+      "gd": 2,
       "pts": 16
     },
     {
@@ -268,8 +268,8 @@
       "draw": 0,
       "lost": 7,
       "gf": 10,
-      "ga": 18,
-      "gd": -8,
+      "ga": 19,
+      "gd": -9,
       "pts": 9
     },
     {
