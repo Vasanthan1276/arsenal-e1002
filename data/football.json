@@ -1,13 +1,6 @@
 {
-  "updated": "07 NOV 16:54 SGT",
+  "updated": "08 NOV 00:30 SGT",
   "fixtures": [
-    {
-      "date": "07 NOV",
-      "home": "ARSENAL",
-      "away": "HULL CITY",
-      "time": "23:00 SGT",
-      "utcDate": "2026-11-07T15:00:00Z"
-    },
     {
       "date": "22 NOV",
       "home": "NEWCASTLE",
@@ -28,6 +21,13 @@
       "away": "ARSENAL",
       "time": "04:15 SGT",
       "utcDate": "2026-12-02T20:15:00Z"
+    },
+    {
+      "date": "07 DEC",
+      "home": "TOTTENHAM",
+      "away": "ARSENAL",
+      "time": "00:30 SGT",
+      "utcDate": "2026-12-06T16:30:00Z"
     }
   ],
   "results": [
@@ -83,14 +83,14 @@
     {
       "pos": 1,
       "team": "Arsenal",
-      "played": 9,
+      "played": 10,
       "won": 8,
-      "draw": 0,
+      "draw": 1,
       "lost": 1,
       "gf": 14,
       "ga": 5,
       "gd": 9,
-      "pts": 24
+      "pts": 25
     },
     {
       "pos": 2,
@@ -166,6 +166,18 @@
     },
     {
       "pos": 8,
+      "team": "Leeds",
+      "played": 10,
+      "won": 3,
+      "draw": 5,
+      "lost": 2,
+      "gf": 10,
+      "ga": 8,
+      "gd": 2,
+      "pts": 14
+    },
+    {
+      "pos": 9,
       "team": "Bournemouth",
       "played": 9,
       "won": 3,
@@ -177,19 +189,43 @@
       "pts": 12
     },
     {
-      "pos": 9,
-      "team": "Tottenham",
-      "played": 9,
-      "won": 3,
-      "draw": 3,
-      "lost": 3,
-      "gf": 10,
+      "pos": 10,
+      "team": "Hull City",
+      "played": 10,
+      "won": 2,
+      "draw": 6,
+      "lost": 2,
+      "gf": 11,
       "ga": 10,
-      "gd": 0,
+      "gd": 1,
       "pts": 12
     },
     {
-      "pos": 10,
+      "pos": 11,
+      "team": "Tottenham",
+      "played": 10,
+      "won": 3,
+      "draw": 3,
+      "lost": 4,
+      "gf": 10,
+      "ga": 11,
+      "gd": -1,
+      "pts": 12
+    },
+    {
+      "pos": 12,
+      "team": "Newcastle",
+      "played": 10,
+      "won": 3,
+      "draw": 3,
+      "lost": 4,
+      "gf": 12,
+      "ga": 15,
+      "gd": -3,
+      "pts": 12
+    },
+    {
+      "pos": 13,
       "team": "Aston Villa",
       "played": 9,
       "won": 3,
@@ -199,42 +235,6 @@
       "ga": 13,
       "gd": -3,
       "pts": 12
-    },
-    {
-      "pos": 11,
-      "team": "Hull City",
-      "played": 9,
-      "won": 2,
-      "draw": 5,
-      "lost": 2,
-      "gf": 11,
-      "ga": 10,
-      "gd": 1,
-      "pts": 11
-    },
-    {
-      "pos": 12,
-      "team": "Leeds",
-      "played": 9,
-      "won": 2,
-      "draw": 5,
-      "lost": 2,
-      "gf": 9,
-      "ga": 8,
-      "gd": 1,
-      "pts": 11
-    },
-    {
-      "pos": 13,
-      "team": "Newcastle",
-      "played": 9,
-      "won": 3,
-      "draw": 2,
-      "lost": 4,
-      "gf": 12,
-      "ga": 15,
-      "gd": -3,
-      "pts": 11
     },
     {
       "pos": 14,
@@ -251,14 +251,14 @@
     {
       "pos": 15,
       "team": "Fulham",
-      "played": 9,
+      "played": 10,
       "won": 2,
-      "draw": 3,
+      "draw": 4,
       "lost": 4,
       "gf": 9,
       "ga": 11,
       "gd": -2,
-      "pts": 9
+      "pts": 10
     },
     {
       "pos": 16,
@@ -334,7 +334,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Alex Baena",
+      "player": "Erling Haaland",
       "status": "Reported target"
     }
   ]
