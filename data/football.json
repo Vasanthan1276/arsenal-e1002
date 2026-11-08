@@ -1,5 +1,5 @@
 {
-  "updated": "09 NOV 00:43 SGT",
+  "updated": "09 NOV 06:15 SGT",
   "fixtures": [
     {
       "date": "22 NOV",
@@ -166,18 +166,6 @@
     },
     {
       "pos": 8,
-      "team": "Aston Villa",
-      "played": 10,
-      "won": 4,
-      "draw": 3,
-      "lost": 3,
-      "gf": 12,
-      "ga": 13,
-      "gd": -1,
-      "pts": 15
-    },
-    {
-      "pos": 9,
       "team": "Brentford",
       "played": 10,
       "won": 3,
@@ -189,7 +177,7 @@
       "pts": 14
     },
     {
-      "pos": 10,
+      "pos": 9,
       "team": "Leeds",
       "played": 10,
       "won": 3,
@@ -199,6 +187,18 @@
       "ga": 8,
       "gd": 2,
       "pts": 14
+    },
+    {
+      "pos": 10,
+      "team": "Aston Villa",
+      "played": 10,
+      "won": 3,
+      "draw": 4,
+      "lost": 3,
+      "gf": 14,
+      "ga": 17,
+      "gd": -3,
+      "pts": 13
     },
     {
       "pos": 11,
@@ -286,6 +286,18 @@
     },
     {
       "pos": 18,
+      "team": "Man United",
+      "played": 10,
+      "won": 1,
+      "draw": 5,
+      "lost": 4,
+      "gf": 14,
+      "ga": 19,
+      "gd": -5,
+      "pts": 8
+    },
+    {
+      "pos": 19,
       "team": "Sunderland",
       "played": 10,
       "won": 2,
@@ -295,18 +307,6 @@
       "ga": 17,
       "gd": -9,
       "pts": 8
-    },
-    {
-      "pos": 19,
-      "team": "Man United",
-      "played": 10,
-      "won": 1,
-      "draw": 4,
-      "lost": 5,
-      "gf": 10,
-      "ga": 17,
-      "gd": -7,
-      "pts": 7
     },
     {
       "pos": 20,
@@ -334,7 +334,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Alex Baena",
+      "player": "Erling Haaland",
       "status": "Reported target"
     }
   ]
