@@ -1,5 +1,5 @@
 {
-  "updated": "08 NOV 09:29 SGT",
+  "updated": "08 NOV 17:07 SGT",
   "fixtures": [
     {
       "date": "22 NOV",
@@ -331,11 +331,6 @@
       "type": "SUSPEND",
       "player": "Max Dowman",
       "status": "Suspended until 29 Nov"
-    },
-    {
-      "type": "TRANSFER",
-      "player": "Alex Baena",
-      "status": "Reported target"
     }
   ]
 }
