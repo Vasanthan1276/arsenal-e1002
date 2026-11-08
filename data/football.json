@@ -1,5 +1,5 @@
 {
-  "updated": "08 NOV 17:07 SGT",
+  "updated": "09 NOV 00:43 SGT",
   "fixtures": [
     {
       "date": "22 NOV",
@@ -94,6 +94,18 @@
     },
     {
       "pos": 2,
+      "team": "Brighton",
+      "played": 10,
+      "won": 7,
+      "draw": 1,
+      "lost": 2,
+      "gf": 26,
+      "ga": 7,
+      "gd": 19,
+      "pts": 22
+    },
+    {
+      "pos": 3,
       "team": "Man City",
       "played": 10,
       "won": 7,
@@ -105,31 +117,31 @@
       "pts": 21
     },
     {
-      "pos": 3,
-      "team": "Brighton",
-      "played": 9,
-      "won": 6,
-      "draw": 1,
-      "lost": 2,
-      "gf": 24,
-      "ga": 7,
-      "gd": 17,
-      "pts": 19
-    },
-    {
       "pos": 4,
-      "team": "Chelsea",
-      "played": 9,
+      "team": "Liverpool",
+      "played": 10,
       "won": 5,
-      "draw": 1,
-      "lost": 3,
-      "gf": 19,
-      "ga": 15,
+      "draw": 3,
+      "lost": 2,
+      "gf": 14,
+      "ga": 10,
       "gd": 4,
-      "pts": 16
+      "pts": 18
     },
     {
       "pos": 5,
+      "team": "Chelsea",
+      "played": 10,
+      "won": 5,
+      "draw": 1,
+      "lost": 4,
+      "gf": 19,
+      "ga": 16,
+      "gd": 3,
+      "pts": 16
+    },
+    {
+      "pos": 6,
       "team": "Everton",
       "played": 10,
       "won": 4,
@@ -141,31 +153,43 @@
       "pts": 16
     },
     {
-      "pos": 6,
-      "team": "Liverpool",
-      "played": 9,
+      "pos": 7,
+      "team": "Bournemouth",
+      "played": 10,
       "won": 4,
       "draw": 3,
-      "lost": 2,
-      "gf": 11,
-      "ga": 9,
+      "lost": 3,
+      "gf": 16,
+      "ga": 14,
       "gd": 2,
       "pts": 15
     },
     {
-      "pos": 7,
+      "pos": 8,
+      "team": "Aston Villa",
+      "played": 10,
+      "won": 4,
+      "draw": 3,
+      "lost": 3,
+      "gf": 12,
+      "ga": 13,
+      "gd": -1,
+      "pts": 15
+    },
+    {
+      "pos": 9,
       "team": "Brentford",
-      "played": 9,
+      "played": 10,
       "won": 3,
       "draw": 5,
-      "lost": 1,
+      "lost": 2,
       "gf": 16,
-      "ga": 9,
-      "gd": 7,
+      "ga": 11,
+      "gd": 5,
       "pts": 14
     },
     {
-      "pos": 8,
+      "pos": 10,
       "team": "Leeds",
       "played": 10,
       "won": 3,
@@ -177,19 +201,7 @@
       "pts": 14
     },
     {
-      "pos": 9,
-      "team": "Bournemouth",
-      "played": 9,
-      "won": 3,
-      "draw": 3,
-      "lost": 3,
-      "gf": 14,
-      "ga": 13,
-      "gd": 1,
-      "pts": 12
-    },
-    {
-      "pos": 10,
+      "pos": 11,
       "team": "Tottenham",
       "played": 10,
       "won": 3,
@@ -201,7 +213,7 @@
       "pts": 12
     },
     {
-      "pos": 11,
+      "pos": 12,
       "team": "Newcastle",
       "played": 10,
       "won": 3,
@@ -209,18 +221,6 @@
       "lost": 4,
       "gf": 13,
       "ga": 16,
-      "gd": -3,
-      "pts": 12
-    },
-    {
-      "pos": 12,
-      "team": "Aston Villa",
-      "played": 9,
-      "won": 3,
-      "draw": 3,
-      "lost": 3,
-      "gf": 10,
-      "ga": 13,
       "gd": -3,
       "pts": 12
     },
@@ -239,13 +239,13 @@
     {
       "pos": 14,
       "team": "Ipswich",
-      "played": 9,
+      "played": 10,
       "won": 3,
       "draw": 2,
-      "lost": 4,
-      "gf": 14,
-      "ga": 18,
-      "gd": -4,
+      "lost": 5,
+      "gf": 15,
+      "ga": 20,
+      "gd": -5,
       "pts": 11
     },
     {
@@ -286,39 +286,39 @@
     },
     {
       "pos": 18,
-      "team": "Man United",
-      "played": 9,
-      "won": 1,
-      "draw": 4,
-      "lost": 4,
-      "gf": 10,
-      "ga": 15,
-      "gd": -5,
-      "pts": 7
+      "team": "Sunderland",
+      "played": 10,
+      "won": 2,
+      "draw": 2,
+      "lost": 6,
+      "gf": 8,
+      "ga": 17,
+      "gd": -9,
+      "pts": 8
     },
     {
       "pos": 19,
-      "team": "Crystal Palace",
-      "played": 9,
-      "won": 2,
-      "draw": 1,
-      "lost": 6,
-      "gf": 9,
-      "ga": 21,
-      "gd": -12,
+      "team": "Man United",
+      "played": 10,
+      "won": 1,
+      "draw": 4,
+      "lost": 5,
+      "gf": 10,
+      "ga": 17,
+      "gd": -7,
       "pts": 7
     },
     {
       "pos": 20,
-      "team": "Sunderland",
-      "played": 9,
-      "won": 1,
-      "draw": 2,
-      "lost": 6,
-      "gf": 7,
-      "ga": 17,
-      "gd": -10,
-      "pts": 5
+      "team": "Crystal Palace",
+      "played": 10,
+      "won": 2,
+      "draw": 1,
+      "lost": 7,
+      "gf": 10,
+      "ga": 24,
+      "gd": -14,
+      "pts": 7
     }
   ],
   "squadWatch": [
@@ -331,6 +331,11 @@
       "type": "SUSPEND",
       "player": "Max Dowman",
       "status": "Suspended until 29 Nov"
+    },
+    {
+      "type": "TRANSFER",
+      "player": "Alex Baena",
+      "status": "Reported target"
     }
   ]
 }
