@@ -1,5 +1,5 @@
 {
-  "updated": "20 NOV 21:07 SGT",
+  "updated": "21 NOV 05:52 SGT",
   "fixtures": [
     {
       "date": "22 NOV",
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Premier League",
+      "player": "Alex Scott",
       "status": "Reported target"
     }
   ]
