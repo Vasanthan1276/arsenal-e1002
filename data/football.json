@@ -1,5 +1,5 @@
 {
-  "updated": "20 NOV 11:28 SGT",
+  "updated": "20 NOV 21:07 SGT",
   "fixtures": [
     {
       "date": "22 NOV",
@@ -328,14 +328,14 @@
       "status": "Thigh injury"
     },
     {
-      "type": "SUSPEND",
-      "player": "Max Dowman",
-      "status": "Suspended until 29 Nov"
-    },
-    {
       "type": "INJURY",
       "player": "M. Ibáñez",
       "status": "Hamstring"
+    },
+    {
+      "type": "SUSPEND",
+      "player": "Max Dowman",
+      "status": "Suspended until 29 Nov"
     },
     {
       "type": "TRANSFER",
