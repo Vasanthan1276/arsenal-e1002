@@ -1,13 +1,6 @@
 {
-  "updated": "21 NOV 20:46 SGT",
+  "updated": "22 NOV 04:34 SGT",
   "fixtures": [
-    {
-      "date": "22 NOV",
-      "home": "NEWCASTLE",
-      "away": "ARSENAL",
-      "time": "01:30 SGT",
-      "utcDate": "2026-11-21T17:30:00Z"
-    },
     {
       "date": "30 NOV",
       "home": "ARSENAL",
@@ -28,9 +21,24 @@
       "away": "ARSENAL",
       "time": "00:30 SGT",
       "utcDate": "2026-12-06T16:30:00Z"
+    },
+    {
+      "date": "13 DEC",
+      "home": "ARSENAL",
+      "away": "BOURNEMOUTH",
+      "time": "22:00 SGT",
+      "utcDate": "2026-12-13T14:00:00Z"
     }
   ],
   "results": [
+    {
+      "date": "22 NOV",
+      "home": "NEWCASTLE",
+      "away": "ARSENAL",
+      "homeScore": 2,
+      "awayScore": 2,
+      "outcome": "D"
+    },
     {
       "date": "07 NOV",
       "home": "ARSENAL",
@@ -62,14 +70,6 @@
       "homeScore": 0,
       "awayScore": 1,
       "outcome": "W"
-    },
-    {
-      "date": "10 OCT",
-      "home": "ARSENAL",
-      "away": "LEEDS",
-      "homeScore": 2,
-      "awayScore": 1,
-      "outcome": "W"
     }
   ],
   "form": [
@@ -77,20 +77,20 @@
     "W",
     "W",
     "W",
-    "W"
+    "D"
   ],
   "standings": [
     {
       "pos": 1,
       "team": "Arsenal",
-      "played": 10,
+      "played": 11,
       "won": 9,
-      "draw": 0,
+      "draw": 1,
       "lost": 1,
-      "gf": 15,
-      "ga": 5,
+      "gf": 17,
+      "ga": 7,
       "gd": 10,
-      "pts": 27
+      "pts": 28
     },
     {
       "pos": 2,
@@ -111,13 +111,25 @@
       "won": 7,
       "draw": 1,
       "lost": 3,
-      "gf": 21,
-      "ga": 13,
+      "gf": 22,
+      "ga": 14,
       "gd": 8,
       "pts": 22
     },
     {
       "pos": 4,
+      "team": "Bournemouth",
+      "played": 11,
+      "won": 5,
+      "draw": 3,
+      "lost": 3,
+      "gf": 18,
+      "ga": 14,
+      "gd": 4,
+      "pts": 18
+    },
+    {
+      "pos": 5,
       "team": "Liverpool",
       "played": 10,
       "won": 5,
@@ -129,19 +141,19 @@
       "pts": 18
     },
     {
-      "pos": 5,
-      "team": "Chelsea",
-      "played": 10,
-      "won": 5,
-      "draw": 1,
-      "lost": 4,
-      "gf": 19,
-      "ga": 16,
-      "gd": 3,
-      "pts": 16
+      "pos": 6,
+      "team": "Leeds",
+      "played": 11,
+      "won": 4,
+      "draw": 5,
+      "lost": 2,
+      "gf": 14,
+      "ga": 9,
+      "gd": 5,
+      "pts": 17
     },
     {
-      "pos": 6,
+      "pos": 7,
       "team": "Everton",
       "played": 10,
       "won": 4,
@@ -153,19 +165,31 @@
       "pts": 16
     },
     {
-      "pos": 7,
-      "team": "Bournemouth",
-      "played": 10,
+      "pos": 8,
+      "team": "Chelsea",
+      "played": 11,
+      "won": 5,
+      "draw": 1,
+      "lost": 5,
+      "gf": 20,
+      "ga": 20,
+      "gd": 0,
+      "pts": 16
+    },
+    {
+      "pos": 9,
+      "team": "Tottenham",
+      "played": 11,
       "won": 4,
       "draw": 3,
-      "lost": 3,
-      "gf": 16,
-      "ga": 14,
-      "gd": 2,
+      "lost": 4,
+      "gf": 12,
+      "ga": 11,
+      "gd": 1,
       "pts": 15
     },
     {
-      "pos": 8,
+      "pos": 10,
       "team": "Brentford",
       "played": 10,
       "won": 3,
@@ -177,55 +201,43 @@
       "pts": 14
     },
     {
-      "pos": 9,
-      "team": "Leeds",
-      "played": 10,
+      "pos": 11,
+      "team": "Aston Villa",
+      "played": 11,
       "won": 3,
       "draw": 5,
-      "lost": 2,
-      "gf": 10,
-      "ga": 8,
-      "gd": 2,
-      "pts": 14
-    },
-    {
-      "pos": 10,
-      "team": "Aston Villa",
-      "played": 10,
-      "won": 3,
-      "draw": 4,
       "lost": 3,
       "gf": 14,
       "ga": 17,
       "gd": -3,
-      "pts": 13
-    },
-    {
-      "pos": 11,
-      "team": "Tottenham",
-      "played": 10,
-      "won": 3,
-      "draw": 3,
-      "lost": 4,
-      "gf": 10,
-      "ga": 11,
-      "gd": -1,
-      "pts": 12
+      "pts": 14
     },
     {
       "pos": 12,
       "team": "Newcastle",
-      "played": 10,
+      "played": 11,
       "won": 3,
-      "draw": 3,
+      "draw": 4,
       "lost": 4,
-      "gf": 13,
-      "ga": 16,
+      "gf": 15,
+      "ga": 18,
       "gd": -3,
-      "pts": 12
+      "pts": 13
     },
     {
       "pos": 13,
+      "team": "Coventry",
+      "played": 11,
+      "won": 4,
+      "draw": 0,
+      "lost": 7,
+      "gf": 13,
+      "ga": 21,
+      "gd": -8,
+      "pts": 12
+    },
+    {
+      "pos": 14,
       "team": "Hull City",
       "played": 10,
       "won": 2,
@@ -237,55 +249,55 @@
       "pts": 11
     },
     {
-      "pos": 14,
+      "pos": 15,
       "team": "Fulham",
       "played": 11,
       "won": 2,
       "draw": 5,
       "lost": 4,
-      "gf": 10,
-      "ga": 12,
+      "gf": 11,
+      "ga": 13,
       "gd": -2,
       "pts": 11
     },
     {
-      "pos": 15,
+      "pos": 16,
       "team": "Ipswich",
-      "played": 10,
+      "played": 11,
       "won": 3,
       "draw": 2,
-      "lost": 5,
+      "lost": 6,
       "gf": 15,
-      "ga": 20,
-      "gd": -5,
+      "ga": 22,
+      "gd": -7,
       "pts": 11
     },
     {
-      "pos": 16,
+      "pos": 17,
       "team": "Nott'm Forest",
-      "played": 10,
+      "played": 11,
       "won": 2,
       "draw": 3,
-      "lost": 5,
+      "lost": 6,
       "gf": 9,
-      "ga": 13,
-      "gd": -4,
-      "pts": 9
-    },
-    {
-      "pos": 17,
-      "team": "Coventry",
-      "played": 10,
-      "won": 3,
-      "draw": 0,
-      "lost": 7,
-      "gf": 10,
-      "ga": 19,
-      "gd": -9,
+      "ga": 15,
+      "gd": -6,
       "pts": 9
     },
     {
       "pos": 18,
+      "team": "Sunderland",
+      "played": 11,
+      "won": 2,
+      "draw": 3,
+      "lost": 6,
+      "gf": 8,
+      "ga": 17,
+      "gd": -9,
+      "pts": 9
+    },
+    {
+      "pos": 19,
       "team": "Man United",
       "played": 10,
       "won": 1,
@@ -297,27 +309,15 @@
       "pts": 8
     },
     {
-      "pos": 19,
-      "team": "Sunderland",
-      "played": 10,
-      "won": 2,
-      "draw": 2,
-      "lost": 6,
-      "gf": 8,
-      "ga": 17,
-      "gd": -9,
-      "pts": 8
-    },
-    {
       "pos": 20,
       "team": "Crystal Palace",
-      "played": 10,
+      "played": 11,
       "won": 2,
       "draw": 1,
-      "lost": 7,
-      "gf": 10,
-      "ga": 24,
-      "gd": -14,
+      "lost": 8,
+      "gf": 12,
+      "ga": 27,
+      "gd": -15,
       "pts": 7
     }
   ],
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Premier League",
+      "player": "Vinicius Junior",
       "status": "Reported target"
     }
   ]
