@@ -1,5 +1,5 @@
 {
-  "updated": "22 NOV 10:19 SGT",
+  "updated": "22 NOV 20:40 SGT",
   "fixtures": [
     {
       "date": "30 NOV",
@@ -336,11 +336,6 @@
       "type": "INJURY",
       "player": "David Raya Martín",
       "status": "Shoulder injury"
-    },
-    {
-      "type": "TRANSFER",
-      "player": "Vinicius Junior",
-      "status": "Reported target"
     }
   ]
 }
