@@ -1,5 +1,5 @@
 {
-  "updated": "22 NOV, 04:34 SGT",
+  "updated": "22 NOV, 10:19 SGT",
   "gameweek": 11,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 11,
-    "gameweekPoints": 0,
+    "gameweekPoints": 29,
     "totalPoints": 730,
-    "overallRank": 92277,
+    "overallRank": 92488,
     "bank": 1.9,
     "value": 102.7,
     "activeChip": null,
@@ -483,7 +483,7 @@
       "gameweek": 11,
       "entryName": "Golden Eagles D2",
       "gameweekPoints": 29,
-      "totalPoints": 481,
+      "totalPoints": 510,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -657,50 +657,50 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 481,
-          "leaguePoints": 481
+          "points": 510,
+          "leaguePoints": 510
         },
         {
           "rank": 2,
           "name": "Dont stop Baleba-ing",
-          "points": 448,
-          "leaguePoints": 448
+          "points": 462,
+          "leaguePoints": 462
         },
         {
           "rank": 3,
           "name": "1MDD",
-          "points": 428,
-          "leaguePoints": 428
+          "points": 441,
+          "leaguePoints": 441
         },
         {
           "rank": 4,
-          "name": "Mighty",
-          "points": 356,
-          "leaguePoints": 356
+          "name": "Dinezine Dizane",
+          "points": 364,
+          "leaguePoints": 364
         },
         {
           "rank": 5,
-          "name": "Dinezine Dizane",
-          "points": 331,
-          "leaguePoints": 331
+          "name": "Mighty",
+          "points": 363,
+          "leaguePoints": 363
         },
         {
           "rank": 6,
-          "name": "Kubsi FC",
-          "points": 315,
-          "leaguePoints": 315
+          "name": "y0y0y",
+          "points": 327,
+          "leaguePoints": 327
         },
         {
           "rank": 7,
-          "name": "y0y0y",
-          "points": 302,
-          "leaguePoints": 302
+          "name": "Kubsi FC",
+          "points": 319,
+          "leaguePoints": 319
         },
         {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 265,
-          "leaguePoints": 265
+          "points": 286,
+          "leaguePoints": 286
         }
       ]
     }

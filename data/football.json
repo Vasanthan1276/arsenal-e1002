@@ -1,5 +1,5 @@
 {
-  "updated": "22 NOV 04:34 SGT",
+  "updated": "22 NOV 10:19 SGT",
   "fixtures": [
     {
       "date": "30 NOV",
@@ -333,9 +333,9 @@
       "status": "Hamstring"
     },
     {
-      "type": "SUSPEND",
-      "player": "Max Dowman",
-      "status": "Suspended until 29 Nov"
+      "type": "INJURY",
+      "player": "David Raya Martín",
+      "status": "Shoulder injury"
     },
     {
       "type": "TRANSFER",
