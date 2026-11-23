@@ -1,5 +1,5 @@
 {
-  "updated": "23 NOV 04:45 SGT",
+  "updated": "23 NOV 10:53 SGT",
   "fixtures": [
     {
       "date": "30 NOV",
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Alex Scott",
+      "player": "Vinicius Junior",
       "status": "Reported target"
     }
   ]

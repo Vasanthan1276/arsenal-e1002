@@ -1,5 +1,5 @@
 {
-  "updated": "23 NOV, 04:45 SGT",
+  "updated": "23 NOV, 10:53 SGT",
   "gameweek": 11,
   "main": {
     "key": "main",
@@ -9,7 +9,7 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 11,
-    "gameweekPoints": 29,
+    "gameweekPoints": 50,
     "totalPoints": 751,
     "overallRank": 38986,
     "bank": 1.9,
@@ -483,7 +483,7 @@
       "gameweek": 11,
       "entryName": "Golden Eagles D2",
       "gameweekPoints": 54,
-      "totalPoints": 510,
+      "totalPoints": 535,
       "leaguePoints": null,
       "leagueRank": 1,
       "players": [
@@ -657,44 +657,44 @@
         {
           "rank": 1,
           "name": "Golden Eagles D2",
-          "points": 510,
-          "leaguePoints": 510
+          "points": 535,
+          "leaguePoints": 535
         },
         {
           "rank": 2,
           "name": "Dont stop Baleba-ing",
-          "points": 462,
-          "leaguePoints": 462
+          "points": 472,
+          "leaguePoints": 472
         },
         {
           "rank": 3,
           "name": "1MDD",
-          "points": 441,
-          "leaguePoints": 441
+          "points": 443,
+          "leaguePoints": 443
         },
         {
           "rank": 4,
+          "name": "Mighty",
+          "points": 366,
+          "leaguePoints": 366
+        },
+        {
+          "rank": 5,
           "name": "Dinezine Dizane",
           "points": 364,
           "leaguePoints": 364
         },
         {
-          "rank": 5,
-          "name": "Mighty",
-          "points": 363,
-          "leaguePoints": 363
-        },
-        {
           "rank": 6,
-          "name": "y0y0y",
-          "points": 327,
-          "leaguePoints": 327
+          "name": "Kubsi FC",
+          "points": 351,
+          "leaguePoints": 351
         },
         {
           "rank": 7,
-          "name": "Kubsi FC",
-          "points": 319,
-          "leaguePoints": 319
+          "name": "y0y0y",
+          "points": 327,
+          "leaguePoints": 327
         },
         {
           "rank": 8,
