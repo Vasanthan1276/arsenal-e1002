@@ -1,5 +1,5 @@
 {
-  "updated": "28 NOV 03:31 SGT",
+  "updated": "28 NOV 10:46 SGT",
   "fixtures": [
     {
       "date": "30 NOV",
@@ -167,13 +167,13 @@
     {
       "pos": 8,
       "team": "Chelsea",
-      "played": 11,
+      "played": 12,
       "won": 5,
       "draw": 1,
-      "lost": 5,
-      "gf": 20,
-      "ga": 20,
-      "gd": 0,
+      "lost": 6,
+      "gf": 22,
+      "ga": 23,
+      "gd": -1,
       "pts": 16
     },
     {
@@ -238,6 +238,18 @@
     },
     {
       "pos": 14,
+      "team": "Nott'm Forest",
+      "played": 12,
+      "won": 3,
+      "draw": 3,
+      "lost": 6,
+      "gf": 12,
+      "ga": 17,
+      "gd": -5,
+      "pts": 12
+    },
+    {
+      "pos": 15,
       "team": "Coventry",
       "played": 11,
       "won": 4,
@@ -249,7 +261,7 @@
       "pts": 12
     },
     {
-      "pos": 15,
+      "pos": 16,
       "team": "Fulham",
       "played": 11,
       "won": 2,
@@ -261,7 +273,7 @@
       "pts": 11
     },
     {
-      "pos": 16,
+      "pos": 17,
       "team": "Ipswich",
       "played": 11,
       "won": 3,
@@ -271,18 +283,6 @@
       "ga": 22,
       "gd": -7,
       "pts": 11
-    },
-    {
-      "pos": 17,
-      "team": "Nott'm Forest",
-      "played": 11,
-      "won": 2,
-      "draw": 3,
-      "lost": 6,
-      "gf": 9,
-      "ga": 15,
-      "gd": -6,
-      "pts": 9
     },
     {
       "pos": 18,
@@ -339,7 +339,7 @@
     },
     {
       "type": "TRANSFER",
-      "player": "Nico Paz",
+      "player": "Ivan Fresneda",
       "status": "Reported target"
     }
   ]

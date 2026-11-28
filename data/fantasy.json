@@ -1,5 +1,5 @@
 {
-  "updated": "28 NOV, 03:31 SGT",
+  "updated": "28 NOV, 10:46 SGT",
   "gameweek": 12,
   "main": {
     "key": "main",
@@ -9,9 +9,9 @@
     "status": "Live FPL API",
     "entryId": 6522273,
     "gameweek": 12,
-    "gameweekPoints": 0,
-    "totalPoints": 751,
-    "overallRank": 40183,
+    "gameweekPoints": 2,
+    "totalPoints": 753,
+    "overallRank": 46371,
     "bank": 1.2,
     "value": 103.2,
     "activeChip": null,
@@ -91,9 +91,9 @@
         "name": "Palmer",
         "position": "MID",
         "club": "CHE",
-        "totalPoints": 49,
-        "gwPoints": 0,
-        "contribution": 0,
+        "totalPoints": 51,
+        "gwPoints": 2,
+        "contribution": 2,
         "starter": true,
         "benchOrder": null,
         "captain": false,
@@ -249,7 +249,7 @@
       "entryId": 351274,
       "gameweek": 12,
       "entryName": "Golden Eagles D1",
-      "gameweekPoints": 0,
+      "gameweekPoints": 2,
       "totalPoints": 456,
       "leaguePoints": 18,
       "leagueRank": 3,
@@ -325,9 +325,9 @@
           "name": "Palmer",
           "position": "MID",
           "club": "CHE",
-          "totalPoints": 49,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 51,
+          "gwPoints": 2,
+          "contribution": 2,
           "starter": true,
           "benchOrder": null
         },
@@ -391,9 +391,9 @@
           "name": "Delap",
           "position": "FWD",
           "club": "NFO",
-          "totalPoints": 31,
-          "gwPoints": 0,
-          "contribution": 0,
+          "totalPoints": 35,
+          "gwPoints": 4,
+          "contribution": 4,
           "starter": false,
           "benchOrder": 2
         },
@@ -669,14 +669,14 @@
         {
           "rank": 3,
           "name": "1MDD",
-          "points": 454,
-          "leaguePoints": 454
+          "points": 467,
+          "leaguePoints": 467
         },
         {
           "rank": 4,
           "name": "Dinezine Dizane",
-          "points": 375,
-          "leaguePoints": 375
+          "points": 377,
+          "leaguePoints": 377
         },
         {
           "rank": 5,
@@ -686,21 +686,21 @@
         },
         {
           "rank": 6,
+          "name": "y0y0y",
+          "points": 359,
+          "leaguePoints": 359
+        },
+        {
+          "rank": 7,
           "name": "Kubsi FC",
           "points": 357,
           "leaguePoints": 357
         },
         {
-          "rank": 7,
-          "name": "y0y0y",
-          "points": 340,
-          "leaguePoints": 340
-        },
-        {
           "rank": 8,
           "name": "DontBottleIt",
-          "points": 290,
-          "leaguePoints": 290
+          "points": 292,
+          "leaguePoints": 292
         }
       ]
     }
